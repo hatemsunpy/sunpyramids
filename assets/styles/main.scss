@@ -1,0 +1,175 @@
+@import url("../fonts/font.scss");
+@import url("./pagination.scss");
+@import url("./responsive.scss");
+@import url("./booking-success.scss");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Trip Sans", sans-serif;
+  color: #1d1f1f;
+  background-color: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities{
+  .scaleBG {
+    background-size: 110%;
+  }
+}
+
+.nuxt-icon svg {
+  margin-bottom: 0 !important;
+}
+.errorStyle {
+  @apply text-red-500 text-xs absolute -bottom-5 start-8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary rounded-lg;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-200;
+}
+
+.inputBase {
+  @apply border-[##EEEEEE] p-4 rounded-2xl flex items-center hover:border-primary border border-[#EEEEEE] transition-colors;
+}
+
+.inputBase {
+  @apply bg-white;
+}
+
+.inputBase:hover {
+  border-color: #4d78e5;
+}
+
+.inputBase:focus-within {
+  border-color: #4d78e5;
+  box-shadow: 0px 0px 0px 4px #e9eefc;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.maincbx {
+  position: relative;
+  top: 1px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border: 1px solid #a5a5a5;
+  border-radius: 0.4125rem;
+  vertical-align: middle;
+  cursor: pointer;
+  display: block;
+}
+
+.maincbx:hover {
+  border-color: #163a96;
+}
+
+.maincbx:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 5px;
+  height: 11px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.maincbxInput:checked~.maincbx {
+  border-color: transparent;
+  background: #163a96;
+
+  &:hover {
+    background-color: #163a96;
+    transition: all 0.1s ease;
+  }
+
+  @apply group-hover:bg-[#0d2359];
+}
+
+.maincbxInput:checked~.maincbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+.maincntr {
+  position: relative;
+}
+
+.hidden-xs-up {
+  display: none !important;
+}
+
+.isRequiredSign{
+  @apply relative before:content-['*'] before:absolute before:top-0 before:-end-3 before:text-red-500
+}
+
+input[type="password"] {
+  -webkit-text-security: circle;
+  /* Options: 'disc', 'circle', 'square' */
+}
+
+.otp-input-container{
+  @apply w-full  xl:gap-6 gap-1 justify-start
+}
+.otp-input {
+  @apply  xl:w-[4.5rem] xl:h-[4.5rem] md:w-[4rem]  md:h-[4rem] w-[3.4rem] h-[3.4rem] text-center text-[33px] outline-none border-2 border-[#EEEEEE] rounded-xl hover:border-[#29ABE2] focus:border-[#29ABE2] transition ;
+}
+
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  white-space: nowrap;
+  /* Prevent line breaks */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar */
+}
+
+.submitBoxShadow{
+  box-shadow: 0px 0px 16px #0000001A;
+}

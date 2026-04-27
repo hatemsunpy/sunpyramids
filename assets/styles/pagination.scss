@@ -1,0 +1,53 @@
+  .pagination-container {
+    display: flex;
+    width: 50% !important;
+
+    column-gap: 4px;
+  }
+
+  .paginate-buttons:not(.starting-breakpoint-button , .ending-breakpoint-button , .back-button,
+  .next-button) {
+    height: 44px;
+
+    width: 44px;
+    font-weight: 500;
+
+    border-radius: 22px;
+
+    cursor: pointer;
+
+    background-color: white;
+
+    border: 1px solid #EEEEEE;
+
+    color: black;
+  }
+
+  .back-button:hover{
+    .nuxt-icon{
+    color: white !important;
+    }
+  }
+
+  .paginate-buttons:hover:not(.starting-breakpoint-button , .ending-breakpoint-button ,  .back-button , .next-button) {
+    background-color: #163a96;
+    color: white;
+    transition: all 0.1s  ease-in;
+  }
+
+  .starting-breakpoint-button,
+  .ending-breakpoint-button{
+    @apply mt-2 text-textLight/50
+  }
+
+  .active-page {
+    background-color: #163a96 !important;
+
+    border: 1px solid #163a96 !important;
+
+    color: white !important;
+  }
+
+  .active-page:hover {
+    background-color: #143485 !important;
+  }

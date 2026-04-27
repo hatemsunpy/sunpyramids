@@ -1,0 +1,5 @@
+<template>
+  <Event />
+
+  <SharedBottomBar />
+</template>

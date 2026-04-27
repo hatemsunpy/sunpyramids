@@ -1,0 +1,81 @@
+/* Mobile */
+@media (max-width: 624px) {
+  .openFilterGrids {
+    @apply grid-cols-1;
+  }
+}
+
+/* Tablet */
+@media (min-width: 625px) and (max-width: 1024px) {
+  .openFilterGrids {
+    @apply grid-cols-2;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 840px) and (max-width: 1025px) {
+  .openFilterGrids {
+    @apply grid-cols-2;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .openFilterGrids {
+    @apply grid-cols-3;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) and (max-width: 1724px) {
+  .openFilterGrids {
+    @apply grid-cols-4;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1724px) {
+  .openFilterGrids {
+    @apply grid-cols-5;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 624px) {
+  .tourCardBoxRes {
+    @apply grid-cols-1;
+  }
+}
+
+/* Tablet */
+@media (min-width: 625px) and (max-width: 1024px) {
+  .tourCardBoxRes {
+    @apply grid-cols-2;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .tourCardBoxRes {
+    @apply grid-cols-2;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1676px) {
+  .tourCardBoxRes {
+    @apply grid-cols-3;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1677px) and (max-width: 1902px) {
+  .tourCardBoxRes {
+    @apply grid-cols-3;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1903px) {
+  .tourCardBoxRes {
+    @apply grid-cols-4;
+  }
+}

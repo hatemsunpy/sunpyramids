@@ -1,0 +1,505 @@
+{
+  "labels": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "contact": "Contato",
+    "events": "Eventos",
+    "goBack": "Voltar",
+    "criTitle": "Explore o Egito guiado por uma verdadeira experiência",
+    "bookCriTrip": "Reserve agora a sua viagem de Natal",
+    "specialEventsData": {
+      "title": "Tours de Páscoa no Egito",
+      "desc": "Celebre a Páscoa com itinerários inesquecíveis no Egito"
+    },
+    "strip": {
+      "title": "Reserve agora o seu tour de Páscoa no Egito – Explore as pirâmides, cruzeiros pelo Nilo e ofertas limitadas de primavera – Reserve nossos itinerários de Páscoa no Egito",
+      "btn": "Ver tours de Páscoa"
+    },
+    "thankful": {
+      "title": "Página de Agradecimento",
+      "one": "Obrigado Senhor {name}",
+      "two": "O Seu Pedido Foi Recebido.",
+      "three": "Os seus dados foram enviados e confirmados com sucesso.",
+      "four": "A nossa equipa entrará em contacto consigo dentro de 1 hora via WhatsApp, chamada telefónica ou e-mail para fornecer todos os detalhes de que precisa.",
+      "five": "Prepare-se — a sua aventura com a Sun Pyramids Tours começa aqui!"
+    },
+    "book-egy-trip": {
+      "title": "Descubra o Egito com Especialistas Locais",
+      "desc": "Explore as maravilhas do Egito com roteiros personalizados, orientação especializada e memórias inesquecíveis."
+    },
+    "specialNeed": {
+      "reedMore": "Ler mais",
+      "popup": "5 % de desconto em todos os nossos pacotes turísticos para hóspedes que necessitam de assistência de acessibilidade, apoiando experiências de viagem inclusivas.",
+      "dragAndDrop": "Arraste e solte seus arquivos aqui ou clique para selecionar",
+      "we": "Nós",
+      "care": "Cuidamos",
+      "special": "Especial",
+      "announcement": "Anúncio",
+      "first": "Na Sun Pyramids Tours, acreditamos que viajar deve ser uma experiência alegre e inclusiva para todos.",
+      "second": {
+        "title": "Por que estamos fazendo isso:",
+        "one": "Para garantir que famílias, amigos e acompanhantes possam compartilhar a mesma alegria de descoberta juntos.",
+        "two": "Para honrar a força, resiliência e espírito inspirador dos nossos valiosos viajantes.",
+        "three": "Para reafirmar nosso compromisso com cuidado, respeito e experiências verdadeiramente inesquecíveis."
+      },
+      "third": "O desconto aplica-se ao pacote inteiro, beneficiando viajantes que precisam de apoio de acessibilidade assim como seus acompanhantes.",
+      "fourth": "Sun Pyramids Tours – Nós cuidamos, porque viajar é para todos.",
+      "five": {
+        "title": "Temos orgulho em apresentar uma nova iniciativa:",
+        "paragraph": "Um desconto fixo de 5 % em todos os pacotes turísticos que incluam viajantes que precisam de apoio de acessibilidade e seus acompanhantes."
+      },
+      "sixth": "Escolha o pacote acessível que atende às suas necessidades, faça o upload do seu cartão médico ou de deficiência para verificação e aproveite até 5 % de desconto na sua experiência."
+    },
+    "accessibleTravel": "Viagem acessível",
+    "event": {
+      "eventDetails": "Detalhes do Evento",
+      "phone": "Telefone",
+      "startDate": "Data de Início",
+      "status": "Status",
+      "location": "Localização",
+      "website": "Site",
+      "email": "E-mail",
+      "bookTicket": "Reserve seu Ingresso"
+    },
+    "contactNow":"Entrar em contato agora",
+    "whatsapp": "WhatsApp Agora",
+    "planYourTrip": "Planeje Sua Viagem",
+    "whyChooseUs": "Por Que Escolher Sun Pyramids Tours?",
+    "licensed": {
+      "title": "Especialistas Licenciados",
+      "desc": "Guias confiáveis com mais de 50 anos de experiência"
+    },
+    "private": {
+      "title": "Transferes Privados",
+      "desc": "Viagens confortáveis e seguras por todo o Egito"
+    },
+    "hotel": {
+      "title": "Melhores Hotéis",
+      "desc": "Hospedagem em hotéis premium com vistas incríveis"
+    },
+    "egypt-trip-landing-german": {
+      "title": "Descubra o Lado Selvagem do Egito com Especialistas Locais",
+      "desc": "De safaris no deserto e escapes para oásis a aventuras no Mar Vermelho — explore a beleza crua do Egito com guias especializados e experiências inesquecíveis",
+      "adventure": {
+        "title": "Especialistas em Aventura",
+        "desc": "Guias especializados em tours pelo deserto e safáris"
+      },
+      "transfers": {
+        "title": "Transferências Seguras",
+        "desc": "Deslocações confortáveis da cidade para o deserto e além"
+      },
+      "style": {
+        "title": "Hospede-se com Estilo",
+        "desc": "De eco-lodges nos oásis a resorts no Mar Vermelho"
+      },
+      "tours-subtitle": "Aventuras no Egito – Personalizadas para Si"
+    },
+    "egypt-trip-landing-france": {
+      "title": "Explore o Patrimônio e os Horizontes Ocultos do Egito",
+      "desc": "Descubra templos atemporais, Abu Simbel e os balões de ar quente de Luxor — depois embarque numa jornada pelos desertos do Egito e pelo sereno Oásis de Siwa para um equilíbrio inesquecível entre cultura e natureza",
+      "adventure": {
+        "title": "Guias Culturais Especializados",
+        "desc": "Especialistas em museus, templos e história"
+      },
+      "transfers": {
+        "title": "Jornadas Desertas Únicas",
+        "desc": "Escapadas para Siwa, Deserto Branco e Saara"
+      },
+      "style": {
+        "title": "Estadias Selecionadas a Dedro",
+        "desc": "De hotéis com vista para o Nilo a retiros no deserto"
+      },
+      "tours-subtitle": "Descubra a Cultura e a Natureza do Egito – Concebidas para Si"
+    },
+    "readMore": "Leia mais",
+    "makeEasy": "Facilite Sua Viagem",
+    "customlinteray": "Obtenha Meu Itinerário Personalizado",
+    "specialEvents": "Passeios Populares no Egito – Selecionados para Você",
+    "cart": "Carrinho",
+    "signIn": "Entrar",
+    "signUp": "Cadastrar",
+    "signOut": "Sair",
+    "egyTours": "Passeios no Egito",
+    "oneDay": "Passeios de um dia",
+    "happyCustomer": "Cliente satisfeito",
+    "yearsExperience": "Anos de experiência",
+    "totalDistination": "Destinos totais",
+    "ratingAdvisors": "Avaliação no Tripadvisor",
+    "multiDays": "Passeios de vários dias",
+    "makeTripShort": "Criar Viagem",
+    "findTripShort": "Encontrar Viagem",
+    "rentCarShort": "Alugar Carro",
+    "nileCruises": "Cruzeiros no Nilo",
+    "shoreExsurision": "Excursões em terra",
+    "languageAndCurrancies": "Idioma e Moeda",
+    "currency": "Moeda",
+    "regionAndLanguage": "Região e Idioma",
+    "blogs": "Blogs",
+    "getStarted": "Comece sua",
+    "excitingJourney": "Jornada Empolgante Conosco",
+    "popularDistnation": "Destinos Populares",
+    "popularDistnationDesc": "Muitos lugares emocionantes para você visitar na sua próxima viagem",
+    "exploreTours": "Explorar Passeios",
+    "gallaryHome": "Galeria de jornadas emocionantes",
+    "gallaryHomeDesc": "Siga-nos nas redes sociais para ver mais jornadas emocionantes",
+    "popular": {
+      "recomanded": "Recomendado",
+      "oneDay": "Um dia",
+      "multiDays": "Vários dias",
+      "nileCruises": "Cruzeiros no Nilo",
+      "shoreExsurision": "Excursões em terra"
+    },
+    "ourPartners": "Nossos Parceiros",
+    "ourTeam": "Nosso Time",
+    "filtter": "Filtrar",
+    "sortBy": "Ordenar por",
+    "next": "Próximo",
+    "back": "Voltar",
+    "outOF": "de",
+    "results": "resultado",
+    "category": "Categoria",
+    "egyptDayTours": "Passeios de um dia no Egito",
+    "startFrom": "A partir de",
+    "time": {
+      "day": "Dia",
+      "hour": "Hora",
+      "minute": "Minuto",
+      "second": "Segundo"
+    },
+    "spaicalOffer": "Oferta Especial",
+    "seeMore": "Ver mais",
+    "SpecialOfferForYou": "Ofertas especiais para você",
+    "SpecialOfferForYouDesc": "Encontre a oferta certa antes que seja tarde",
+    "howItWorks": "Como funciona?",
+    "howItWorksDesc": "A apenas três passos do Egito",
+    "bookingSteps": {
+      "find": {
+        "title": "Encontrar Viagem",
+        "desc": "Selecione sua viagem favorita"
+      },
+      "booking": {
+        "title": "Reserva",
+        "desc": "Reserva e pagamento da viagem"
+      },
+      "enjoy": {
+        "title": "Aproveite",
+        "desc": "Comece sua jornada emocionante"
+      }
+    },
+    "highlightsOfEgypt": "Destaques do Egito",
+    "highlightsOfEgyptDesc": "Descubra os marcos mais importantes no Egito",
+    "travelBlogs": "Nossos Blogs de Viagem",
+    "frequentlyAskedQuestions": "Perguntas Frequentes",
+    "needHelp": "Precisa de ajuda para encontrar sua viagem?",
+    "makeYourTrip": "Faça Sua Viagem",
+    "makeTrip": "Criar Viagem",
+    "whenBeTravelling": "Quando você vai viajar?",
+    "existTime": "Tem um horário exato",
+    "approximateTime": "Tem um horário aproximado",
+    "notSureYet": "Ainda não tenho certeza",
+    "selectStartDate": "Selecione a data de início da viagem",
+    "selectEndDate": "Selecione a data de término da viagem",
+    "selectExpectedMonth": "Selecione o mês previsto da viagem",
+    "from": "De",
+    "to": "Para",
+    "speakingLanguage": "Idioma falado",
+    "selectMonth": "Selecionar Mês",
+    "manyDays": "Quantos Dias",
+    "findYourTrep": "Encontre sua viagem",
+    "search": "Pesquisar",
+    "where": "Onde",
+    "placeholderWhere": "Escolha seu lugar favorito no Egito",
+    "howLong": "Quanto tempo",
+    "placeholderHowLong": "Quantos dias você fica no Egito",
+    "rentcar": "Alugar Carro",
+    "tripType": "Tipo de viagem?",
+    "oneWay": "Só ida",
+    "roundTrip": "Ida e volta",
+    "pickUpDateAndTime": "Data e hora de retirada",
+    "pickUpDateAndTimePlaceholder": "Escolha a hora e data para retirada",
+    "location": "Localização",
+    "locationPlaceholder": "Escolha local de retirada",
+    "dropLoactionPlaceholder": "Escolha local de entrega",
+    "picUpLocation": "Local de retirada",
+    "dropOffLocation": "Local de entrega",
+    "sendRequest": "Enviar Pedido",
+    "returnDataAndTime": "Data e hora de retorno",
+    "returnDataAndTimePlaceholder": "Escolha a hora e data para retorno",
+    "searchPlachholder": "Encontre lugares e coisas para fazer",
+    "quickInfo": "Informações rápidas",
+    "personalInfo": "Informações pessoais",
+    "confirmation": "Confirmação",
+    "nextUp": "Próximo passo",
+    "info": "Informação",
+    "edit": "Editar",
+    "travelerName": "Nome do viajante",
+    "startDay": "Data de início da viagem",
+    "endDay": "Data de término da viagem",
+    "monthTrip": "Mês da viagem",
+    "tripDuration": "Duração da viagem",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "contactMe": "Contate-nos",
+    "yes": "Sim",
+    "no": "Não",
+    "days": "Dias",
+    "delete": "Excluir",
+    "submit": "Enviar",
+    "travelDate": "Data da viagem",
+    "totalPrice": "Preço total",
+    "addToCart": "ADICIONAR AO CARRINHO",
+    "over": "Mais de",
+    "sunpyramidsLinks": "Links Sunpyramids",
+    "contactInfo": "Informações de contato",
+    "aboutus": {
+      "banner": {
+        "fline": "Sua Jornada Começa Conosco",
+        "slineColor": "50 Anos",
+        "sline": "de Experiência em Viagens"
+      },
+      "sunpyramids": {
+        "about": "Sobre",
+        "sunpyramids": "Sun Pyramids",
+        "tours": "Passeios",
+        "aboutOne": "Fundada em 1970 com licença de turismo (No. 92 - Classe A) do Ministério do Turismo do Egito.",
+        "aboutTwo": "Uma das primeiras empresas de turismo no Egito, com mais de 50 anos de experiência na indústria de viagens.",
+        "aboutThree": "Especializada em organizar passeios individuais, viagens em grupo, programas de incentivo, viagens de estudo e jornadas religiosas."
+      },
+      "where": {
+        "partOne": "De onde são nossos",
+        "partOneColered": "Clientes",
+        "from": "de",
+        "overall": "Nossos clientes são de todo o mundo"
+      },
+      "distination": {
+        "distination": "Destinos",
+        "line": "e Serviços Oferecidos",
+        "aboutOne": "oferece serviços em todo o Egito, incluindo Cairo, Aswan, Luxor, Alexandria, Mar Vermelho e Península do Sinai.",
+        "aboutTwo": "A empresa oferece cruzeiros no Nilo de Aswan para Luxor, viagens no deserto e traslados do aeroporto.",
+        "aboutThree": "Escritórios localizados em todos os principais destinos para garantir suporte local."
+      },
+      "partnership": {
+        "partnership": "Parceria",
+        "benefits": "Benefícios",
+        "line": "e Serviços Personalizados",
+        "one": "Benefícios exclusivos de parceiros confiáveis",
+        "two": "Planejamento completo: transporte, estadias e passeios pela cidade",
+        "three": "Passeios essenciais com opções personalizáveis"
+      },
+      "certfication": {
+        "travelife": "Travelife",
+        "line": "Certificação de Parceiro",
+        "info": "Na Sun Pyramids Tours, estamos dedicados a viagens sustentáveis e orgulhosos de sermos certificados pela Travelife, atendendo aos padrões internacionais de turismo responsável. Ao nos escolher, você apoia uma maneira mais verde e ética de explorar o mundo. Junte-se a nós para moldar um futuro sustentável! Explore com responsabilidade e confira nossas políticas de Privacidade, Sustentabilidade e Viagem Responsável."
+      },
+      "goals": {
+        "mission": {
+          "title": "Nossa Missão",
+          "paragraph": "Criar experiências de viagem excepcionais, focadas no cliente, com compromisso com a sustentabilidade. Nos esforçamos para reduzir nosso impacto ambiental e apoiar comunidades locais, estabelecendo novos padrões para o turismo responsável."
+        },
+        "vision": {
+          "title": "Nossa Visão",
+          "paragraph": "Buscamos ser essenciais para nossos clientes oferecendo passeios de qualidade a preços acessíveis. Nosso foco na satisfação do cliente e inovação impulsiona nossa liderança na indústria de viagens."
+        }
+      },
+      "ceo": {
+        "ceoMessage": "Mensagem do CEO",
+        "value": "Caro Visitante,",
+        "one": "Bem-vindo à Sun Pyramids Tours! Nossa equipe dedicada de especialistas em viagens, com mais de 20 anos de experiência, está aqui para garantir que sua jornada seja agradável e memorável.",
+        "two": "Desde nosso início em 1970, crescemos para nos tornar uma das principais empresas de viagens no Egito, impulsionados por nossa paixão por excelência e satisfação do cliente. Com vasta experiência em destinos em todo o mundo, estamos comprometidos em superar suas expectativas e fornecer um serviço excepcional adaptado às suas necessidades.",
+        "three": "Obrigado por nos escolher para realizar seus sonhos de viagem. Esperamos trabalhar com você e garantir que sua experiência com a Sun Pyramids Tours seja tranquila e agradável.",
+        "warm": "Atenciosamente,"
+      }
+    },
+    "contactus": {
+      "hero": "Ligue, Escreva ou Bata na Nossa Porta",
+      "info": {
+        "adress": {
+          "title": "Nosso Endereço",
+          "paragraph": "Torre Pyramids View - Intersecção Mansourieh com Faisal - Acima da Confeitaria Tseppas - Quarto Andar"
+        },
+        "email": {
+          "title": "Endereço de Email"
+        }
+      },
+      "form": {
+        "contactToday": "Entre em Contato Hoje"
+      }
+    },
+    "auth": {
+      "login": {
+        "welcomeBack": "Bem-vindo de volta",
+        "loginUseing": "Entrar usando",
+        "forgetPassword": "Esqueceu a senha?",
+        "saveLogin": "Salvar login",
+        "login": "Entrar",
+        "craeteAnAccount": "Criar uma Conta"
+      },
+      "signup": {
+        "createNewAccount": "Criar nova conta",
+        "createUsing": "Criar conta usando",
+        "iAgree": "Eu concordo com os",
+        "termsAndConditions": "termos e condições",
+        "iamAlready": "Já tem uma conta?",
+        "login": "Entrar"
+      },
+      "forgetPassword": {
+        "title": "Esqueceu sua senha?",
+        "paragraph": "Esqueceu sua senha? Não se preocupe, você pode criar uma nova senha inserindo seu endereço de email registrado.",
+        "sendCode": "Enviar código",
+        "donotHaveAccount": "Não tem uma conta?"
+      },
+      "confirmCode": {
+        "title": "Código de ativação",
+        "paragraph": "O código de ativação da conta foi enviado para o email {email}",
+        "activitionCode": "Código de ativação",
+        "codeWillExpired": "O código expirará em",
+        "inSec": "{sec} segundos",
+        "resendCode": "Reenviar código"
+      },
+      "CreatePassword": {
+        "title": "Criar nova senha",
+        "paragraph": "Tente criar uma senha forte para manter suas informações pessoais seguras."
+      }
+    },
+    "blog": {
+      "searchPlaceholder": "Qual artigo você está procurando",
+      "popularTags": "Tags populares:",
+      "onThisPage": "Índice",
+      "relatedBlog": "Blog relacionado"
+    },
+    "trips": {
+      "tours": "Passeios",
+      "egyptTours": "Passeios no Egito",
+      "clearAll": "Limpar tudo"
+    },
+    "tours": {
+      "contractAll": "Contrair Tudo",
+      "highlights": "Destaques",
+      "expandAll": "Expandir tudo",
+      "viewDistination": "Ver destinos",
+      "BookNow": "Reservar agora",
+      "distinations": "Destinos",
+      "share": "Compartilhar",
+      "passangers": "Passageiros",
+      "amount": "Quantidade",
+      "addOns": "Adicionais",
+      "seeDetails": "Ver detalhes",
+      "total": "Total",
+      "itinerary": "Roteiro",
+      "meal": "Refeições",
+      "accommodation": "Hospedagem",
+      "include": "O que está incluído?",
+      "exclude": "O que está excluído?",
+      "duration": "Duração",
+      "days": "Dias",
+      "day": "Dia",
+      "cities": "Cidades",
+      "type": "Tipo",
+      "category": "Categoria",
+      "overView": "Visão geral",
+      "pickup": "Horário de retirada",
+      "availablity": "Disponibilidade do passeio",
+      "reviews": "Avaliações",
+      "related": "Passeios relacionados",
+      "gallary": "Galeria de jornadas emocionantes",
+      "askQuestion": "Fazer uma pergunta",
+      "favorites": "Favoritos"
+    },
+    "checkout": {
+      "view": "Visualizar",
+      "editTour": "Editar detalhes do passeio",
+      "saveEdits": "Salvar edições",
+      "sumarry": "Resumo do pagamento",
+      "totalNums": "Número de passeios",
+      "subTotal": "Subtotal",
+      "adds": "Adicionais",
+      "discount": "Desconto",
+      "discountCoupon": "Cupom de desconto",
+      "addCouponCode": "Adicionar código de cupom..",
+      "grandTotal": "Total geral",
+      "checkoutNow": "Finalizar compra agora",
+      "checkout": "Finalizar compra",
+      "cartDetails": "detalhes do carrinho",
+      "baillingDetails": "Detalhes de faturamento",
+      "paymentMethod": "Método de pagamento",
+      "enterCardNumber": "Digite o número do seu cartão",
+      "mm-yy": "MM/AA",
+      "cardNum": "Número do cartão",
+      "ccv": "CVV",
+      "experation": "Data de validade",
+      "warning": "As informações de pagamento não serão salvas",
+      "back": "Voltar",
+      "payNow": "Pagar agora"
+    },
+    "faqs": {
+      "faqs": "faqs",
+      "banner": "Perguntas Frequentes",
+      "searchPlaceholder": "Sobre o que você gostaria de perguntar"
+    },
+    "privacy": {
+      "banner": "Privacidade e Cookies",
+      "onThisPage": "Nesta página"
+    }
+  },
+  "inputLabels": {
+    "apply": "Aplicar",
+    "Date": "Data",
+    "DatePlaceholder": "Escolha uma data",
+    "dateAnbdTime": "Data e hora",
+    "month": "Mês",
+    "numberOfDays": "Número de dias",
+    "where": "Onde",
+    "howLong": "Quanto tempo",
+    "fullName": "Nome completo",
+    "speakingLanguage": "Idioma falado",
+    "speakingLanguagePlacehgolder": "Escolha seu idioma",
+    "fullNamePlaceholder": "seu nome completo aqui",
+    "addFlightOffer": "Adicionar oferta de voo",
+    "email": "Email",
+    "emailPlaceholder": "Digite seu email..",
+    "phone": "Telefone",
+    "phonePlaceholder": "Digite seu telefone",
+    "nationality": "Nacionalidade",
+    "nationalityPlaceholder": "Escolha sua nacionalidade",
+    "adults": "Adultos",
+    "children": "Crianças",
+    "infants": "Bebês",
+    "price": "Preço",
+    "min": "Mín",
+    "max": "Máx",
+    "note": "Observação",
+    "notePlaceholder": "Observações adicionais..........",
+    "optional": "Opcional",
+    "writeus": "Escreva para nós....",
+    "sendAMessage": "Enviar mensagem",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "country": "País/Região",
+    "city": "Cidade",
+    "state": "Estado",
+    "countryPlaceholder": "Escolha seu País ",
+    "citPlaceholder": "Escolha sua Cidade ",
+    "statePlaceholder": "Escolha seu Estado ",
+    "additionalInfo": "Informações adicionais",
+    "applyForPayment": "Solicitar pagamento",
+    "notePayment": "Informações adicionais",
+    "place": "Local"
+  },
+  "errors": {
+    "isRequired": "{name} é obrigatório",
+    "phoneLength": "{name} deve ter {num} números",
+    "minMemer": "{name} deve ter pelo menos 1 membro",
+    "min": "{name} deve ter pelo menos {num} caracteres",
+    "match": "{name} deve corresponder a {nameTwo}",
+    "email": "{name} não é um email válido",
+    "invalidCharacters": "{name} tem um formato inválido",
+    "mustBeGreaterThanZero": "{name} deve ser maior que 0",
+    "passwordLowercase": "A senha deve conter pelo menos uma letra minúscula",
+    "passwordUppercase": "A senha deve conter pelo menos uma letra maiúscula",
+    "passwordNumber": "A senha deve conter pelo menos um número",
+    "passwordSpecialChar": "A senha deve conter pelo menos um caractere especial",
+    "notFoundTour": "Tour não encontrada",
+    "notFound": "Página não encontrada",
+    "notFoundBlog": "Blog não encontrado"
+  }
+}

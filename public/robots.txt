@@ -1,0 +1,32 @@
+User-agent: *
+Disallow: /*/profile/
+Disallow: /*/error/
+Disallow: /*/login/
+Disallow: /*/signup/
+Disallow: /*/auth/
+Disallow: /*/api/
+Disallow: /_nuxt/*
+Disallow: /__nuxt/*
+Disallow: /nuxty/*
+Disallow: /images/*
+Disallow: /storage/*
+Disallow: /server/*
+Disallow: /*?lang=
+Disallow: /*?s&mode
+Disallow: /*?page=
+Disallow: /*?mode=
+Disallow: /*?wordfence_lh
+Disallow: /*?view=
+Disallow: /*?tour_types
+Disallow: /*?wmc-currency=
+Disallow: /*?action=
+Disallow: /*?currency=
+Disallow: /*?car_
+Disallow: /*.htm$
+Disallow: /*.html$
+Disallow: /*.phtml$
+Disallow: /*.shtml$
+Disallow: /*.xhtml$
+
+
+sitemap: https://sunpyramidstours.com/sitemap.xml

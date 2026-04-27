@@ -1,0 +1,505 @@
+{
+  "labels": {
+    "home": "首页",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "events": "活动",
+    "goBack": "返回",
+    "criTitle": "由真实体验引领，探索埃及",
+    "bookCriTrip": "立即预订您的圣诞之旅",
+    "specialEventsData": {
+      "title": "埃及复活节之旅",
+      "desc": "通过难忘的埃及行程庆祝复活节"
+    },
+    "strip": {
+      "title": "立即预订埃及复活节之旅——探索金字塔、尼罗河游轮及春季限时优惠——预订我们的埃及复活节行程",
+      "btn": "查看复活节之旅"
+    },
+    "thankful": {
+      "title": "感谢页面",
+      "one": "谢谢 {name} 先生",
+      "two": "我们已收到您的请求。",
+      "three": "您的详细信息已成功提交并确认。",
+      "four": "我们的团队将在1小时内通过WhatsApp、电话或电子邮件与您联系，为您提供所需的所有详细信息。",
+      "five": "准备好——您在Sun Pyramids Tours的冒险之旅从这里开始！"
+    },
+    "specialNeed": {
+      "reedMore": "阅读更多",
+      "popup": "所有旅游套餐对需要无障碍辅助的客人提供 5% 折扣，支持包容性旅游体验。",
+      "dragAndDrop": "将文件拖放到此处或点击选择",
+      "we": "我们",
+      "care": "关怀",
+      "special": "特别",
+      "announcement": "公告",
+      "first": "在 Sun Pyramids Tours，我们相信旅行应该是每个人愉快且包容的体验。",
+      "second": {
+        "title": "我们这样做的原因：",
+        "one": "确保家庭、朋友和同伴能够一起分享发现的快乐。",
+        "two": "致敬我们尊贵旅客的坚强、韧性和鼓舞人心的精神。",
+        "three": "重申我们对关怀、尊重以及真正难忘体验的承诺。"
+      },
+      "third": "折扣适用于整个套餐，惠及需要无障碍支持的旅客及其同伴。",
+      "fourth": "Sun Pyramids Tours – 我们关怀，因为旅行属于每个人。",
+      "five": {
+        "title": "我们自豪地推出一项新举措：",
+        "paragraph": "对包含需要无障碍支持的旅客及其同伴的所有旅游套餐提供 5% 固定折扣。"
+      },
+      "sixth": "选择适合您需求的无障碍套餐，上传您的医疗或残疾证以进行验证，享受高达 5% 的折扣体验。"
+    },
+    "book-egy-trip": {
+      "title": "与当地专家一起探索埃及",
+      "desc": "通过定制行程、专业导游和难忘的回忆，探索埃及的奇迹。"
+    },
+    "contactNow": "立即联系",
+    "accessibleTravel": "无障碍旅行",
+    "event": {
+      "eventDetails": "活动详情",
+      "phone": "电话",
+      "startDate": "开始日期",
+      "status": "状态",
+      "location": "地点",
+      "website": "网站",
+      "email": "电子邮件",
+      "bookTicket": "预订门票"
+    },
+    "whatsapp": "立即WhatsApp",
+    "planYourTrip": "计划您的旅程",
+    "whyChooseUs": "为什么选择Sun Pyramids Tours？",
+    "licensed": {
+      "title": "持证专家",
+      "desc": "值得信赖的导游，拥有50多年经验"
+    },
+    "private": {
+      "title": "私人接送",
+      "desc": "舒适安全的埃及全程交通"
+    },
+    "hotel": {
+      "title": "顶级酒店",
+      "desc": "入住景观极佳的豪华酒店"
+    },
+    "egypt-trip-landing-german": {
+      "title": "与当地专家一起探索埃及的狂野一面",
+      "desc": "从沙漠 safari 和绿洲探秘到红海探险 — 在专业向导的带领下探索埃及原始粗犷的美，收获难忘体验",
+      "adventure": {
+        "title": "探险专家",
+        "desc": "专精于沙漠和 safari 观光的专业向导"
+      },
+      "transfers": {
+        "title": "安全接送",
+        "desc": "从城市到沙漠及更远地区的舒适接送服务"
+      },
+      "style": {
+        "title": "风格住宿",
+        "desc": "从绿洲的生态旅馆到红海的度假村，任您选择"
+      },
+      "tours-subtitle": "埃及探险之旅 – 为您量身定制"
+    },
+    "egypt-trip-landing-france": {
+      "title": "探索埃及的遗产与隐秘地平线",
+      "desc": "发现永恒的寺庙、阿布辛贝和卢克索的热气球 — 然后踏上前往埃及沙漠和宁静锡瓦绿洲的旅程，体验文化与自然难忘的平衡",
+      "adventure": {
+        "title": "专业文化向导",
+        "desc": "博物馆、寺庙与历史方面的专家"
+      },
+      "transfers": {
+        "title": "独特的沙漠之旅",
+        "desc": "锡瓦、白色沙漠和撒哈拉沙漠探秘"
+      },
+      "style": {
+        "title": "精挑选址",
+        "desc": "从尼罗河景观酒店到沙漠隐居处"
+      },
+      "tours-subtitle": "揭开埃及的文化与自然面纱 – 为您量身设计"
+    },
+    "readMore": "阅读更多",
+    "makeEasy": "让您的旅行更轻松",
+    "customlinteray": "获取我的定制行程",
+    "specialEvents": "热门埃及之旅——专为您精选",
+    "cart": "购物车",
+    "signIn": "登录",
+    "signUp": "注册",
+    "signOut": "退出登录",
+    "egyTours": "埃及旅游",
+    "oneDay": "一日游",
+    "happyCustomer": "满意客户",
+    "yearsExperience": "年经验",
+    "totalDistination": "总目的地",
+    "ratingAdvisors": "Tripadvisor评分",
+    "multiDays": "多日游",
+    "makeTripShort": "定制行程",
+    "findTripShort": "查找行程",
+    "rentCarShort": "租车",
+    "nileCruises": "尼罗河游轮",
+    "shoreExsurision": "岸上观光",
+    "languageAndCurrancies": "语言和货币",
+    "currency": "货币",
+    "regionAndLanguage": "地区和语言",
+    "blogs": "博客",
+    "getStarted": "开始您的",
+    "excitingJourney": "精彩旅程与我们同行",
+    "popularDistnation": "热门目的地",
+    "popularDistnationDesc": "为您下次旅行准备的许多令人兴奋的地方",
+    "exploreTours": "探索旅游",
+    "gallaryHome": "精彩旅程画廊",
+    "gallaryHomeDesc": "关注我们的社交媒体查看更多精彩旅程",
+    "popular": {
+      "recomanded": "推荐",
+      "oneDay": "一日游",
+      "multiDays": "多日游",
+      "nileCruises": "尼罗河游轮",
+      "shoreExsurision": "岸上观光"
+    },
+    "ourPartners": "我们的合作伙伴",
+    "ourTeam": "我们的团队",
+    "filtter": "筛选",
+    "sortBy": "排序方式",
+    "next": "下一步",
+    "back": "返回",
+    "outOF": "共",
+    "results": "个结果",
+    "category": "类别",
+    "egyptDayTours": "埃及一日游",
+    "startFrom": "起价",
+    "time": {
+      "day": "天",
+      "hour": "小时",
+      "minute": "分钟",
+      "second": "秒"
+    },
+    "spaicalOffer": "特别优惠",
+    "seeMore": "查看更多",
+    "SpecialOfferForYou": "为您提供的特别优惠",
+    "SpecialOfferForYouDesc": "在太晚之前找到合适的优惠",
+    "howItWorks": "如何运作？",
+    "howItWorksDesc": "只需三步即可到达埃及",
+    "bookingSteps": {
+      "find": {
+        "title": "查找行程",
+        "desc": "选择您喜欢的行程"
+      },
+      "booking": {
+        "title": "预订",
+        "desc": "行程预订和支付"
+      },
+      "enjoy": {
+        "title": "享受",
+        "desc": "开始您的精彩旅程"
+      }
+    },
+    "highlightsOfEgypt": "埃及亮点",
+    "highlightsOfEgyptDesc": "探索埃及最重要的地标",
+    "travelBlogs": "我们的旅行博客",
+    "frequentlyAskedQuestions": "常见问题",
+    "needHelp": "需要帮助寻找您的行程吗？",
+    "makeYourTrip": "定制您的行程",
+    "makeTrip": "定制行程",
+    "whenBeTravelling": "您什么时候旅行？",
+    "existTime": "有确切时间",
+    "approximateTime": "有大概时间",
+    "notSureYet": "还不确定",
+    "selectStartDate": "选择行程开始日期",
+    "selectEndDate": "选择行程结束日期",
+    "selectExpectedMonth": "选择预计旅行月份",
+    "from": "从",
+    "to": "至",
+    "speakingLanguage": "使用语言",
+    "selectMonth": "选择月份",
+    "manyDays": "多少天",
+    "findYourTrep": "查找您的行程",
+    "search": "搜索",
+    "where": "哪里",
+    "placeholderWhere": "选择您在埃及最喜欢的地方",
+    "howLong": "多长时间",
+    "placeholderHowLong": "您将在埃及停留多少天",
+    "rentcar": "租车",
+    "tripType": "行程类型？",
+    "oneWay": "单程",
+    "roundTrip": "往返",
+    "pickUpDateAndTime": "接送日期和时间",
+    "pickUpDateAndTimePlaceholder": "选择接送时间和日期",
+    "location": "位置",
+    "locationPlaceholder": "选择接车地点",
+    "dropLoactionPlaceholder": "选择下车地点",
+    "picUpLocation": "接车地点",
+    "dropOffLocation": "下车地点",
+    "sendRequest": "发送请求",
+    "returnDataAndTime": "返回日期和时间",
+    "returnDataAndTimePlaceholder": "选择返回时间和日期",
+    "searchPlachholder": "查找地点和活动",
+    "quickInfo": "快速信息",
+    "personalInfo": "个人信息",
+    "confirmation": "确认",
+    "nextUp": "下一步",
+    "info": "信息",
+    "edit": "编辑",
+    "travelerName": "旅客姓名",
+    "startDay": "行程开始日期",
+    "endDay": "行程结束日期",
+    "monthTrip": "旅行月份",
+    "tripDuration": "行程时长",
+    "cancel": "取消",
+    "confirm": "确认",
+    "contactMe": "联系我们",
+    "yes": "是",
+    "no": "否",
+    "days": "天",
+    "delete": "删除",
+    "submit": "提交",
+    "travelDate": "旅行日期",
+    "totalPrice": "总价",
+    "addToCart": "加入购物车",
+    "over": "超过",
+    "sunpyramidsLinks": "Sunpyramids链接",
+    "contactInfo": "联系信息",
+    "aboutus": {
+      "banner": {
+        "fline": "您的旅程从我们开始",
+        "slineColor": "50年",
+        "sline": "旅行专业经验"
+      },
+      "sunpyramids": {
+        "about": "关于",
+        "sunpyramids": "太阳金字塔",
+        "tours": "旅游",
+        "aboutOne": "成立于1970年，拥有埃及旅游部颁发的旅游许可证(编号92-A类)。",
+        "aboutTwo": "埃及首批旅游公司之一，在旅游业拥有50多年的经验。",
+        "aboutThree": "专注于组织个人旅游、团体旅行、奖励计划、学习旅行和宗教旅程。"
+      },
+      "where": {
+        "partOne": "我们的",
+        "partOneColered": "客户",
+        "from": "来自",
+        "overall": "我们的客户来自世界各地"
+      },
+      "distination": {
+        "distination": "目的地",
+        "line": "和提供的服务",
+        "aboutOne": "在埃及各地提供服务，包括开罗、阿斯旺、卢克索、亚历山大、红海和西奈半岛。",
+        "aboutTwo": "公司提供从阿斯旺到卢克索的尼罗河游轮、沙漠旅行和机场接送服务。",
+        "aboutThree": "在所有主要目的地设有办事处，确保地面支持。"
+      },
+      "partnership": {
+        "partnership": "合作伙伴",
+        "benefits": "福利",
+        "line": "和定制服务",
+        "one": "来自可信合作伙伴的独家福利",
+        "two": "完整规划：交通、住宿和城市游览",
+        "three": "基本旅游与可定制选项"
+      },
+      "certfication": {
+        "travelife": "Travelife",
+        "line": "合作伙伴认证",
+        "info": "在Sun Pyramids Tours，我们致力于可持续旅行，并自豪地获得Travelife认证，符合国际负责任旅游标准。选择我们，您就支持了一种更环保、更道德的探索世界的方式。加入我们，共同塑造可持续的未来！负责任地探索，并查看我们的隐私、可持续性和负责任旅行政策。"
+      },
+      "goals": {
+        "mission": {
+          "title": "我们的使命",
+          "paragraph": "创造卓越的、以客户为中心的旅行体验，致力于可持续发展。我们努力减少对环境的影响并支持当地社区，为负责任旅游设定新标准。"
+        },
+        "vision": {
+          "title": "我们的愿景",
+          "paragraph": "我们的目标是通过提供价格合理的优质旅游成为客户不可或缺的选择。我们专注于客户满意度和创新，推动我们在旅游业中的领导地位。"
+        }
+      },
+      "ceo": {
+        "ceoMessage": "CEO致辞",
+        "value": "尊敬的访客：",
+        "one": "欢迎来到Sun Pyramids Tours！我们拥有20多年经验的旅行专家团队将确保您的旅程愉快而难忘。",
+        "two": "自1970年成立以来，我们已发展成为埃及领先的旅游公司之一，受到对卓越和客户满意度的热情的推动。凭借在全球目的地的丰富经验，我们致力于超越您的期望，并提供量身定制的卓越服务。",
+        "three": "感谢您选择我们实现您的旅行梦想。我们期待与您合作，确保您在Sun Pyramids Tours的体验顺畅愉快。",
+        "warm": "此致"
+      }
+    },
+    "contactus": {
+      "hero": "打电话、写信或敲我们的门",
+      "info": {
+        "adress": {
+          "title": "我们的地址",
+          "paragraph": "金字塔景观塔 - Mansourieh与Faisal交叉口 - Tseppas糕点店上方 - 四楼"
+        },
+        "email": {
+          "title": "电子邮件地址"
+        }
+      },
+      "form": {
+        "contactToday": "今天联系我们"
+      }
+    },
+    "auth": {
+      "login": {
+        "welcomeBack": "欢迎回来",
+        "loginUseing": "使用以下方式登录",
+        "forgetPassword": "忘记密码？",
+        "saveLogin": "保存登录",
+        "login": "登录",
+        "craeteAnAccount": "创建账户"
+      },
+      "signup": {
+        "createNewAccount": "创建新账户",
+        "createUsing": "使用以下方式创建账户",
+        "iAgree": "我同意",
+        "termsAndConditions": "条款和条件",
+        "iamAlready": "已有账户？",
+        "login": "登录"
+      },
+      "forgetPassword": {
+        "title": "忘记密码了吗？",
+        "paragraph": "忘记密码？别担心，您可以通过输入注册的电子邮件地址创建新密码。",
+        "sendCode": "发送验证码",
+        "donotHaveAccount": "没有账户？"
+      },
+      "confirmCode": {
+        "title": "激活码",
+        "paragraph": "账户激活码已发送至邮箱{email}",
+        "activitionCode": "激活码",
+        "codeWillExpired": "验证码将在",
+        "inSec": "{sec}秒后过期",
+        "resendCode": "重新发送验证码"
+      },
+      "CreatePassword": {
+        "title": "创建新密码",
+        "paragraph": "请创建一个强密码以保护您的个人信息安全。"
+      }
+    },
+    "blog": {
+      "searchPlaceholder": "您想找什么文章",
+      "popularTags": "热门标签：",
+      "onThisPage": "目录",
+      "relatedBlog": "相关博客"
+    },
+    "trips": {
+      "tours": "旅游",
+      "egyptTours": "埃及旅游",
+      "clearAll": "全部清除"
+    },
+    "tours": {
+      "contractAll": "全部折叠",
+      "highlights": "亮点",
+      "expandAll": "全部展开",
+      "viewDistination": "查看目的地",
+      "BookNow": "立即预订",
+      "distinations": "目的地",
+      "share": "分享",
+      "passangers": "乘客",
+      "amount": "数量",
+      "addOns": "附加服务",
+      "seeDetails": "查看详情",
+      "total": "总计",
+      "itinerary": "行程安排",
+      "meal": "餐饮",
+      "accommodation": "住宿",
+      "include": "包含内容",
+      "exclude": "不包含内容",
+      "duration": "时长",
+      "days": "天",
+      "day": "天",
+      "cities": "城市",
+      "type": "类型",
+      "category": "类别",
+      "overView": "概述",
+      "pickup": "接车时间",
+      "availablity": "旅游可用性",
+      "reviews": "评价",
+      "related": "相关旅游",
+      "gallary": "精彩旅程画廊",
+      "askQuestion": "提问",
+      "favorites": "收藏"
+    },
+    "checkout": {
+      "view": "查看",
+      "editTour": "编辑旅游详情",
+      "saveEdits": "保存编辑",
+      "sumarry": "付款摘要",
+      "totalNums": "旅游数量",
+      "subTotal": "小计",
+      "adds": "附加服务",
+      "discount": "折扣",
+      "discountCoupon": "折扣券",
+      "addCouponCode": "添加优惠码..",
+      "grandTotal": "总计",
+      "checkoutNow": "立即结账",
+      "checkout": "结账",
+      "cartDetails": "购物车详情",
+      "baillingDetails": "账单详情",
+      "paymentMethod": "付款方式",
+      "enterCardNumber": "输入您的卡号",
+      "mm-yy": "月/年",
+      "cardNum": "卡号",
+      "ccv": "CVV",
+      "experation": "有效期",
+      "warning": "付款信息不会被保存",
+      "back": "返回",
+      "payNow": "立即支付"
+    },
+    "faqs": {
+      "faqs": "常見問題",
+      "banner": "常见问题",
+      "searchPlaceholder": "您想了解什么"
+    },
+    "privacy": {
+      "banner": "隐私和Cookie",
+      "onThisPage": "本页内容"
+    }
+  },
+  "inputLabels": {
+    "apply": "应用",
+    "Date": "日期",
+    "DatePlaceholder": "选择日期",
+    "dateAnbdTime": "日期和时间",
+    "month": "月份",
+    "numberOfDays": "天数",
+    "where": "哪里",
+    "howLong": "多长时间",
+    "fullName": "全名",
+    "speakingLanguage": "使用语言",
+    "speakingLanguagePlacehgolder": "选择您的语言",
+    "fullNamePlaceholder": "在此输入您的全名",
+    "addFlightOffer": "添加航班优惠",
+    "email": "电子邮件",
+    "emailPlaceholder": "输入您的电子邮件..",
+    "phone": "电话",
+    "phonePlaceholder": "输入您的电话",
+    "nationality": "国籍",
+    "nationalityPlaceholder": "选择您的国籍",
+    "adults": "成人",
+    "children": "儿童",
+    "infants": "婴儿",
+    "price": "价格",
+    "min": "最低",
+    "max": "最高",
+    "note": "备注",
+    "notePlaceholder": "附加说明..........",
+    "optional": "可选",
+    "writeus": "给我们留言....",
+    "sendAMessage": "发送消息",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "country": "国家/地区",
+    "city": "城镇/城市",
+    "state": "州/省",
+    "countryPlaceholder": "选择您的国家",
+    "citPlaceholder": "选择您的城市",
+    "statePlaceholder": "选择您的州",
+    "additionalInfo": "附加信息",
+    "applyForPayment": "申请付款",
+    "notePayment": "附加信息",
+    "place": "地点"
+  },
+  "errors": {
+    "isRequired": "{name}是必填项",
+    "phoneLength": "{name}必须是{num}位数字",
+    "minMemer": "{name}至少需要1位成员",
+    "min": "{name}至少需要{num}个字符",
+    "match": "{name}必须与{nameTwo}匹配",
+    "email": "{name}不是有效的电子邮件",
+    "invalidCharacters": "{name}格式无效",
+    "mustBeGreaterThanZero": "{name}必须大于0",
+    "passwordLowercase": "密码必须包含至少一个小写字母",
+    "passwordUppercase": "密码必须包含至少一个大写字母",
+    "passwordNumber": "密码必须包含至少一个数字",
+    "passwordSpecialChar": "密码必须包含至少一个特殊字符",
+    "notFoundTour": "未找到行程",
+    "notFound": "页面未找到",
+    "notFoundBlog": "未找到博客"
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>Correct Spin Wheel</title>
+
+    <style>
+      body {
+        background: #d9e2d0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .wheel-box {
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .pointer {
+        position: absolute;
+        left: 50%;
+        top: -20px; /* ⚠ السهم الآن في الأسفل (270°) */
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 35px solid rgb(211, 42, 42);
+        z-index: 10;
+      }
+
+      .spin-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      .result {
+        margin-top: 20px;
+        background: white;
+        padding: 10px 20px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="wheel-box">
+        <canvas id="wheelCanvas" width="400" height="400"></canvas>
+
+        <!-- السهم -->
+        <div class="pointer"></div>
+
+        <!-- زر الدوران -->
+        <div class="spin-btn" id="spinBtn">SPIN</div>
+      </div>
+    </div>
+
+    <script>
+      /* --------------------------------------------
+   DATA
+---------------------------------------------*/
+      let items = ["50%", "60%", "10%", "5%", "10%", "try", "75%"];
+      let colors = [
+        "#F6951E",
+        "#19BCBC",
+        "#F6951E",
+        "#19BCBC",
+        "#F6951E",
+        "#19BCBC",
+      ];
+
+      let isSpinning = false;
+      let totalRotation = 0;
+
+      const canvas = document.getElementById("wheelCanvas");
+      const ctx = canvas.getContext("2d");
+      const spinBtn = document.getElementById("spinBtn");
+      const resultBox = document.getElementById("resultBox");
+
+      /* --------------------------------------------
+   DRAW WHEEL
+---------------------------------------------*/
+      function drawWheel() {
+        const center = canvas.width / 2;
+        const radius = center - 5;
+        const segAngle = (2 * Math.PI) / items.length;
+
+        for (let i = 0; i < items.length; i++) {
+          const start = i * segAngle;
+          const end = start + segAngle;
+
+          // Slice
+          ctx.beginPath();
+          ctx.moveTo(center, center);
+          ctx.arc(center, center, radius, start, end);
+          ctx.fillStyle = colors[i % colors.length];
+          ctx.fill();
+
+          // رسم الفاصل الشفاف
+          ctx.beginPath();
+          ctx.moveTo(center, center);
+          ctx.lineTo(
+            center + radius * Math.cos(start),
+            center + radius * Math.sin(start)
+          );
+          ctx.strokeStyle = "rgba(255,255,255,0.5)"; // شفاف جزئي
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          // Text
+          ctx.save();
+          ctx.translate(center, center);
+          ctx.rotate(start + segAngle / 2);
+          ctx.textAlign = "right";
+          ctx.fillStyle = "white";
+          ctx.font = "bold 25px Arial";
+          ctx.fillText(items[i], radius - 15, 10);
+          ctx.restore();
+        }
+      }
+
+      drawWheel();
+
+      /* --------------------------------------------
+   CONFETTI EFFECT
+---------------------------------------------*/
+      function launchConfetti() {
+        const duration = 3000;
+        const end = Date.now() + duration;
+
+        (function frame() {
+          // من اليسار يمين
+          confetti({
+            particleCount: 5,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+          });
+          // من اليمين يسار
+          confetti({
+            particleCount: 5,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+          });
+          // من الأعلى للأسفل
+          confetti({
+            particleCount: 7,
+            angle: 90,
+            spread: 120,
+            origin: { x: 0.5, y: 0 },
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(frame);
+          }
+        })();
+      }
+
+      /* --------------------------------------------
+   SPIN FUNCTION
+---------------------------------------------*/
+      spinBtn.onclick = function () {
+        if (isSpinning) return;
+        isSpinning = true;
+
+        let extraSpins = 6; // 6 لفات كاملة
+        let extraAngle = Math.random() * 2 * Math.PI; // زاوية عشوائية
+        let targetRotation = extraSpins * 2 * Math.PI + extraAngle;
+
+        let start = performance.now();
+
+        function animate(now) {
+          let progress = (now - start) / 3500; // 3.5 ثانية
+          if (progress > 1) progress = 1;
+
+          let ease = 1 - Math.pow(1 - progress, 3); // easing
+          let currentRotation = ease * targetRotation;
+
+          // Apply rotation
+          canvas.style.transform = `rotate(${currentRotation}rad)`;
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            totalRotation = targetRotation;
+            spinBtn.textContent = "SPIN";
+            isSpinning = false;
+            showWinner(totalRotation);
+          }
+        }
+
+        requestAnimationFrame(animate);
+      };
+
+      /* --------------------------------------------
+   CORRECT WINNER CALCULATION
+---------------------------------------------*/
+      function showWinner(finalRotation) {
+        const segAngle = (2 * Math.PI) / items.length;
+
+        // زاوية توقف العجلة
+        let finalAngle = finalRotation % (2 * Math.PI);
+
+        // نخليها موجبة
+        if (finalAngle < 0) finalAngle += 2 * Math.PI;
+
+        // السهم في الأسفل = زاوية 270° = 3π/2
+        const pointerAngle = (3 * Math.PI) / 2;
+
+        // نصحح الزاوية بالنسبة للسهم
+        let corrected = pointerAngle - finalAngle;
+
+        // نرجعها لنطاق 0 - 2π
+        corrected = (corrected + 2 * Math.PI) % (2 * Math.PI);
+
+        // رقم الشريحة
+        let index = Math.floor(corrected / segAngle);
+
+        let winner = items[index];
+
+        // resultBox.textContent = "Winner: " + winner;
+
+        launchConfetti();
+      }
+    </script>
+  </body>
+</html>

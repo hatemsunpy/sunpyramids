@@ -1,0 +1,525 @@
+{
+  "labels": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "events": "Veranstaltungen",
+    "whatsapp": "Jetzt per WhatsApp",
+    "planYourTrip": "Reise Planen",
+    "criTitle": "Entdecken Sie Ägypten mit echter Erfahrung",
+    "bookCriTrip": "Buchen Sie jetzt Ihre Weihnachtsreise",
+    "specialEventsData": {
+      "title": "Ägypten Osterrundreisen",
+      "desc": "Feiern Sie Ostern mit unvergesslichen Ägypten-Reiserouten"
+    },
+    "strip": {
+      "title": "Buchen Sie jetzt Ihre Ägypten Osterrundreise – Entdecken Sie Pyramiden, Nilkreuzfahrten & limitierte Frühlingsangebote - Buchen Sie unsere Ägypten Osterrundreisen",
+      "btn": "Osterrundreisen ansehen"
+    },
+    "contactNow":"Jetzt kontaktieren",
+    "whyChooseUs": "Warum Sun Pyramids Tours?",
+    "goBack": "Zurück",
+    "thankful": {
+      "title": "Dankesseite",
+      "one": "Vielen Dank, Herr/Frau {name}",
+      "two": "Ihre Anfrage wurde empfangen.",
+      "three": "Ihre Details wurden erfolgreich übermittelt und bestätigt.",
+      "four": "Unser Team wird sich innerhalb einer Stunde per WhatsApp, Telefonanruf oder E-Mail bei Ihnen melden, um alle notwendigen Details zu besprechen.",
+      "five": "Machen Sie sich bereit — Ihr Abenteuer mit Sun Pyramids Tours beginnt hier!"
+    },
+    "accessibleTravel": "Barrierefreies Reisen",
+    "book-egy-trip": {
+      "title": "Entdecken Sie Ägypten mit lokalen Experten",
+      "desc": "Erkunden Sie die Wunder Ägyptens mit maßgeschneiderten Reisen, fachkundiger Führung und unvergesslichen Erinnerungen."
+    },
+    "licensed": {
+      "title": "Lizenzierte Experten",
+      "desc": "Vertrauenswürdige Reiseleiter mit über 50 Jahren Erfahrung"
+    },
+    "private": {
+      "title": "Private Transfers",
+      "desc": "Komfortable & sichere Fahrten durch ganz Ägypten"
+    },
+    "hotel": {
+      "title": "Top-Hotels",
+      "desc": "Übernachten Sie in Premium-Hotels mit fantastischer Aussicht"
+    },
+    "specialNeed": {
+       "reedMore": "Mehr lesen",
+      "popup": "5 % Rabatt auf alle unsere Tourpakete für Gäste, die barrierefreie Unterstützung benötigen, zur Förderung inklusiver Reiseerlebnisse.",
+      "dragAndDrop": "Ziehen Sie Ihre Dateien hierher oder klicken Sie, um auszuwählen",
+      "we": "Wir",
+      "care": "Kümmern",
+      "special": "Besonders",
+      "announcement": "Ankündigung",
+      "first": "Bei Sun Pyramids Tours glauben wir, dass Reisen für alle ein freudvolles und inklusives Erlebnis sein sollte.",
+      "second": {
+        "title": "Warum wir das tun:",
+        "one": "Damit Familien, Freunde und Begleiter dieselbe Freude an der Entdeckung gemeinsam teilen können.",
+        "two": "Um die Stärke, Widerstandsfähigkeit und den inspirierenden Geist unserer geschätzten Reisenden zu ehren.",
+        "three": "Um unser Engagement für Fürsorge, Respekt und wirklich unvergessliche Erlebnisse zu bekräftigen."
+      },
+      "third": "Der Rabatt gilt für das gesamte Paket und kommt reisenden mit Unterstützungsbedarf sowie ihren Begleitern zugute.",
+      "fourth": "Sun Pyramids Tours – Wir kümmern uns, denn Reisen ist für alle da.",
+      "five": {
+        "title": "Wir freuen uns, eine neue Initiative vorzustellen:",
+        "paragraph": "Ein fixer 5 % Rabatt auf alle Tourpakete, die Reisende mit barrierefreiem Unterstützungsbedarf und ihre Begleiter einschließen."
+      },
+      "sixth": "Wählen Sie das barrierefreie Paket, das Ihren Bedürfnissen entspricht, laden Sie Ihre medizinische oder Behindertenkarte zur Verifizierung hoch und genießen Sie bis zu 5 % Rabatt auf Ihr Erlebnis."
+    },
+    "egypt-trip-landing-german": {
+      "title": "Entdecken Sie Ägyptens wilde Seite mit lokalen Experten",
+      "desc": "Von Wüstensafaris und Oasen-Ausflügen bis hin zu Abenteuern am Roten Meer – entdecken Sie Ägyptens ursprüngliche Schönheit mit erfahrenen Guides und unvergesslichen Erlebnissen",
+      "adventure": {
+        "title": "Abenteuer-Experten",
+        "desc": "Spezialisierte Guides für Wüsten- & Safaritouren"
+      },
+      "transfers": {
+        "title": "Sichere Transfers",
+        "desc": "Komfortable Fahrten von der Stadt in die Wüste und darüber hinaus"
+      },
+      "style": {
+        "title": "Stilvoll übernachten",
+        "desc": "Von Öko-Lodges in den Oasen bis zu Resorts am Roten Meer"
+      },
+      "tours-subtitle": "Ägypten-Abenteuer – Maßgeschneidert für Sie"
+    },
+    "egypt-trip-landing-france": {
+      "title": "Entdecken Sie Ägyptens Erbe und verborgene Horizonte",
+      "desc": "Entdecken Sie zeitlose Tempel, Abu Simbel und die Heißluftballons von Luxor – und begeben Sie sich dann in Ägyptens Wüsten und die ruhige Siwa-Oase für eine unvergessliche Balance aus Kultur und Natur",
+      "adventure": {
+        "title": "Fachkundige Kulturführer",
+        "desc": "Spezialisten für Museen, Tempel & Geschichte"
+      },
+      "transfers": {
+        "title": "Einzigartige Wüstenreisen",
+        "desc": "Siwa, Weiße Wüste und Sahara-Ausflüge"
+      },
+      "style": {
+        "title": "Handverlesene Unterkünfte",
+        "desc": "Von Hotels mit Nilblick bis zu Wüsten-Retreats"
+      },
+      "tours-subtitle": "Entdecken Sie Ägyptens Kultur und Natur – Für Sie konzipiert"
+    },
+    "event": {
+      "eventDetails": "Veranstaltungsdetails",
+      "phone": "Telefon",
+      "startDate": "Startdatum",
+      "status": "Status",
+      "location": "Standort",
+      "website": "Webseite",
+      "email": "E-Mail",
+      "bookTicket": "Ticket Buchen"
+    },
+    "readMore": "Weiterlesen",
+    "egyptGallery": "Ägypten-Galerie",
+    "ClientsFeedback": "Kundenfeedback",
+    "gallaryEvent": "Veranstaltungsgalerie",
+    "makeEasy": "Gestalten Sie Ihre Reise einfach",
+    "customlinteray": "Meine individuelle Reiseroute erhalten",
+    "specialEvents": "Beliebte Ägypten-Rundreisen – Handverlesen für Sie",
+    "payment_on_hold_message": "Ihre Zahlung wird zurückgehalten",
+    "payment_failed_message": "Ihre Zahlung ist fehlgeschlagen",
+    "payment_successfully": "Zahlung erfolgreich",
+    "payment_pending": "Zahlung ausstehend",
+    "thank_you": "Danke",
+    "booking_successfully_message": "Ihre Buchung wurde erfolgreich abgeschlossen. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "please_check_your_mail": "Bitte überprüfen Sie Ihre E-Mails für alle Details",
+    "payment_rejected": "Zahlung abgelehnt",
+    "cart": "Warenkorb",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "egyTours": "Ägypten-Rundreisen",
+    "egyptTravelGuide": "Ägypten Reiseführer",
+    "saveChanges": "Änderungen speichern",
+    "myBookings": "Meine Buchungen",
+    "myProfile": "Kontoeinstellungen",
+    "myFavorites": "Meine Favoriten",
+    "oneDay": "Tagesausflüge",
+    "happyCustomer": "Zufriedene Kunden",
+    "yearsExperience": "Jahre Erfahrung",
+    "totalDistination": "Reiseziele insgesamt",
+    "ratingAdvisors": "Bewertung auf Tripadvisor",
+    "multiDays": "Mehrtägige Rundreisen",
+    "makeTripShort": "Reise planen",
+    "findTripShort": "Reise finden",
+    "rentCarShort": "Auto mieten",
+    "nileCruises": "Nilkreuzfahrten",
+    "shoreExsurision": "Landausflüge (Kreuzfahrt)",
+    "languageAndCurrancies": "Sprache und Währung",
+    "currency": "Währung",
+    "regionAndLanguage": "Region und Sprache",
+    "blogs": "Blogs",
+    "carHolder": "Autovermietung",
+    "getStarted": "Starten Sie Ihre",
+    "excitingJourney": "aufregende Reise mit uns",
+    "popularDistnation": "Beliebte Reiseziele",
+    "popularDistnationDesc": "Viele sehr aufregende Orte für Ihren nächsten Urlaub",
+    "exploreTours": "Rundreisen entdecken",
+    "gallaryHome": "Galerie aufregender Reisen",
+    "gallaryHomeDesc": "Folgen Sie uns in den sozialen Medien, um noch mehr aufregende Reisen zu sehen",
+    "popular": {
+      "recomanded": "Empfohlen",
+      "oneDay": "Tagestouren",
+      "multiDays": "Mehrtägig",
+      "nileCruises": "Nilkreuzfahrten",
+      "shoreExsurision": "Landausflüge"
+    },
+    "ourPartners": "Unsere Partner",
+    "ourTeam": "Unser Team",
+    "filtter": "Filtern",
+    "sortBy": "Sortieren nach",
+    "next": "Weiter",
+    "back": "Zurück",
+    "outOF": "von",
+    "results": "Ergebnisse",
+    "category": "Kategorie",
+    "egyptDayTours": "Ägypten Tagesausflüge",
+    "startFrom": "Ab",
+    "time": {
+      "day": "Tage",
+      "hour": "Stunden",
+      "minute": "Minuten",
+      "second": "Sekunden"
+    },
+    "spaicalOffer": "Sonderangebot",
+    "seeMore": "Mehr ansehen",
+    "SpecialOfferForYou": "Sonderangebote für Sie",
+    "SpecialOfferForYouDesc": "Finden Sie das passende Angebot, bevor es zu spät ist",
+    "howItWorks": "Wie funktioniert es?",
+    "howItWorksDesc": "Nur drei Schritte bis nach Ägypten",
+    "bookingSteps": {
+      "find": {
+        "title": "Reise finden",
+        "desc": "Wählen Sie Ihre Lieblingsreise"
+      },
+      "booking": {
+        "title": "Buchung",
+        "desc": "Reise buchen und bezahlen"
+      },
+      "enjoy": {
+        "title": "Genießen",
+        "desc": "Starten Sie Ihr aufregendes Abenteuer"
+      }
+    },
+    "highlightsOfEgypt": "Highlights Ägyptens",
+    "highlightsOfEgyptDesc": "Entdecken Sie die wichtigsten Sehenswürdigkeiten Ägyptens",
+    "travelBlogs": "Unsere Reiseblogs",
+    "frequentlyAskedQuestions": "Häufig gestellte Fragen (FAQ)",
+    "needHelp": "Hilfe bei der Suche nach Ihrer Reise nötig?",
+    "makeYourTrip": "Reise planen",
+    "makeTrip": "Reise planen",
+    "whenBeTravelling": "Wann werden Sie reisen?",
+    "existTime": "Ich habe ein genaues Datum",
+    "approximateTime": "Ich habe einen ungefähren Zeitraum",
+    "notSureYet": "Noch nicht sicher",
+    "selectStartDate": "Wählen Sie das Startdatum der Reise",
+    "selectEndDate": "Wählen Sie das Enddatum der Reise",
+    "selectExpectedMonth": "Wählen Sie den voraussichtlichen Reisemonat",
+    "from": "Von",
+    "to": "Bis",
+    "speakingLanguage": "Gesprochene Sprache",
+    "selectMonth": "Monat auswählen",
+    "manyDays": "Wie viele Tage",
+    "findYourTrep": "Reise finden",
+    "search": "Suchen",
+    "where": "Wohin",
+    "placeholderWhere": "Wählen Sie Ihren Lieblingsort in Ägypten",
+    "howLong": "Wie lange",
+    "placeholderHowLong": "Wie viele Tage bleiben Sie in Ägypten",
+    "rentcar": "Auto mieten",
+    "tripType": "Art der Reise?",
+    "oneWay": "Einfache Fahrt",
+    "roundTrip": "Hin- und Rückfahrt",
+    "pickUpDateAndTime": "Abholdatum und -uhrzeit",
+    "pickUpDateAndTimePlaceholder": "Wählen Sie Datum und Uhrzeit für die Abholung",
+    "location": "Standort",
+    "locationPlaceholder": "Abholort wählen",
+    "dropLoactionPlaceholder": "Rückgabeort wählen",
+    "picUpLocation": "Abholort",
+    "dropOffLocation": "Rückgabeort",
+    "sendRequest": "Anfrage senden",
+    "returnDataAndTime": "Rückgabedatum und -uhrzeit",
+    "returnDataAndTimePlaceholder": "Wählen Sie Datum und Uhrzeit für die Rückgabe",
+    "searchPlachholder": "Orte und Aktivitäten finden",
+    "quickInfo": "Kurzinformation",
+    "personalInfo": "Persönliche Daten",
+    "confirmation": "Bestätigung",
+    "nextUp": "Als nächstes",
+    "info": "Informationen",
+    "edit": "Bearbeiten",
+    "travelerName": "Name des Reisenden",
+    "startDay": "Startdatum der Reise",
+    "endDay": "Enddatum der Reise",
+    "monthTrip": "Reisemonat",
+    "tripDuration": "Reisedauer",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "contactMe": "Kontakt",
+    "yes": "Ja",
+    "no": "Nein",
+    "days": "Tage",
+    "delete": "Löschen",
+    "submit": "Absenden",
+    "travelDate": "Reisedatum",
+    "totalPrice": "Gesamtpreis",
+    "addToCart": "IN DEN WARENKORB",
+    "over": "Über",
+    "sunpyramidsLinks": "Sun Pyramids Links",
+    "contactInfo": "Kontaktinformationen",
+    "aboutus": {
+      "banner": {
+        "fline": "Ihre Reise beginnt mit uns",
+        "slineColor": "50 Jahre",
+        "sline": "Reiseerfahrung"
+      },
+      "sunpyramids": {
+        "about": "Über",
+        "sunpyramids": "Sun Pyramids",
+        "tours": "Reisen",
+        "aboutOne": "Gegründet 1970 mit einer Tourismuslizenz (Nr. 92 – Klasse A) des ägyptischen Tourismusministeriums.",
+        "aboutTwo": "Eines der ersten Reiseunternehmen in Ägypten mit über 50 Jahren Erfahrung in der Reisebranche.",
+        "aboutThree": "Spezialisiert auf die Organisation von Einzelreisen, Gruppenreisen, Incentive-Programmen, Studienreisen und religiösen Reisen."
+      },
+      "where": {
+        "partOne": "Woher unsere",
+        "partOneColered": "Kunden",
+        "from": "kommen",
+        "overall": "Unsere Kunden kommen aus der ganzen Welt"
+      },
+      "distination": {
+        "distination": "Reiseziele",
+        "line": "und angebotene Dienstleistungen",
+        "aboutOne": "bietet Dienstleistungen in ganz Ägypten an, darunter Kairo, Assuan, Luxor, Alexandria, das Rote Meer und die Sinai-Halbinsel.",
+        "aboutTwo": "Das Unternehmen bietet Nilkreuzfahrten von Assuan nach Luxor, Wüstenausflüge und Flughafentransfers an.",
+        "aboutThree": "Büros befinden sich in allen wichtigen Reisezielen, um Unterstützung vor Ort zu gewährleisten."
+      },
+      "partnership": {
+        "partnership": "Partnerschafts",
+        "benefits": "Vorteile",
+        "line": "und maßgeschneiderte Dienstleistungen",
+        "one": "Exklusive Vorteile von vertrauenswürdigen Partnern",
+        "two": "Komplette Planung: Transport, Unterkunft und Stadtrundfahrten",
+        "three": "Wichtige Touren mit anpassbaren Optionen"
+      },
+      "certfication": {
+        "travelife": "Travelife",
+        "line": "zertifiziert",
+        "info": "Bei Sun Pyramids Tours engagieren wir uns für nachhaltiges Reisen und sind stolz darauf, Travelife-zertifiziert zu sein und damit internationale Standards für verantwortungsvollen Tourismus zu erfüllen. Indem Sie sich für uns entscheiden, unterstützen Sie eine grünere, ethischere Art, die Welt zu erkunden. Gestalten Sie mit uns eine nachhaltige Zukunft! Entdecken Sie verantwortungsvoll und informieren Sie sich über unsere Richtlinien zu Datenschutz, Nachhaltigkeit und verantwortungsvollem Reisen."
+      },
+      "goals": {
+        "mission": {
+          "title": "Unsere Mission",
+          "paragraph": "Herausragende, kundenorientierte Reiseerlebnisse mit einem Bekenntnis zur Nachhaltigkeit zu schaffen. Wir bemühen uns, unsere Umweltbelastung zu reduzieren und lokale Gemeinschaften zu unterstützen, um neue Maßstäbe für verantwortungsvollen Tourismus zu setzen."
+        },
+        "vision": {
+          "title": "Unsere Vision",
+          "paragraph": "Wir möchten für unsere Kunden unverzichtbar sein, indem wir qualitativ hochwertige Reisen zu erschwinglichen Preisen anbieten. Unser Fokus auf Kundenzufriedenheit und Innovation treibt unsere Führungsposition in der Reisebranche voran."
+        }
+      },
+      "ceo": {
+        "ceoMessage": "Nachricht des Geschäftsführers",
+        "value": "Liebe Besucherin, lieber Besucher,",
+        "one": "Willkommen bei Sun Pyramids Tours! Unser engagiertes Team von Reiseexperten mit über 20 Jahren Erfahrung ist hier, um sicherzustellen, dass Ihre Reise sowohl erfreulich als auch unvergesslich wird.",
+        "two": "Seit unserer Gründung im Jahr 1970 sind wir zu einem der führenden Reiseunternehmen Ägyptens gewachsen, angetrieben von unserer Leidenschaft für Exzellenz und Kundenzufriedenheit. Mit umfangreicher Erfahrung in Reisezielen weltweit sind wir bestrebt, Ihre Erwartungen zu übertreffen und einen außergewöhnlichen Service zu bieten, der auf Ihre Bedürfnisse zugeschnitten ist.",
+        "three": "Vielen Dank, dass Sie sich für uns entschieden haben, um Ihre Reiseträume zu erfüllen. Wir freuen uns auf die Zusammenarbeit mit Ihnen und darauf, dass Ihre Erfahrung mit Sun Pyramids Tours reibungslos und angenehm verläuft.",
+        "warm": "Mit freundlichen Grüßen"
+      }
+    },
+    "contactus": {
+      "hero": "Rufen Sie uns an, schreiben Sie uns oder klopfen Sie an unsere Tür",
+      "info": {
+        "adress": {
+          "title": "Unsere Adresse",
+          "paragraph": "Pyramids View Tower - Kreuzung Mansourieh mit Faisal - Über der Tseppas-Patisserie - Vierte Etage"
+        },
+        "email": {
+          "title": "E-Mail-Adresse"
+        }
+      },
+      "form": {
+        "contactToday": "Nehmen Sie noch heute Kontakt mit uns auf"
+      }
+    },
+    "auth": {
+      "login": {
+        "welcomeBack": "Willkommen zurück",
+        "loginUseing": "Anmelden mit",
+        "forgetPassword": "Passwort vergessen?",
+        "saveLogin": "Anmeldung speichern",
+        "login": "Anmelden",
+        "craeteAnAccount": "Ein Konto erstellen"
+      },
+      "signup": {
+        "createNewAccount": "Ein neues Konto erstellen",
+        "createUsing": "Ein Konto erstellen mit",
+        "iAgree": "Ich stimme den",
+        "termsAndConditions": "Allgemeinen Geschäftsbedingungen",
+        "iamAlready": "Haben Sie bereits ein Konto?",
+        "login": "Anmelden"
+      },
+      "forgetPassword": {
+        "title": "Haben Sie Ihr Passwort vergessen?",
+        "paragraph": "Passwort vergessen? Kein Problem, Sie können ein neues Passwort erstellen, indem Sie Ihre registrierte E-Mail-Adresse eingeben.",
+        "sendCode": "Code senden",
+        "donotHaveAccount": "Sie haben kein Konto?"
+      },
+      "confirmCode": {
+        "title": "Aktivierungscode",
+        "paragraph": "Der Aktivierungscode für das Konto wurde an die E-Mail {email} gesendet",
+        "activitionCode": "Aktivierungscode",
+        "codeWillExpired": "Der Code läuft ab in",
+        "inSec": "{sec} Sekunden",
+        "resendCode": "Code erneut senden"
+      },
+      "CreatePassword": {
+        "title": "Ein neues Passwort erstellen",
+        "paragraph": "Versuchen Sie, ein sicheres Passwort zu erstellen, um Ihre persönlichen Daten zu schützen."
+      }
+    },
+    "blog": {
+      "searchPlaceholder": "Nach welchem Artikel suchen Sie?",
+      "popularTags": "Beliebte Tags:",
+      "onThisPage": "Inhaltsverzeichnis",
+      "relatedBlog": "Ähnliche Blogs"
+    },
+    "trips": {
+      "tours": "Rundreisen",
+      "egyptTours": "Ägypten-Rundreisen",
+      "clearAll": "Alle löschen"
+    },
+    "tours": {
+      "highlights": "Highlights",
+      "contractAll": "Alle einklappen",
+      "expandAll": "Alle ausklappen",
+      "viewDistination": "Reiseziele ansehen",
+      "BookNow": "Jetzt buchen",
+      "distinations": "Reiseziele",
+      "share": "Teilen",
+      "passangers": "Passagiere",
+      "amount": "Anzahl",
+      "addOns": "Zusatzleistungen",
+      "seeDetails": "Details ansehen",
+      "total": "Gesamt",
+      "itinerary": "Reiseverlauf",
+      "meal": "Mahlzeiten",
+      "accommodation": "Unterkunft",
+      "include": "Was ist inbegriffen?",
+      "exclude": "Was ist nicht inbegriffen?",
+      "duration": "Dauer",
+      "days": "Tage",
+      "day": "Tag",
+      "cities": "Städte",
+      "type": "Art",
+      "category": "Kategorie",
+      "overView": "Überblick",
+      "pickup": "Abholzeit",
+      "availablity": "Reiseverfügbarkeit",
+      "reviews": "Bewertungen",
+      "related": "Ähnliche Reisen",
+      "gallary": "Galerie aufregender Reisen",
+      "askQuestion": "Eine Frage stellen",
+      "favorites": "Favoriten"
+    },
+    "checkout": {
+      "view": "Ansehen",
+      "editTour": "Reisedetails bearbeiten",
+      "saveEdits": "Änderungen speichern",
+      "sumarry": "Zahlungsübersicht",
+      "totalNums": "Anzahl Reisen",
+      "subTotal": "Zwischensumme",
+      "adds": "Zusatzleistungen",
+      "discount": "Rabatt",
+      "discountCoupon": "Rabattcode",
+      "addCouponCode": "Rabattcode hinzufügen..",
+      "grandTotal": "Gesamtsumme",
+      "checkoutNow": "Jetzt zur Kasse",
+      "checkout": "Zur Kasse",
+      "cartDetails": "Warenkorbdetails",
+      "baillingDetails": "Rechnungsdaten",
+      "paymentMethod": "Zahlungsmethode",
+      "enterCardNumber": "Kartennummer eingeben",
+      "mm-yy": "MM / JJ",
+      "cardNum": "Kartennummer",
+      "ccv": "CVV",
+      "experation": "Ablaufdatum",
+      "warning": "Zahlungsinformationen werden nicht gespeichert",
+      "back": "Zurück",
+      "payNow": "Jetzt bezahlen"
+    },
+    "faqs": {
+      "faqs": "FAQs",
+      "banner": "Häufig gestellte Fragen (FAQ)",
+      "searchPlaceholder": "Was möchten Sie fragen?"
+    },
+    "privacy": {
+      "banner": "Datenschutz und Cookies",
+      "onThisPage": "Auf dieser Seite"
+    }
+  },
+  "inputLabels": {
+    "apply": "Übernehmen",
+    "Date": "Datum",
+    "DatePlaceholder": "Ein Datum auswählen",
+    "dateAnbdTime": "Datum und Uhrzeit",
+    "month": "Monat",
+    "numberOfDays": "Anzahl der Tage",
+    "where": "Wohin",
+    "howLong": "Wie lange",
+    "fullName": "Vollständiger Name",
+    "speakingLanguage": "Gesprochene Sprache",
+    "speakingLanguagePlacehgolder": "Sprache wählen",
+    "fullNamePlaceholder": "Ihr vollständiger Name hier",
+    "addFlightOffer": "Flugangebot hinzufügen",
+    "email": "E-Mail",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail ein..",
+    "phone": "Telefon",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "nationality": "Staatsangehörigkeit",
+    "nationalityPlaceholder": "Wählen Sie Ihre Staatsangehörigkeit",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "infants": "Kleinkinder",
+    "price": "Preis",
+    "min": "Min",
+    "max": "Max",
+    "note": "Notiz",
+    "notePlaceholder": "Zusätzliche Anmerkungen..........",
+    "optional": "Optional",
+    "writeus": "Schreiben Sie uns....",
+    "sendAMessage": "Nachricht senden",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "country": "Land / Region",
+    "city": "Stadt",
+    "state": "Bundesland / Region",
+    "countryPlaceholder": "Wählen Sie Ihr Land",
+    "citPlaceholder": "Wählen Sie Ihre Stadt",
+    "statePlaceholder": "Wählen Sie Ihr Bundesland/Ihre Region",
+    "additionalInfo": "Zusätzliche Informationen",
+    "applyForPayment": "Zahlung beantragen",
+    "notePayment": "Zusätzliche Informationen",
+    "place": "Ort",
+    "birthDate": "Geburtsdatum",
+    "birthDatePlaceholder": "Geburtsdatum"
+  },
+  "errors": {
+    "isRequired": "{name} ist erforderlich",
+    "phoneLength": "{name} muss {num} Ziffern lang sein",
+    "minMemer": "{name} muss mindestens 1 Teilnehmer sein",
+    "min": "{name} muss mindestens {num} Zeichen lang sein",
+    "match": "{name} muss mit {nameTwo} übereinstimmen",
+    "email": "{name} ist keine gültige E-Mail-Adresse",
+    "invalidCharacters": "{name} hat ein ungültiges Format",
+    "passwordComplexity": "{name} muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten",
+    "passwordLowercase": "Das Passwort muss mindestens einen Kleinbuchstaben enthalten",
+    "passwordUppercase": "Das Passwort muss mindestens einen Großbuchstaben enthalten",
+    "passwordNumber": "Das Passwort muss mindestens eine Zahl enthalten",
+    "passwordSpecialChar": "Das Passwort muss mindestens ein Sonderzeichen enthalten",
+    "mustBeGreaterThanZero": "{name} muss größer als 0 sein",
+    "notFoundTour": "Reise nicht gefunden",
+    "notFound": "Seite nicht gefunden",
+    "notFoundBlog": "Blog nicht gefunden"
+  }
+}
