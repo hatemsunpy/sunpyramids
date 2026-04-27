@@ -3,7 +3,8 @@
     "project": "sun-front",
     "framework": "Nuxt 3",
     "generated": "2026-04-27",
-    "totalVueFiles": 150,
+    "totalVueFiles": 234,
+    "note": "Curated high-level dependency index. Not an exhaustive AST-derived graph. Nodes/edges cover pages, layouts, composables, stores, and high-impact components only.",
     "description": "Code review dependency graph for Sun Pyramids Tours frontend"
   },
   "nodes": [
@@ -31,8 +32,6 @@
     { "from": "layouts/default.vue", "to": "stores/sharedStore.js", "relation": "imports" },
     { "from": "layouts/auth.vue", "to": "stores/sharedStore.js", "relation": "imports" },
     { "from": "composables/useSeo.js", "to": "utils/seo.js", "relation": "imports" },
-    { "from": "pages/index.vue", "to": "composables/useApi.js", "relation": "uses (commented)" },
-    { "from": "pages/index.vue", "to": "composables/useSeo.js", "relation": "uses (commented)" },
     { "from": "pages/about-us.vue", "to": "composables/useApi.js", "relation": "uses" },
     { "from": "pages/about-us.vue", "to": "composables/useSeo.js", "relation": "uses" },
     { "from": "pages/contact-us.vue", "to": "composables/useApi.js", "relation": "uses" },
@@ -228,7 +227,7 @@
     { "file": "pages/tour/[id].vue", "risk": "high", "reason": "Main product detail page" }
   ],
   "reviewPaths": {
-    "auth": ["middleware/auth.global.js", "stores/userStore.js", "components/Auth/*.vue", "layouts/auth.vue", "pages/auth/*.vue"],
+    "auth": ["middleware/auth.global.js", "stores/userStore.js", "components/Auth/*.vue", "components/Auth/index.vue", "layouts/auth.vue", "pages/auth/*.vue"],
     "cartCheckout": ["pages/cart/index.vue", "pages/cart/checkout.vue", "components/Cart/**/*.vue", "components/Checkout/**/*.vue"],
     "tours": ["pages/tour/[id].vue", "components/Tours/**/*.vue", "components/Shared/TourCard.vue"],
     "home": ["pages/index.vue", "components/Home/**/*.vue"],

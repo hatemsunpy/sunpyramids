@@ -164,6 +164,8 @@ graph TD
     P_RESET["pages/auth/reset-password.vue"] --> AUTH_RESET["Auth/ResetPassword.vue"]
     P_CONFIRM["pages/auth/confirm-code.vue"] --> AUTH_CONFIRM["Auth/ConfirmCode.vue"]
     P_CREATE["pages/auth/create-password.vue"] --> AUTH_CREATE["Auth/CreatePassword.vue"]
+    AUTH_INDEX["Auth/index.vue"] --> AUTH_SIGNIN
+    AUTH_INDEX --> AUTH_SIGNUP
   end
 
   subgraph "Shared Auth UI"
@@ -334,7 +336,7 @@ graph TD
 - [ ] `nuxt.config.ts` — route rules, runtimeConfig, module order
 - [ ] `tailwind.config.js` — theme tokens, content paths
 - [ ] `server/middleware/redirect-http-protocol.ts` — redirect logic correctness
-- [ ] `.github/workflows/main.yml` — **CRITICAL: hardcoded PAT present**
+- [x] `.github/workflows/main.yml` — hardcoded PAT removed, now uses `${{ secrets.GITHUB_TOKEN }}`
 
 ### 10.2 Global Layer
 - [ ] `app.vue` — GTM/GA4 injection, `html lang` binding
@@ -368,4 +370,3 @@ graph TD
 
 ---
 
-*End of Code Review Graph*
