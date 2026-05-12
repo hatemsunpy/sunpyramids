@@ -24,8 +24,8 @@
 
 **Purpose**: Ensure dev server runs and prerequisites are met
 
-- [X] T001 Verify dev server starts with `npm run dev` and serves pages at `http://localhost:3000/`
-- [X] T002 [P] Confirm all 7 supported locales are accessible: `/`, `/fr`, `/de`, `/it`, `/pt`, `/es`, `/zh`
+- [x] T001 Verify dev server starts with `npm run dev` and serves pages at `http://localhost:3000/`
+- [x] T002 [P] Confirm all 7 supported locales are accessible: `/`, `/fr`, `/de`, `/it`, `/pt`, `/es`, `/zh`
 
 ---
 
@@ -35,9 +35,9 @@
 
 **⚠️ CRITICAL**: No modifications until each file is reviewed against spec requirements
 
-- [X] T003 Review `generateHreflangLinks()` in `utils/seo.js` — confirm the current locale loop at lines 33-40 does NOT yet skip `"en"`, and identify the exact insertion point for the `continue` statement
-- [X] T004 [P] Review `addSeo()` in `composables/useSeo.js` — map current OG/Twitter attribute usage (META_NAME_TAGS at lines 11-18, META_PROPERTY_TAGS at lines 20-25), fallback chains (lines 84-100), and schema integration (lines 103-112)
-- [X] T005 [P] Review `useApi()` in `composables/useApi.js` — verify `X-Localize` header uses `useI18n().locale` at lines 2,10 (server-safe, not `navigator`)
+- [x] T003 Review `generateHreflangLinks()` in `utils/seo.js` — confirm the current locale loop at lines 33-40 does NOT yet skip `"en"`, and identify the exact insertion point for the `continue` statement
+- [x] T004 [P] Review `addSeo()` in `composables/useSeo.js` — map current OG/Twitter attribute usage (META_NAME_TAGS at lines 11-18, META_PROPERTY_TAGS at lines 20-25), fallback chains (lines 84-100), and schema integration (lines 103-112)
+- [x] T005 [P] Review `useApi()` in `composables/useApi.js` — verify `X-Localize` header uses `useI18n().locale` at lines 2,10 (server-safe, not `navigator`)
 
 **Checkpoint**: Foundation ready — all three files understood, gaps identified against spec requirements
 
@@ -51,8 +51,8 @@
 
 ### Implementation for User Story 1
 
-- [X] T006 [US1] Add `if (loc === "en") continue;` at the top of the locale loop in `generateHreflangLinks()` in `utils/seo.js` (inside the `for (const loc of availableLocales)` block, before `links.push()`) per research.md decision #1
-- [X] T007 [US1] Verify `x-default` hreflang tag is still generated (line 26-30) and points to root URL without `/en` prefix in `utils/seo.js`
+- [x] T006 [US1] Add `if (loc === "en") continue;` at the top of the locale loop in `generateHreflangLinks()` in `utils/seo.js` (inside the `for (const loc of availableLocales)` block, before `links.push()`) per research.md decision #1
+- [x] T007 [US1] Verify `x-default` hreflang tag is still generated (line 26-30) and points to root URL without `/en` prefix in `utils/seo.js`
 
 **Checkpoint**: `curl http://localhost:3000/ | grep "hreflang"` shows only `x-default` and non-English locales — zero `hreflang="en"`
 
@@ -66,10 +66,10 @@
 
 ### Implementation for User Story 2
 
-- [X] T008 [US2] Verify OG tags in `composables/useSeo.js` correctly use `property` attribute: confirm `META_PROPERTY_TAGS` entries (lines 20-25) are pushed via `{ property: tagName, content: ... }` at line 79, and hardcoded OG entries (lines 60-62) also use `property`
-- [X] T009 [US2] Verify Twitter tags in `composables/useSeo.js` correctly use `name` attribute: confirm `META_NAME_TAGS` twitter entries (lines 13-17) are pushed via `{ name: tagName, content: ... }` at line 73
-- [X] T010 [US2] Extend Twitter fallback chain in `composables/useSeo.js` (lines 84-91): add second-level fallback from `og_*` to `meta_*` fields — when `twitter_title` is missing AND `og_title` is missing, fall back to `meta_title`; same for `twitter_description` → `og_description` → `meta_description` per FR-006 and data-model.md fallback chain
-- [X] T011 [US2] Verify OG fallback chain in `composables/useSeo.js` (lines 95-100): `og_title` → `meta_title` and `og_description` → `meta_description` are correctly implemented
+- [x] T008 [US2] Verify OG tags in `composables/useSeo.js` correctly use `property` attribute: confirm `META_PROPERTY_TAGS` entries (lines 20-25) are pushed via `{ property: tagName, content: ... }` at line 79, and hardcoded OG entries (lines 60-62) also use `property`
+- [x] T009 [US2] Verify Twitter tags in `composables/useSeo.js` correctly use `name` attribute: confirm `META_NAME_TAGS` twitter entries (lines 13-17) are pushed via `{ name: tagName, content: ... }` at line 73
+- [x] T010 [US2] Extend Twitter fallback chain in `composables/useSeo.js` (lines 84-91): add second-level fallback from `og_*` to `meta_*` fields — when `twitter_title` is missing AND `og_title` is missing, fall back to `meta_title`; same for `twitter_description` → `og_description` → `meta_description` per FR-006 and data-model.md fallback chain
+- [x] T011 [US2] Verify OG fallback chain in `composables/useSeo.js` (lines 95-100): `og_title` → `meta_title` and `og_description` → `meta_description` are correctly implemented
 
 **Checkpoint**: OG tags have `property`, Twitter tags have `name`, fallback chains match data-model.md specifications
 
@@ -83,8 +83,8 @@
 
 ### Implementation for User Story 3
 
-- [X] T012 [US3] Confirm `meta_keywords` is NOT present in `META_NAME_TAGS` object in `composables/useSeo.js` (lines 11-18) per research.md decision #3
-- [X] T013 [US3] Verify `meta_keywords` is NOT rendered via any other code path: check that no `{ name: "keywords", content: ... }` meta is pushed anywhere in `composables/useSeo.js` per FR-005
+- [x] T012 [US3] Confirm `meta_keywords` is NOT present in `META_NAME_TAGS` object in `composables/useSeo.js` (lines 11-18) per research.md decision #3
+- [x] T013 [US3] Verify `meta_keywords` is NOT rendered via any other code path: check that no `{ name: "keywords", content: ... }` meta is pushed anywhere in `composables/useSeo.js` per FR-005
 
 **Checkpoint**: `curl http://localhost:3000/ | grep -i "keywords"` returns empty
 
@@ -98,9 +98,9 @@
 
 ### Implementation for User Story 4
 
-- [X] T014 [US4] Verify `validateAndParseSchema()` in `utils/seo.js` (lines 45-85) correctly handles all input formats: pre-parsed object (line 53-58), raw JSON string with try/catch (lines 61-82), arrays (lines 55, 67-68), null/undefined (line 46-48) per data-model.md SchemaBlock lifecycle
-- [X] T015 [US4] Verify schema integration in `composables/useSeo.js` (lines 103-112): confirm the result from `validateAndParseSchema()` is properly iterated and pushed as `seo.script` entries with `type: "application/ld+json"` per FR-007 and FR-008
-- [X] T016 [US4] Add handling for empty string `structure_schema`: confirm `validateAndParseSchema()` returns `null` when `structure_schema` is `""` (empty string edge case from spec.md Edge Cases) in `utils/seo.js`
+- [x] T014 [US4] Verify `validateAndParseSchema()` in `utils/seo.js` (lines 45-85) correctly handles all input formats: pre-parsed object (line 53-58), raw JSON string with try/catch (lines 61-82), arrays (lines 55, 67-68), null/undefined (line 46-48) per data-model.md SchemaBlock lifecycle
+- [x] T015 [US4] Verify schema integration in `composables/useSeo.js` (lines 103-112): confirm the result from `validateAndParseSchema()` is properly iterated and pushed as `seo.script` entries with `type: "application/ld+json"` per FR-007 and FR-008
+- [x] T016 [US4] Add handling for empty string `structure_schema`: confirm `validateAndParseSchema()` returns `null` when `structure_schema` is `""` (empty string edge case from spec.md Edge Cases) in `utils/seo.js`
 
 **Checkpoint**: Valid schema renders JSON-LD script tag; invalid/malformed/empty schema silently skipped with 200 status
 
@@ -114,9 +114,9 @@
 
 ### Implementation for User Story 5
 
-- [X] T017 [US5] Verify `X-Localize` header is set from `useI18n().locale` in `composables/useApi.js` (line 10: `"X-Localize": locale.value`) — this resolves from URL path during SSR, not from `navigator` per FR-009 and FR-010
-- [X] T018 [US5] Verify root path (`/`) resolves to `"en"` for `X-Localize` header: confirm `useI18n().locale.value` returns `"en"` when rendering the root URL during SSR per contracts/seo-utility-contract.md locale resolution table
-- [X] T019 [US5] Confirm the `options` object in `composables/useApi.js` (lines 7-11) is re-evaluated per-request during SSR — Nuxt creates a new composable instance per SSR request, so `locale.value` reflects the current request's locale
+- [x] T017 [US5] Verify `X-Localize` header is set from `useI18n().locale` in `composables/useApi.js` (line 10: `"X-Localize": locale.value`) — this resolves from URL path during SSR, not from `navigator` per FR-009 and FR-010
+- [x] T018 [US5] Verify root path (`/`) resolves to `"en"` for `X-Localize` header: confirm `useI18n().locale.value` returns `"en"` when rendering the root URL during SSR per contracts/seo-utility-contract.md locale resolution table
+- [x] T019 [US5] Confirm the `options` object in `composables/useApi.js` (lines 7-11) is re-evaluated per-request during SSR — Nuxt creates a new composable instance per SSR request, so `locale.value` reflects the current request's locale
 
 **Checkpoint**: `curl http://localhost:3000/fr` returns French SEO data; `curl http://localhost:3000/` returns English SEO data
 
@@ -126,14 +126,14 @@
 
 **Purpose**: Validation across all locales and quality gates
 
-- [X] T020 Run hreflang verification (GATE-06): `curl http://localhost:3000/ | grep "hreflang"` — zero `hreflang="en"`, x-default present per SC-001
-- [X] T021 [P] Run OG attribute verification (GATE-02): `curl http://localhost:3000/ | grep "og:" | grep 'name="og:"'` — must return nothing per SC-002
-- [X] T022 [P] Run Twitter attribute verification: `curl http://localhost:3000/ | grep "twitter:" | grep 'property="twitter:"'` — must return nothing per FR-004
-- [X] T023 [P] Run meta keywords verification (GATE-03): `curl http://localhost:3000/ | grep -i "keywords"` — must return nothing per SC-003
-- [X] T024 Run schema safety verification (GATE-05): `curl http://localhost:3000/ | grep 'application/ld+json'` — confirm valid JSON-LD script tag present per SC-004
-- [X] T025 Run cross-locale verification: loop over all 7 locales (`/`, `/fr`, `/de`, `/it`, `/pt`, `/es`, `/zh`) and verify each returns locale-specific `<title>` per SC-005
-- [X] T026 Run API domain check (GATE-04): `curl http://localhost:3000/ | grep "sunpyramidtours.com"` — confirm no API domain (`sunpyramidtours.com`) in hreflang/canonical/og:url hrefs
-- [X] T027 Run full quickstart.md validation procedure from `specs/002-seo-foundational-fixes/quickstart.md` lines 74-133
+- [x] T020 Run hreflang verification (GATE-06): `curl http://localhost:3000/ | grep "hreflang"` — zero `hreflang="en"`, x-default present per SC-001
+- [x] T021 [P] Run OG attribute verification (GATE-02): `curl http://localhost:3000/ | grep "og:" | grep 'name="og:"'` — must return nothing per SC-002
+- [x] T022 [P] Run Twitter attribute verification: `curl http://localhost:3000/ | grep "twitter:" | grep 'property="twitter:"'` — must return nothing per FR-004
+- [x] T023 [P] Run meta keywords verification (GATE-03): `curl http://localhost:3000/ | grep -i "keywords"` — must return nothing per SC-003
+- [x] T024 Run schema safety verification (GATE-05): `curl http://localhost:3000/ | grep 'application/ld+json'` — confirm valid JSON-LD script tag present per SC-004
+- [x] T025 Run cross-locale verification: loop over all 7 locales (`/`, `/fr`, `/de`, `/it`, `/pt`, `/es`, `/zh`) and verify each returns locale-specific `<title>` per SC-005
+- [x] T026 Run API domain check (GATE-04): `curl http://localhost:3000/ | grep "sunpyramidtours.com"` — confirm no API domain (`sunpyramidtours.com`) in hreflang/canonical/og:url hrefs
+- [x] T027 Run full quickstart.md validation procedure from `specs/002-seo-foundational-fixes/quickstart.md` lines 74-133
 
 ---
 
