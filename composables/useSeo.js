@@ -1,145 +1,126 @@
-import { getPathWithoutLocale, pageStructureSchema } from "~~/utils/seo";
+import {
+  getPathWithoutLocale,
+  validateAndParseSchema,
+  buildCanonicalUrl,
+  generateHreflangLinks,
+} from "~~/utils/seo";
+import langsConfig from "~~/i18n/Helpers/config";
+
+const ALL_LOCALES = langsConfig.map((l) => l.code);
+
+const META_NAME_TAGS = {
+  meta_description: "description",
+  twitter_card: "twitter:card",
+  twitter_title: "twitter:title",
+  twitter_description: "twitter:description",
+  twitter_image: "twitter:image",
+  twitter_creator: "twitter:creator",
+};
+
+const META_PROPERTY_TAGS = {
+  og_title: "og:title",
+  og_description: "og:description",
+  og_image: "og:image",
+  og_type: "og:type",
+};
 
 export default function () {
   const nuxtApp = useNuxtApp();
+  const { locale } = useI18n();
+  const config = useRuntimeConfig();
+  const appUrl = config.public.appURL;
+  const siteName = config.public.siteName || "Sun Pyramids Tours";
 
-  const appUrl = useRuntimeConfig().public.appURL;
+  function addSeo(page, options = {}) {
+    const { availableLocales = ALL_LOCALES } = options;
 
-  let pathWithoutLocale = getPathWithoutLocale();
-  pathWithoutLocale = pathWithoutLocale.trim() === "/" ? "" : pathWithoutLocale;
-
-  function addSeo(page) {
     try {
       if (!page?.seo) {
         return {};
       }
-      //configure seo foreach page
-      page.seo = page.seo || {};
 
-      page.seo.canonical = page.seo.canonical || appUrl + useRoute().fullPath;
+      const route = useRoute();
+      const currentPath = route.fullPath;
+      const canonicalUrl =
+        page.seo.canonical || buildCanonicalUrl(currentPath, locale, appUrl);
+      const localeIso =
+        langsConfig.find((l) => l.code === locale)?.iso || "en-US";
 
-      let seo = {
+      const seo = {
         title:
-          page?.seo?.meta_title ||
+          page.seo.meta_title ||
+          page.seo.og_title ||
           page.title ||
           page.name ||
-          "Sun Pyramids Tours",
+          siteName,
         meta: [
-          {
-            name: "viewport",
-            content: page.seo.viewport || "width=device-width, initial-scale=1",
-          },
+          { name: "viewport", content: page.seo.viewport || "width=device-width, initial-scale=1" },
           { name: "robots", content: page.seo.robots || "index, follow" },
-          { name: "charset", content: "utf-8" },
-          { name: "og:url", content: page.seo.canonical },
-          { name: "og:site_name", content: "Sun Pyramids Tours" },
+          { charset: "utf-8" },
+          { property: "og:url", content: canonicalUrl },
+          { property: "og:site_name", content: siteName },
+          { property: "og:locale", content: localeIso },
         ],
         link: [
-          { rel: "canonical", href: page.seo.canonical },
-          {
-            rel: "alternate",
-            hreflang: "x-default",
-            href: appUrl + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "en",
-            href: appUrl + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "fr",
-            href: appUrl + "/fr" + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "de",
-            href: appUrl + "/de" + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "it",
-            href: appUrl + "/it" + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "pt",
-            href: appUrl + "/pt" + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "es",
-            href: appUrl + "/es" + pathWithoutLocale,
-          },
-          {
-            rel: "alternate",
-            hreflang: "zh",
-            href: appUrl + "/zh" + pathWithoutLocale,
-          },
+          { rel: "canonical", href: canonicalUrl },
+          ...generateHreflangLinks(availableLocales, currentPath, appUrl),
         ],
         script: [],
       };
 
-      if (pageStructureSchema(page)) {
-        let page_structure_schema = pageStructureSchema(page);
-        if (Array.isArray(page_structure_schema)) {
-          page_structure_schema.forEach((sc) =>
-            seo.script.push({
-              innerHTML: sc,
-              type: "application/ld+json",
-            })
-          );
-        } else {
+      for (const [field, tagName] of Object.entries(META_NAME_TAGS)) {
+        if (page.seo[field]) {
+          seo.meta.push({ name: tagName, content: page.seo[field] });
+        }
+      }
+
+      for (const [field, tagName] of Object.entries(META_PROPERTY_TAGS)) {
+        if (page.seo[field]) {
+          seo.meta.push({ property: tagName, content: page.seo[field] });
+        }
+      }
+
+      // Twitter fallback chain: twitter:* -> og:* -> meta_*
+      if (!page.seo.twitter_title) {
+        const fallback = page.seo.og_title || page.seo.meta_title;
+        if (fallback) seo.meta.push({ name: "twitter:title", content: fallback });
+      }
+      if (!page.seo.twitter_description) {
+        const fallback = page.seo.og_description || page.seo.meta_description;
+        if (fallback) seo.meta.push({ name: "twitter:description", content: fallback });
+      }
+      if (!page.seo.twitter_image && page.seo.og_image) {
+        seo.meta.push({ name: "twitter:image", content: page.seo.og_image });
+      }
+
+      // OG fallback chain: og:* -> meta_*
+      if (!page.seo.og_title && page.seo.meta_title) {
+        seo.meta.push({ property: "og:title", content: page.seo.meta_title });
+      }
+      if (!page.seo.og_description && page.seo.meta_description) {
+        seo.meta.push({ property: "og:description", content: page.seo.meta_description });
+      }
+
+      // Schema
+      const schema = validateAndParseSchema(page);
+      if (schema) {
+        const schemas = Array.isArray(schema) ? schema : [schema];
+        for (const sc of schemas) {
           seo.script.push({
-            innerHTML: page_structure_schema,
+            innerHTML: sc,
             type: "application/ld+json",
           });
         }
       }
 
-      let seo_meta_names = [
-        "meta_description",
-        "meta_keywords",
-        //"meta_title",
-        "og_description",
-        "og_image",
-        "og_title",
-        "og_type",
-        "twitter_card",
-        "twitter_description",
-        "twitter_title",
-        "twitter_image",
-        "twitter_creator",
-      ];
-
-      let keysMappings = {
-        og_title: "og:title",
-        og_description: "og:description",
-        meta_description: "description",
-        og_image: "og:image",
-        //	meta_title: "title",
-        meta_keywords: "keywords",
-        og_type: "og:type",
-        twitter_card: "twitter:card",
-        twitter_description: "twitter:description",
-        twitter_title: "twitter:title",
-        twitter_image: "twitter:image",
-        twitter_creator: "twitter:creator",
-      };
-
-      seo_meta_names.forEach((key) => {
-        if (page.seo[key]) {
-          let seo_k = keysMappings[key] || key;
-          seo.meta.push({
-            name: seo_k,
-            content: page.seo[key],
-          });
-        }
-      });
-
       nuxtApp.runWithContext(() => useHead(seo));
+      return seo;
     } catch (e) {
-      nuxtApp.runWithContext(() => useHead({ title: "Sun Pyramids Tours" }));
+      console.warn("[useSeo] Failed to apply SEO:", e);
+      nuxtApp.runWithContext(() =>
+        useHead({ title: page?.seo?.meta_title || page?.title || siteName })
+      );
+      return {};
     }
   }
 
