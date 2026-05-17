@@ -38,7 +38,9 @@ onMounted(() => {
     script.setAttribute('data-type', 'stripe');
     script.setAttribute('data-location', 'home-reviews');
 
-    trustindexContainer.value.appendChild(script);
+    if (trustindexContainer.value) {
+      trustindexContainer.value.appendChild(script);
+    }
   }
 });
 </script>
