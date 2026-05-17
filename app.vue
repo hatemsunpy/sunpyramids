@@ -1,5 +1,5 @@
 <template>
-  <noscript>
+  <noscript v-if="!noThirdPartyQuery">
     <iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-KDF33T7"
       height="0"
@@ -22,41 +22,46 @@
 <script setup lang="js">
 import '@vuepic/vue-datepicker/dist/main.css'
 const {locale} = useI18n()
+const route = useRoute()
+const noThirdPartyQuery = computed(() => !!route.query['no-third-party'])
+
 watchEffect( ()=>{
   useHead({
   htmlAttrs: {
-    lang: locale.value // example for French
+    lang: locale.value
   }
 })
 })
 
-useHead({
-  script: [
-    {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-NKZ6W32C4J',
-      async: true
-    },
-    {
-      children: `
-        // Google Analytics 4 (gtag.js)
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-NKZ6W32C4J');
+useHead(() => {
+  if (route.query['no-third-party']) return {}
 
-        // Google Tag Manager
-        (function(w,d,s,l,i){
-          w[l]=w[l]||[];
-          w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-          var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-          j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-          f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KDF33T7');
-      `,
-      type: 'text/javascript'
-    }
-  ]
+  return {
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-NKZ6W32C4J',
+        async: true
+      },
+      {
+        children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NKZ6W32C4J');
+
+          (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-KDF33T7');
+        `,
+        type: 'text/javascript'
+      }
+    ]
+  }
 })
 </script>
 

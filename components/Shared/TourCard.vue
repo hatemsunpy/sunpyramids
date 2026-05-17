@@ -5,8 +5,9 @@
       disableOnInteraction: false
     } : false" @swiper="setSwiperInstance">
       <swiper-slide class="overflow-hidden h-full" v-for="img in props.item?.gallery.slice(0, 6)" :key="img">
-        <NuxtLink :to="localePath(`/tour/${props.item?.slug}`)">
-          <NuxtImg class="w-full h-full object-cover cursor-pointer " :src="img" alt="TourCard" loading="lazy" />
+        <NuxtLink :to="localePath(`/tour/${props.item?.slug}`)" :prefetch="false">
+          <NuxtImg class="w-full h-full object-cover cursor-pointer" :src="img" alt="TourCard"
+            :loading="img === props.item?.gallery[0] ? 'eager' : 'lazy'" width="400" height="194" />
         </NuxtLink>
       </swiper-slide>
 
@@ -26,7 +27,7 @@
     </swiper>
 
     <div class="flex flex-col gap-4">
-      <NuxtLink :to="localePath(`/tour/${props.item?.slug}`)">
+      <NuxtLink :to="localePath(`/tour/${props.item?.slug}`)" :prefetch="false">
         <h6 class="2xl:text-xl xl:text-xl md:block hidden text-base mt-4 px-2 h-[3.25rem] font-medium cursor-pointer"
           @click="router.push(localePath(`/tour/${props.item?.slug}`))">
           {{ props.item?.title && props.item?.title.length > 45 ? props.item?.title.slice(0, 45) + '...' :
@@ -203,9 +204,20 @@ function extractDuration(input) {
 onMounted(() => {
   if (props.showTimer && isOffered) {
     if (process.client) {
-      setInterval(() => {
-        calculateDuration(props.item?.offer_end_date)
-      }, 1000);
+      let animationId
+      let lastUpdate = 0
+      const update = (timestamp) => {
+        if (timestamp - lastUpdate >= 1000) {
+          calculateDuration(props.item?.offer_end_date)
+          lastUpdate = timestamp
+        }
+        animationId = requestAnimationFrame(update)
+      }
+      animationId = requestAnimationFrame(update)
+
+      onBeforeUnmount(() => {
+        if (animationId) cancelAnimationFrame(animationId)
+      })
     }
   }
 })

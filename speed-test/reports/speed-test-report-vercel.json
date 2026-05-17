@@ -1,0 +1,452 @@
+[
+  {
+    "key": "homepage",
+    "name": "Homepage",
+    "url": "https://sunpyramids.vercel.app/",
+    "route": "/",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1245,
+      "fcp": 2439,
+      "lcp": 3811,
+      "cls": 0.6502,
+      "domContentLoaded": 2742,
+      "loadTime": 0
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 8306,
+      "count": 225,
+      "breakdownKb": {
+        "html": 966,
+        "js": 2368,
+        "css": 77,
+        "images": 4773,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "about",
+    "name": "About Us",
+    "url": "https://sunpyramids.vercel.app/about-us",
+    "route": "/about-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1103,
+      "fcp": 3388,
+      "lcp": 4518,
+      "cls": 0.0862,
+      "domContentLoaded": 3466,
+      "loadTime": 7207
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 6501,
+      "count": 213,
+      "breakdownKb": {
+        "html": 359,
+        "js": 2345,
+        "css": 77,
+        "images": 3599,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "accessible_travel",
+    "name": "Accessible Travel",
+    "url": "https://sunpyramids.vercel.app/accessible-travel",
+    "route": "/accessible-travel",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1115,
+      "fcp": 1711,
+      "lcp": 2645,
+      "cls": 0.1457,
+      "domContentLoaded": 1737,
+      "loadTime": 4159
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 8693,
+      "count": 174,
+      "breakdownKb": {
+        "html": 398,
+        "js": 2368,
+        "css": 79,
+        "images": 5727,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "blogs_list",
+    "name": "Blogs List",
+    "url": "https://sunpyramids.vercel.app/blogs/all-blogs",
+    "route": "/blogs/all-blogs",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1076,
+      "fcp": 1587,
+      "lcp": 2089,
+      "cls": 0.0763,
+      "domContentLoaded": 1711,
+      "loadTime": 3467
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 3635,
+      "count": 176,
+      "breakdownKb": {
+        "html": 324,
+        "js": 2335,
+        "css": 77,
+        "images": 479,
+        "fonts": 118,
+        "api": 298,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "blog_detail",
+    "name": "Blog Detail",
+    "url": "https://sunpyramids.vercel.app/blog/best-easter-destinations",
+    "route": "/blog/best-easter-destinations",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2506,
+      "fcp": 3370,
+      "lcp": 5324,
+      "cls": 0.0011,
+      "domContentLoaded": 3778,
+      "loadTime": 0
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 20396,
+      "count": 130,
+      "breakdownKb": {
+        "html": 716,
+        "js": 1888,
+        "css": 68,
+        "images": 17604,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "contact",
+    "name": "Contact Us",
+    "url": "https://sunpyramids.vercel.app/contact-us",
+    "route": "/contact-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1265,
+      "fcp": 2269,
+      "lcp": 2465,
+      "cls": 0.0021,
+      "domContentLoaded": 2417,
+      "loadTime": 4786
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 3593,
+      "count": 184,
+      "breakdownKb": {
+        "html": 307,
+        "js": 2408,
+        "css": 158,
+        "images": 304,
+        "fonts": 118,
+        "api": 296,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "egypt_tours_cat",
+    "name": "Egypt Tours Category",
+    "url": "https://sunpyramids.vercel.app/egypt-tours/one-day-tours",
+    "route": "/egypt-tours/one-day-tours",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 975,
+      "fcp": 1776,
+      "lcp": 2214,
+      "cls": 0.0034,
+      "domContentLoaded": 1890,
+      "loadTime": 2891
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 4340,
+      "count": 182,
+      "breakdownKb": {
+        "html": 332,
+        "js": 2336,
+        "css": 77,
+        "images": 1474,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "egypt_travel_guide",
+    "name": "Egypt Travel Guide",
+    "url": "https://sunpyramids.vercel.app/egypt-travel-guide",
+    "route": "/egypt-travel-guide",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 799,
+      "fcp": 1765,
+      "lcp": 2009,
+      "cls": 0.0006,
+      "domContentLoaded": 1775,
+      "loadTime": 3878
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 3199,
+      "count": 169,
+      "breakdownKb": {
+        "html": 266,
+        "js": 2336,
+        "css": 78,
+        "images": 395,
+        "fonts": 118,
+        "api": 3,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "events",
+    "name": "Events",
+    "url": "https://sunpyramids.vercel.app/events",
+    "route": "/events",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 792,
+      "fcp": 1483,
+      "lcp": 2855,
+      "cls": 0.0026,
+      "domContentLoaded": 1663,
+      "loadTime": 0
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 10277,
+      "count": 170,
+      "breakdownKb": {
+        "html": 336,
+        "js": 2356,
+        "css": 77,
+        "images": 7387,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "faqs",
+    "name": "FAQs",
+    "url": "https://sunpyramids.vercel.app/faqs",
+    "route": "/faqs",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 987,
+      "fcp": 1798,
+      "lcp": 7200,
+      "cls": 0.0008,
+      "domContentLoaded": 2655,
+      "loadTime": 7129
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 2622,
+      "count": 100,
+      "breakdownKb": {
+        "html": 339,
+        "js": 1894,
+        "css": 59,
+        "images": 253,
+        "fonts": 74,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "rent_car",
+    "name": "Rent Car",
+    "url": "https://sunpyramids.vercel.app/rent-car",
+    "route": "/rent-car",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1121,
+      "fcp": 1883,
+      "lcp": 2695,
+      "cls": 0.0265,
+      "domContentLoaded": 2206,
+      "loadTime": 5193
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 2992,
+      "count": 161,
+      "breakdownKb": {
+        "html": 279,
+        "js": 2336,
+        "css": 77,
+        "images": 203,
+        "fonts": 94,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "sustainability",
+    "name": "Sustainability",
+    "url": "https://sunpyramids.vercel.app/sustainability",
+    "route": "/sustainability",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 909,
+      "fcp": 2613,
+      "lcp": 4598,
+      "cls": 0.1648,
+      "domContentLoaded": 2665,
+      "loadTime": 0
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 4874,
+      "count": 170,
+      "breakdownKb": {
+        "html": 312,
+        "js": 2406,
+        "css": 78,
+        "images": 1957,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "terms",
+    "name": "Terms and Conditions",
+    "url": "https://sunpyramids.vercel.app/terms-and-conditions",
+    "route": "/terms-and-conditions",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 765,
+      "fcp": 1856,
+      "lcp": 2015,
+      "cls": 0.0014,
+      "domContentLoaded": 1851,
+      "loadTime": 3328
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 3056,
+      "count": 163,
+      "breakdownKb": {
+        "html": 278,
+        "js": 2341,
+        "css": 77,
+        "images": 239,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "privacy",
+    "name": "Privacy and Cookies",
+    "url": "https://sunpyramids.vercel.app/privacy-and-cookies",
+    "route": "/privacy-and-cookies",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 805,
+      "fcp": 1664,
+      "lcp": 1804,
+      "cls": 0.0009,
+      "domContentLoaded": 1687,
+      "loadTime": 3479
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 3071,
+      "count": 162,
+      "breakdownKb": {
+        "html": 274,
+        "js": 2334,
+        "css": 77,
+        "images": 264,
+        "fonts": 118,
+        "api": 0,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "tour_detail",
+    "name": "Tour Detail",
+    "url": "https://sunpyramids.vercel.app/tour/pyramids-nile-cruise-by-train",
+    "route": "/tour/pyramids-nile-cruise-by-train",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1777,
+      "fcp": 2412,
+      "lcp": 3759,
+      "cls": 0.0084,
+      "domContentLoaded": 2936,
+      "loadTime": 5707
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 5728,
+      "count": 231,
+      "breakdownKb": {
+        "html": 853,
+        "js": 2428,
+        "css": 167,
+        "images": 1722,
+        "fonts": 203,
+        "api": 348,
+        "other": 7
+      }
+    }
+  }
+]

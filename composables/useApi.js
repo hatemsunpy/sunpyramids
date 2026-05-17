@@ -15,18 +15,34 @@ export default function useApi() {
   };
 
   // get data
-async function getData(uri, params = {}, withToken = true) {
+async function getData(uri, params = {}, withToken = true, pickFields = null) {
   try {
     if (withToken) {
       tokenAuth();
     }
 
-    const { data, error } = await useFetch(uri, {
+    const fetchOptions = {
       method: "GET",
       baseURL,
       headers: options,
       params,
-    });
+    }
+
+    // Support picking specific fields from response data to reduce hydration payload
+    if (pickFields && Array.isArray(pickFields)) {
+      fetchOptions.transform = (response) => {
+        if (!response || !response.data) return response
+        const picked = {}
+        pickFields.forEach((field) => {
+          if (response.data[field] !== undefined) {
+            picked[field] = response.data[field]
+          }
+        })
+        return { ...response, data: picked }
+      }
+    }
+
+    const { data, error } = await useFetch(uri, fetchOptions)
 
     if (error.value) {
       throw error.value;

@@ -74,7 +74,7 @@ watch(() => props.page, (val) => {
   currentPage.value = val
 })
 
-const windowWidth = ref(0);
+const windowWidth = ref(1080);
 
 const getDeviceType = computed(() => {
   if (windowWidth.value < 768) return 4;

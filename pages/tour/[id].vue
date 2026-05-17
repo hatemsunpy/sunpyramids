@@ -40,6 +40,21 @@ watch(tour, (newVal) => {
     breadcrumbItems.value = [...breadcrumbItems.value, { title: newVal.title, directTitle: true, disabled: true, path: "" },]
     
     addSeo(newVal)
+
+    // Preload the first Swiper hero image as the LCP element
+    if (newVal.gallery && newVal.gallery[0]) {
+      useHead({
+        link: [
+          {
+            rel: 'preload',
+            as: 'image',
+            href: `/_ipx/w_1024,f_webp/${newVal.gallery[0]}`,
+            imagesrcset: `/_ipx/w_320,f_webp/${newVal.gallery[0]} 320w, /_ipx/w_640,f_webp/${newVal.gallery[0]} 640w, /_ipx/w_768,f_webp/${newVal.gallery[0]} 768w, /_ipx/w_1024,f_webp/${newVal.gallery[0]} 1024w`,
+            imagesizes: 'xs:320px sm:640px md:768px lg:1024px'
+          }
+        ]
+      })
+    }
   }
 },
   { immediate: true }

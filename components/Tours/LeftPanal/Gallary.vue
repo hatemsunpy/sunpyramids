@@ -33,13 +33,13 @@
         },
       }" :freeMode="true">
       <swiper-slide class=" group cursor-pointer !h-[24.375rem]  rounded-2xl overflow-hidden"
-        v-for="item in props.socials">
+        v-for="(item, index) in props.socials" :key="index">
         <div class="h-full">
           <NuxtImg :src="item.image ? item.image : getStyles(item.type) ? getStyles(item.type).img : ''"
-            @click="getSpecialLink(item.url)" class="w-full !h-full object-cover" />
+            @click="getSpecialLink(item.url)" class="w-full !h-full object-cover" loading="lazy" sizes="xs:250px sm:300px" />
 
           <NuxtImg :src="getStyles(item.type) ? getStyles(item.type).icon : ''" @click="getSpecialLink(item.url)"
-            class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
+            class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" loading="lazy" />
         </div>
       </swiper-slide>
 
@@ -73,12 +73,12 @@
         },
       }" :freeMode="true">
       <swiper-slide class=" group cursor-pointer !h-[24.375rem]  rounded-2xl overflow-hidden"
-        v-for="item in gallaryMob">
+        v-for="(item, index) in gallaryMob" :key="index">
         <div class="h-full">
-          <NuxtImg :src="item?.img" class="w-full !h-full object-cover" />
+          <NuxtImg :src="item?.img" class="w-full !h-full object-cover" loading="lazy" sizes="xs:250px sm:300px" />
 
           <NuxtImg :src="item?.icon" @click="getLink(item.value)"
-            class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
+            class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" loading="lazy" />
         </div>
       </swiper-slide>
 

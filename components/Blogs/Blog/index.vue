@@ -119,8 +119,16 @@ function parseStrongParagraphsAsHeadings(htmlString) {
   let hierarchy = [];
   let stack = [];
 
+  // Rewrite src to use Nuxt IPX optimization for dynamic backend domains
+  let optimizedHtml = htmlString.replace(/src="https?:\/\/(sunpyramidtours\.com|pub-5ccb6ad334fb427684d7f3fa11a34197\.r2\.dev)\/([^"]+)"/gi, (match, domain, path) => {
+    return `src="/_ipx/w_800,f_webp/https://${domain}/${path}"`;
+  });
+
+  // Add loading="lazy" and decoding="async" to defer loading of below-the-fold images
+  optimizedHtml = optimizedHtml.replace(/<img\s+/gi, '<img loading="lazy" decoding="async" ');
+
   // Modify HTML to include unique IDs for each detected heading
-  let newHtml = htmlString.replace(/(.*)/g, (match, content) => {
+  let newHtml = optimizedHtml.replace(/(.*)/g, (match, content) => {
     if (lines.includes(content.trim())) {
       let id = `custom-heading-${idCounter++}`;
       return `<p id="${id}">${content}</p>`;
