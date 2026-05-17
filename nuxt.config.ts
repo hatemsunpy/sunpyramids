@@ -113,6 +113,7 @@ export default defineNuxtConfig({
   image: {
     quality: 80,
     format: ['webp', 'avif'],
+    domains: ['sunpyramidtours.com', 'pub-5ccb6ad334fb427684d7f3fa11a34197.r2.dev'],
     screens: {
       xs: 320,
       sm: 640,
@@ -124,6 +125,54 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    "/": {
+      swr: 600,
+    },
+    "/about-us": {
+      swr: 3600,
+    },
+    "/accessible-travel": {
+      swr: 3600,
+    },
+    "/blogs/**": {
+      swr: 600,
+    },
+    "/blog/**": {
+      swr: 3600,
+    },
+    "/tour/**": {
+      swr: 1800,
+    },
+    "/egypt-tours/**": {
+      swr: 1800,
+    },
+    "/egypt-travel-guide": {
+      swr: 3600,
+    },
+    "/egypt-travel-guide/**": {
+      swr: 3600,
+    },
+    "/events": {
+      swr: 1800,
+    },
+    "/event/**": {
+      swr: 1800,
+    },
+    "/faqs": {
+      swr: 3600,
+    },
+    "/rent-car": {
+      swr: 3600,
+    },
+    "/sustainability": {
+      swr: 3600,
+    },
+    "/terms-and-conditions": {
+      swr: 3600,
+    },
+    "/privacy-and-cookies": {
+      swr: 3600,
+    },
     "/images/**": {
       headers: {
         "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",

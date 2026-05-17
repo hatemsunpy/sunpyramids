@@ -53,8 +53,22 @@ await getData(`blogs/${route.params.slug}?includes=seo,relatedTours`).then((res)
 })
 
 const { addSeo } = useSeo()
-if (blog.value)
+if (blog.value) {
   addSeo(blog.value)
+  
+  // Preload LCP main banner image
+  useHead({
+    link: blog.value.featured_image ? [
+      {
+        rel: 'preload',
+        as: 'image',
+        href: `/_ipx/w_1024,f_webp/${blog.value.featured_image}`,
+        imagesrcset: `/_ipx/w_320,f_webp/${blog.value.featured_image} 320w, /_ipx/w_640,f_webp/${blog.value.featured_image} 640w, /_ipx/w_768,f_webp/${blog.value.featured_image} 768w, /_ipx/w_1024,f_webp/${blog.value.featured_image} 1024w`,
+        imagesizes: 'xs:320px sm:640px md:768px lg:1024px'
+      }
+    ] : []
+  })
+}
 </script>
 
 <style scoped lang="scss"></style>

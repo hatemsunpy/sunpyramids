@@ -1,0 +1,452 @@
+[
+  {
+    "key": "homepage",
+    "name": "Homepage",
+    "url": "http://sun-front:3000/",
+    "route": "/",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 10252,
+      "count": 210,
+      "breakdownKb": {
+        "html": 953,
+        "js": 1301,
+        "css": 10,
+        "images": 7914,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "about",
+    "name": "About Us",
+    "url": "http://sun-front:3000/about-us",
+    "route": "/about-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3353,
+      "fcp": 4096,
+      "lcp": 4637,
+      "cls": 0.0062,
+      "domContentLoaded": 4852,
+      "loadTime": 10130
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 4921,
+      "count": 135,
+      "breakdownKb": {
+        "html": 361,
+        "js": 1224,
+        "css": 8,
+        "images": 3255,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "accessible_travel",
+    "name": "Accessible Travel",
+    "url": "http://sun-front:3000/accessible-travel",
+    "route": "/accessible-travel",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2753,
+      "fcp": 4242,
+      "lcp": 4280,
+      "cls": 0.1657,
+      "domContentLoaded": 4159,
+      "loadTime": 10370
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 7071,
+      "count": 86,
+      "breakdownKb": {
+        "html": 375,
+        "js": 1230,
+        "css": 10,
+        "images": 5383,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "blogs_list",
+    "name": "Blogs List",
+    "url": "http://sun-front:3000/blogs/all-blogs",
+    "route": "/blogs/all-blogs",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3347,
+      "fcp": 4526,
+      "lcp": 4767,
+      "cls": 0.0046,
+      "domContentLoaded": 4139,
+      "loadTime": 24716
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 1986,
+      "count": 103,
+      "breakdownKb": {
+        "html": 328,
+        "js": 1225,
+        "css": 9,
+        "images": 350,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "blog_detail",
+    "name": "Blog Detail",
+    "url": "http://sun-front:3000/blog/how-to-plan-egypt-trip",
+    "route": "/blog/how-to-plan-egypt-trip",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3772,
+      "fcp": 4027,
+      "lcp": 4027,
+      "cls": 0,
+      "domContentLoaded": 3802,
+      "loadTime": 3803
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 4,
+      "count": 1,
+      "breakdownKb": {
+        "html": 4,
+        "js": 0,
+        "css": 0,
+        "images": 0,
+        "fonts": 0,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "contact",
+    "name": "Contact Us",
+    "url": "http://sun-front:3000/contact-us",
+    "route": "/contact-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3703,
+      "fcp": 4681,
+      "lcp": 4590,
+      "cls": 0.0043,
+      "domContentLoaded": 4481,
+      "loadTime": 25176
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 1858,
+      "count": 91,
+      "breakdownKb": {
+        "html": 286,
+        "js": 1295,
+        "css": 8,
+        "images": 192,
+        "fonts": 74,
+        "api": 3,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "egypt_tours_cat",
+    "name": "Egypt Tours Category",
+    "url": "http://sun-front:3000/egypt-tours/one-day-tours",
+    "route": "/egypt-tours/one-day-tours",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 5199,
+      "fcp": 6489,
+      "lcp": 6489,
+      "cls": 0.0019,
+      "domContentLoaded": 6017,
+      "loadTime": 26717
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 3257,
+      "count": 103,
+      "breakdownKb": {
+        "html": 334,
+        "js": 1398,
+        "css": 9,
+        "images": 1442,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "egypt_travel_guide",
+    "name": "Egypt Travel Guide",
+    "url": "http://sun-front:3000/egypt-travel-guide",
+    "route": "/egypt-travel-guide",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2837,
+      "fcp": 3720,
+      "lcp": 3720,
+      "cls": 0.0014,
+      "domContentLoaded": 3559,
+      "loadTime": 15559
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 1656,
+      "count": 76,
+      "breakdownKb": {
+        "html": 270,
+        "js": 1209,
+        "css": 8,
+        "images": 96,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "events",
+    "name": "Events",
+    "url": "http://sun-front:3000/events",
+    "route": "/events",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/events\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 16348,
+      "count": 108,
+      "breakdownKb": {
+        "html": 310,
+        "js": 1205,
+        "css": 8,
+        "images": 14752,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "faqs",
+    "name": "FAQs",
+    "url": "http://sun-front:3000/faqs",
+    "route": "/faqs",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/faqs\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 1852,
+      "count": 74,
+      "breakdownKb": {
+        "html": 342,
+        "js": 1153,
+        "css": 8,
+        "images": 275,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "rent_car",
+    "name": "Rent Car",
+    "url": "http://sun-front:3000/rent-car",
+    "route": "/rent-car",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/rent-car\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 277,
+      "count": 8,
+      "breakdownKb": {
+        "html": 271,
+        "js": 0,
+        "css": 7,
+        "images": 0,
+        "fonts": 0,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "sustainability",
+    "name": "Sustainability",
+    "url": "http://sun-front:3000/sustainability",
+    "route": "/sustainability",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/sustainability\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 2726,
+      "count": 70,
+      "breakdownKb": {
+        "html": 285,
+        "js": 1142,
+        "css": 9,
+        "images": 1216,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "terms",
+    "name": "Terms and Conditions",
+    "url": "http://sun-front:3000/terms-and-conditions",
+    "route": "/terms-and-conditions",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/terms-and-conditions\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 1467,
+      "count": 65,
+      "breakdownKb": {
+        "html": 281,
+        "js": 995,
+        "css": 8,
+        "images": 110,
+        "fonts": 74,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "privacy",
+    "name": "Privacy and Cookies",
+    "url": "http://sun-front:3000/privacy-and-cookies",
+    "route": "/privacy-and-cookies",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/privacy-and-cookies\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 0,
+      "count": 0,
+      "breakdownKb": {
+        "html": 0,
+        "js": 0,
+        "css": 0,
+        "images": 0,
+        "fonts": 0,
+        "api": 0,
+        "other": 0
+      }
+    }
+  },
+  {
+    "key": "tour_detail",
+    "name": "Tour Detail",
+    "url": "http://sun-front:3000/tour/1",
+    "route": "/tour/1",
+    "success": false,
+    "error": "page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"http://sun-front:3000/tour/1\", waiting until \"load\"\n",
+    "metrics": {
+      "ttfb": null,
+      "fcp": null,
+      "lcp": null,
+      "cls": null,
+      "domContentLoaded": null,
+      "loadTime": null
+    },
+    "hydrationMismatch": false,
+    "resources": {
+      "totalKb": 0,
+      "count": 0,
+      "breakdownKb": {
+        "html": 0,
+        "js": 0,
+        "css": 0,
+        "images": 0,
+        "fonts": 0,
+        "api": 0,
+        "other": 0
+      }
+    }
+  }
+]

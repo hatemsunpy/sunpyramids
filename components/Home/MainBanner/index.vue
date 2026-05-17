@@ -1,13 +1,7 @@
 <template>
-  <!-- <section class=" h-[65vh] pt-[77px]" -->
-  <section class=" h-[65vh] md:pt-[77px] sm:pt-[280px] pt-[200px]"
-    :class="[windowHeight > 944 ? 'lg:h-[100vh]' : windowHeight > 900 ? 'lg:h-[105vh]' : windowHeight > 814 ? 'lg:h-[115vh]' : windowHeight > 744 ? 'lg:h-[125vh]' : windowHeight > 684 ? 'lg:h-[135vh]' : 'lg:h-[155vh]']">
-    <div class="h-[60vh] relative"
-      :class="[windowHeight > 944 ? 'lg:h-[90vh]' : windowHeight > 900 ? 'lg:h-[95vh]' : windowHeight > 814 ? 'lg:h-[105vh]' : windowHeight > 744 ? 'lg:h-[115vh]' : windowHeight > 684 ? 'lg:h-[125vh]' : 'lg:h-[145vh]']">
-      <NuxtImg v-if="homeData?.gallery?.[0]" fetchpriority="high" class="w-full h-full object-cover pointer-events-none" :src="homeData.gallery[0]"
-        alt="main-banner-images-0" loading="eager" width="1920" height="1080" decoding="sync" />
-
-      <swiper @swiper="onSwiperInit" v-if="isClient && homeData?.gallery?.length !== 0" :modules="modules"
+  <section class="h-[65vh] lg:h-[100vh] md:pt-[77px] sm:pt-[280px] pt-[200px]">
+    <div class="h-[60vh] lg:h-[90vh] relative">
+      <swiper v-if="isClient && homeData?.gallery?.length !== 0" :modules="modules"
         class="mainBannerSwiper z-10" :pagination="{ clickable: false }" :autoplay="{
           delay: 3000,
           disableOnInteraction: false,
@@ -75,7 +69,6 @@
 </template>
 
 <script setup lang="js">
-import { Swiper } from "swiper/vue";
 import { Pagination, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/pagination";
@@ -89,7 +82,6 @@ const props = defineProps({
 })
 
 const isClient = ref(false);
-const isSwiperReady = ref(false);
 
 const { getData } = useApi()
 const { addSeo } = useSeo()
@@ -115,18 +107,8 @@ useHead({
 
 let modules = [Pagination, Autoplay];
 
-const windowHeight = ref(1080)
 const timer = ref(null)
 const timeValues = [{ title: "day", value: "days" }, { title: "hour", value: "hours" }, { title: "minute", value: "minutes" }, { title: "second", value: "seconds" }]
-
-const onSwiperInit = (swiper) => {
-  setTimeout(() => {
-
-    isSwiperReady.value = true;
-    console.log("Swiper initialized", swiper);
-  }, 50);
-
-};
 
 function calculateDuration(dateString) {
   const targetDate = new Date(dateString).getTime();
@@ -145,25 +127,13 @@ function calculateDuration(dateString) {
     seconds: seconds < 10 ? '0' + seconds : seconds.toString(),
   };
 }
-const iceContainer = ref(null)
-
 onMounted(() => {
-  windowHeight.value = window.innerHeight
-  window.addEventListener('resize', () => {
-    windowHeight.value = window.innerHeight
-  })
-
   if (process.client) {
     isClient.value = true;
     setInterval(() => {
       calculateDuration("2025-12-25T00:00:00.000000Z")
     }, 1000);
   }
-})
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', () => {
-    windowHeight.value = window.innerHeight
-  })
 })
 
 </script>
