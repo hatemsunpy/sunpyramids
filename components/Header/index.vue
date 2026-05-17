@@ -265,9 +265,9 @@ const isFirstStyle = computed(() => {
   return (route.path == localePath('/') && scrollExceeded.value)
 })
 
-const screanHeight = ref(0)
+const screanHeight = ref(1080)
 
-const isMobile = ref(true)
+const isMobile = ref(false)
 
 const isFixed = computed(() => {
   return (route.path == localePath('/'))

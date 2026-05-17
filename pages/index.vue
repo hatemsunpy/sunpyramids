@@ -28,7 +28,9 @@
 
     <LazyHomeGallary />
 
-    <div class="w-full xl:px-20" id="home-reviews" ref="trustindexContainer"></div>
+    <ClientOnly>
+      <div class="w-full xl:px-20" id="home-reviews" ref="trustindexContainer"></div>
+    </ClientOnly>
 
     <LazyHomeFrequentlyAsked url="faqs/home?page_limit=5" path="/faqs" />
 

@@ -27,7 +27,7 @@
     "vee-validate": "^4.12.5",
     "vue": "latest",
     "vue-awesome-paginate": "^1.2.0",
-    "vue-router": "latest",
+    "vue-router": "^4.5.0",
     "vue3-datepicker": "^0.4.0",
     "vue3-lottie": "^3.3.1",
     "vue3-otp-input": "^0.5.21",

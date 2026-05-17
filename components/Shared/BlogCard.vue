@@ -1,7 +1,7 @@
 <template>
   <div class="tourCardBox h-full justify-between group">
     <div>
-      <NuxtLink :to="localePath(`/blog/${props.blog.slug}`)">
+      <NuxtLink :to="localePath(`/blog/${props.blog.slug}`)" :prefetch="false">
 
         <!-- @click="router.push({
           name: `blog-slug___${locale}`, // Now correct
@@ -9,7 +9,7 @@
           })" -->
         <div class="h-[12.0625rem] cursor-pointer rounded-[1.1rem] overflow-hidden">
           <NuxtImg class="w-full h-full object-cover group-hover:scale-125 transition-all duration-300"
-            :src="props.blog.featured_image" alt="TourCard" loading="lazy" />
+            :src="props.blog.featured_image" alt="BlogCard" loading="lazy" width="400" height="193" />
         </div>
       </NuxtLink>
       <div class="mt-4 px-2 flex flex-col gap-2">
@@ -27,7 +27,7 @@
           </p>
         </div>
 
-        <NuxtLink :to="localePath(`/blog/${props.blog.slug}`)">
+        <NuxtLink :to="localePath(`/blog/${props.blog.slug}`)" :prefetch="false">
           <h6 @click="router.push(`/blog/${id}`)" class="text-base h-[4.25rem] cursor-pointer font-medium">
             {{ props.blog.title }}
           </h6>

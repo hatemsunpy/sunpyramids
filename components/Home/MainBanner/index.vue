@@ -4,8 +4,7 @@
     :class="[windowHeight > 944 ? 'lg:h-[100vh]' : windowHeight > 900 ? 'lg:h-[105vh]' : windowHeight > 814 ? 'lg:h-[115vh]' : windowHeight > 744 ? 'lg:h-[125vh]' : windowHeight > 684 ? 'lg:h-[135vh]' : 'lg:h-[155vh]']">
     <div class="h-[60vh] relative"
       :class="[windowHeight > 944 ? 'lg:h-[90vh]' : windowHeight > 900 ? 'lg:h-[95vh]' : windowHeight > 814 ? 'lg:h-[105vh]' : windowHeight > 744 ? 'lg:h-[115vh]' : windowHeight > 684 ? 'lg:h-[125vh]' : 'lg:h-[145vh]']">
-      <NuxtImg fetchpriority="high" class="w-full h-full object-cover  pointer-events-none"
-        :class="[isSwiperReady ? 'absolute  top-0 left-0' : '']" :src="homeData?.gallery?.[0]"
+      <NuxtImg v-if="homeData?.gallery?.[0]" fetchpriority="high" class="w-full h-full object-cover pointer-events-none" :src="homeData.gallery[0]"
         alt="main-banner-images-0" loading="eager" width="1920" height="1080" decoding="sync" />
 
       <swiper @swiper="onSwiperInit" v-if="isClient && homeData?.gallery?.length !== 0" :modules="modules"
@@ -15,7 +14,8 @@
         }">
         <swiper-slide v-for="(item, index) in homeData.gallery" :key="item">
           <NuxtImg width="1920" height="1080" class="w-full h-full object-cover brightness-[85%]" :src="item"
-            :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'" />
+            :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'"
+            :fetchpriority="index === 0 ? 'high' : 'auto'" />
         </swiper-slide>
 
         <div class="absolute top-0 start-0 xl lg:mt-[10rem] mt-[14rem] h-full w-full flex flex-col  gap-24 z-10">
@@ -94,15 +94,28 @@ const isSwiperReady = ref(false);
 const { getData } = useApi()
 const { addSeo } = useSeo()
 const homeData = ref([])
-await getData('pages/home?includes=seo').then((res) => {
+await getData('pages/home?includes=seo', {}, true, ['gallery', 'seo']).then((res) => {
   homeData.value = res.data
 })
 addSeo(homeData.value)
 
+// Preload LCP hero image
+useHead({
+  link: () => {
+    const firstImage = homeData.value?.gallery?.[0]
+    if (!firstImage) return []
+    return [{
+      rel: 'preload',
+      as: 'image',
+      href: firstImage,
+      fetchpriority: 'high',
+    }]
+  },
+})
 
 let modules = [Pagination, Autoplay];
 
-const windowHeight = ref(null)
+const windowHeight = ref(1080)
 const timer = ref(null)
 const timeValues = [{ title: "day", value: "days" }, { title: "hour", value: "hours" }, { title: "minute", value: "minutes" }, { title: "second", value: "seconds" }]
 
