@@ -86,6 +86,7 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxt/image",
+    "@vercel/speed-insights",
   ],
   lottie: {
     componentName: "Lottie", // Optional: Customize the component name
