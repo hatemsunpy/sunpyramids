@@ -89,6 +89,24 @@ await getData('pages/home?includes=seo', {}, true, ['gallery', 'seo']).then((res
 })
 addSeo(homeData.value)
 
+// Preload LCP hero image so the browser starts loading before CSS blocks it
+const img = useImage()
+const heroSrc = computed(() => {
+  const firstImage = homeData.value?.gallery?.[0]
+  if (!firstImage) return null
+  return img(firstImage, { width: 1536, quality: 80 })
+})
+
+useHead(() => {
+  const src = heroSrc.value
+  if (!src) return {}
+  return {
+    link: [
+      { rel: 'preload', as: 'image', href: src, fetchpriority: 'high' }
+    ]
+  }
+})
+
 let modules = [Pagination, Autoplay];
 
 const timer = ref(null)

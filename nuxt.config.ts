@@ -62,7 +62,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "nuxt-swiper",
     "nuxt-icons",
-    "nuxt-lottie",
     [
       "@vee-validate/nuxt",
       {
@@ -89,10 +88,6 @@ export default defineNuxtConfig({
     "@vercel/speed-insights",
     "@vercel/speed-insights/nuxt",
   ],
-  lottie: {
-    componentName: "Lottie", // Optional: Customize the component name
-    lottieFolder: "/assets/lottie", // Optional: Customize the Lottie folder path
-  },
   app: {
     head: {
       link: [
