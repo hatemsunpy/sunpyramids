@@ -56,8 +56,8 @@ const data = ref(null)
 const isLoading = ref(false)
 
 const getWords = (tour) => {
-  const title = tour?.title.length > 40 ? tour?.title.slice(0, 40) : tour?.title
-  return title.split(' ')
+  const title = tour?.title?.length > 40 ? tour?.title?.slice(0, 40) : tour?.title
+  return title?.split(' ') ?? []
 }
 
 function debounce(func, delay) {

@@ -93,7 +93,7 @@ function changePhoneLength({ index, length }) {
 }
 
 const submit = async (values, actions) => {
-  const randomEmail = `${Date.now()}.random@${Math.abs(Math.random * 1000)}test.com`
+  const randomEmail = `${Date.now()}.random@${Math.abs(Math.random() * 1000)}test.com`
   const token = await generateRecaptchaToken('6LeaVMEqAAAAANXKFLnQvxeAoWvTeEOUlatRYIFn', 'submit');
   const body = {
     name: values.name,

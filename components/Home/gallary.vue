@@ -88,16 +88,19 @@ const localePath = useLocalePath()
 
 
 const getLinkOnly = (value) => {
-  if (settings.value) {
-    const url = settings.value.find((setting) => setting.option_key == "social_links").option_value.find((v) => v.type == value).url
-    return url
-  }
+  if (!settings.value) return '#';
+  const setting = settings.value.find((s) => s.option_key == "social_links");
+  if (!setting) return '#';
+  const link = setting.option_value?.find((v) => v.type == value);
+  return link?.url ?? '#';
 }
 const getLink = (value) => {
-  if (settings.value) {
-    const url = settings.value.find((setting) => setting.option_key == "social_links").option_value.find((v) => v.type == value).url
-    window.open(url, '_blank', 'width=650,height=800,scrollbars=yes,resizable=yes');
-  }
+  if (!settings.value) return;
+  const setting = settings.value.find((s) => s.option_key == "social_links");
+  if (!setting) return;
+  const link = setting.option_value?.find((v) => v.type == value);
+  const url = link?.url;
+  if (url) window.open(url, '_blank', 'width=650,height=800,scrollbars=yes,resizable=yes');
 }
 
 const gallary = [{ img: "/images/shorts.png", icon: "/images/shorts-gallary.png", value: "shorts" }, { img: "/images/youtubeone.png", icon: "/images/youtube-gallary.png", value: "youtube-video-1" }, { img: "/images/tiktok.png", icon: "/images/tiktok-gallary.png", value: "tiktok" }, { img: "/images/instagram.png", icon: "/images/insta-gallary.png", value: "insta-link" }, {

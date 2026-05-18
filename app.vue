@@ -1,12 +1,8 @@
 <template>
-  <noscript v-if="!noThirdPartyQuery">
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-KDF33T7"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"
-    ></iframe>
-  </noscript>
+  <!-- noscript rendered via v-html to avoid Vue SSR hydration mismatch.
+       Browsers parse noscript contents as text when JS is enabled,
+       but Vue SSR renders them as DOM nodes. v-html outputs a text node. -->
+  <noscript v-if="!noThirdPartyQuery" v-html="gtmIframe"></noscript>
 
   <NuxtLayout>
     <NuxtPage />
@@ -25,13 +21,13 @@ const {locale} = useI18n()
 const route = useRoute()
 const noThirdPartyQuery = computed(() => !!route.query['no-third-party'])
 
-watchEffect( ()=>{
-  useHead({
+const gtmIframe = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDF33T7" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
+
+useHead(() => ({
   htmlAttrs: {
     lang: locale.value
   }
-})
-})
+}))
 
 useHead(() => {
   if (route.query['no-third-party']) return {}
