@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex justify-center bg-black items-center">
-    <div v-if="!isStarted" class="relative w-full" :class="[props.height]"><img :src="props.photo" alt=""
-        class="w-full h-full object-cover" :class="[props.height]" />
+    <div v-if="!isStarted" class="relative w-full" :class="[props.height]"><NuxtImg :src="props.photo" alt=""
+        class="w-full h-full object-cover" :class="[props.height]" loading="lazy" sizes="xs:100vw sm:100vw md:80vw lg:60vw" width="800" height="450" style="aspect-ratio: 16 / 9;" />
 
       <div @click="isStarted = true"
         class="absolute bg-[#1D1F1FCC]  cursor-pointer flex justify-center items-center  rounded-full w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
