@@ -1,6 +1,5 @@
 export async function generateRecaptchaToken(siteKey, action = "submit") {
-  return null;
-  new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     grecaptcha.enterprise.ready(async () => {
       try {
         const token = await grecaptcha.enterprise.execute(siteKey, { action });
