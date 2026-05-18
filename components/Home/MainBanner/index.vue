@@ -1,7 +1,7 @@
 <template>
   <section class="h-[65vh] lg:h-[100vh] md:pt-[77px] sm:pt-[280px] pt-[200px]">
     <div class="h-[60vh] lg:h-[90vh] relative">
-      <swiper v-if="isClient && homeData?.gallery?.length !== 0" :modules="modules"
+      <swiper v-if="homeData?.gallery?.length" :modules="modules"
         class="mainBannerSwiper z-10" :pagination="{ clickable: false }" :autoplay="{
           delay: 3000,
           disableOnInteraction: false,
@@ -81,8 +81,6 @@ const props = defineProps({
   }
 })
 
-const isClient = ref(false);
-
 const { getData } = useApi()
 const { addSeo } = useSeo()
 const homeData = ref([])
@@ -90,20 +88,6 @@ await getData('pages/home?includes=seo', {}, true, ['gallery', 'seo']).then((res
   homeData.value = res.data
 })
 addSeo(homeData.value)
-
-// Preload LCP hero image
-useHead({
-  link: () => {
-    const firstImage = homeData.value?.gallery?.[0]
-    if (!firstImage) return []
-    return [{
-      rel: 'preload',
-      as: 'image',
-      href: `/_ipx/w_1920,f_webp/${firstImage}`,
-      fetchpriority: 'high',
-    }]
-  },
-})
 
 let modules = [Pagination, Autoplay];
 
@@ -128,12 +112,9 @@ function calculateDuration(dateString) {
   };
 }
 onMounted(() => {
-  if (process.client) {
-    isClient.value = true;
-    setInterval(() => {
-      calculateDuration("2025-12-25T00:00:00.000000Z")
-    }, 1000);
-  }
+  setInterval(() => {
+    calculateDuration("2025-12-25T00:00:00.000000Z")
+  }, 1000);
 })
 
 </script>
