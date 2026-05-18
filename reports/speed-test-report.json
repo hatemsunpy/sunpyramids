@@ -1,0 +1,452 @@
+[
+  {
+    "key": "homepage",
+    "name": "Homepage",
+    "url": "http://localhost:3000/",
+    "route": "/",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 61,
+      "fcp": 283,
+      "lcp": 7532,
+      "cls": 0.0014,
+      "domContentLoaded": 2943,
+      "loadTime": 0
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 17528,
+      "count": 596,
+      "breakdownKb": {
+        "html": 956,
+        "js": 15550,
+        "css": 502,
+        "images": 439,
+        "fonts": 74,
+        "api": 4,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "about",
+    "name": "About Us",
+    "url": "http://localhost:3000/about-us",
+    "route": "/about-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3076,
+      "fcp": 3364,
+      "lcp": 3533,
+      "cls": 0.0877,
+      "domContentLoaded": 5811,
+      "loadTime": 0
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 15742,
+      "count": 554,
+      "breakdownKb": {
+        "html": 225,
+        "js": 14592,
+        "css": 507,
+        "images": 332,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "accessible_travel",
+    "name": "Accessible Travel",
+    "url": "http://localhost:3000/accessible-travel",
+    "route": "/accessible-travel",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3776,
+      "fcp": 4177,
+      "lcp": 4177,
+      "cls": 0.1592,
+      "domContentLoaded": 6274,
+      "loadTime": 6310
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 18140,
+      "count": 535,
+      "breakdownKb": {
+        "html": 275,
+        "js": 14656,
+        "css": 545,
+        "images": 2579,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "blogs_list",
+    "name": "Blogs List",
+    "url": "http://localhost:3000/blogs/all-blogs",
+    "route": "/blogs/all-blogs",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2421,
+      "fcp": 3174,
+      "lcp": 3174,
+      "cls": 0.0758,
+      "domContentLoaded": 5075,
+      "loadTime": 7972
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 15885,
+      "count": 537,
+      "breakdownKb": {
+        "html": 215,
+        "js": 14531,
+        "css": 557,
+        "images": 198,
+        "fonts": 74,
+        "api": 307,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "blog_detail",
+    "name": "Blog Detail",
+    "url": "http://localhost:3000/blog/egypt%20desert%20tours",
+    "route": "/blog/egypt%20desert%20tours",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 3296,
+      "fcp": 4057,
+      "lcp": 4057,
+      "cls": 0.0008,
+      "domContentLoaded": 7764,
+      "loadTime": 10670
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 28813,
+      "count": 557,
+      "breakdownKb": {
+        "html": 522,
+        "js": 14641,
+        "css": 577,
+        "images": 12987,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "contact",
+    "name": "Contact Us",
+    "url": "http://localhost:3000/contact-us",
+    "route": "/contact-us",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2533,
+      "fcp": 3118,
+      "lcp": 3813,
+      "cls": 0.0024,
+      "domContentLoaded": 5472,
+      "loadTime": 5515
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 14256,
+      "count": 508,
+      "breakdownKb": {
+        "html": 184,
+        "js": 12800,
+        "css": 660,
+        "images": 230,
+        "fonts": 74,
+        "api": 305,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "egypt_tours_cat",
+    "name": "Egypt Tours Category",
+    "url": "http://localhost:3000/egypt-tours/one-day-tours",
+    "route": "/egypt-tours/one-day-tours",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2567,
+      "fcp": 2937,
+      "lcp": 3658,
+      "cls": 0.0013,
+      "domContentLoaded": 5164,
+      "loadTime": 6038
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 15748,
+      "count": 569,
+      "breakdownKb": {
+        "html": 216,
+        "js": 14504,
+        "css": 599,
+        "images": 342,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "egypt_travel_guide",
+    "name": "Egypt Travel Guide",
+    "url": "http://localhost:3000/egypt-travel-guide",
+    "route": "/egypt-travel-guide",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1787,
+      "fcp": 2183,
+      "lcp": 3035,
+      "cls": 0.0004,
+      "domContentLoaded": 4430,
+      "loadTime": 4456
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 13443,
+      "count": 485,
+      "breakdownKb": {
+        "html": 167,
+        "js": 12445,
+        "css": 608,
+        "images": 133,
+        "fonts": 74,
+        "api": 13,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "events",
+    "name": "Events",
+    "url": "http://localhost:3000/events",
+    "route": "/events",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2013,
+      "fcp": 2715,
+      "lcp": 3333,
+      "cls": 0.0026,
+      "domContentLoaded": 4668,
+      "loadTime": 0
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 15346,
+      "count": 567,
+      "breakdownKb": {
+        "html": 224,
+        "js": 14234,
+        "css": 635,
+        "images": 167,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "faqs",
+    "name": "FAQs",
+    "url": "http://localhost:3000/faqs",
+    "route": "/faqs",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 6142,
+      "fcp": 7067,
+      "lcp": 8828,
+      "cls": 0.0008,
+      "domContentLoaded": 9221,
+      "loadTime": 9262
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 13917,
+      "count": 484,
+      "breakdownKb": {
+        "html": 225,
+        "js": 12646,
+        "css": 641,
+        "images": 320,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "rent_car",
+    "name": "Rent Car",
+    "url": "http://localhost:3000/rent-car",
+    "route": "/rent-car",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2848,
+      "fcp": 3640,
+      "lcp": 3709,
+      "cls": 0.0262,
+      "domContentLoaded": 5488,
+      "loadTime": 5514
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 14204,
+      "count": 492,
+      "breakdownKb": {
+        "html": 143,
+        "js": 13231,
+        "css": 653,
+        "images": 117,
+        "fonts": 49,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "sustainability",
+    "name": "Sustainability",
+    "url": "http://localhost:3000/sustainability",
+    "route": "/sustainability",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 2091,
+      "fcp": 3061,
+      "lcp": 4845,
+      "cls": 0.1729,
+      "domContentLoaded": 5147,
+      "loadTime": 5183
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 16743,
+      "count": 561,
+      "breakdownKb": {
+        "html": 192,
+        "js": 15247,
+        "css": 663,
+        "images": 555,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "terms",
+    "name": "Terms and Conditions",
+    "url": "http://localhost:3000/terms-and-conditions",
+    "route": "/terms-and-conditions",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1657,
+      "fcp": 2418,
+      "lcp": 5394,
+      "cls": 0.0009,
+      "domContentLoaded": 4528,
+      "loadTime": 4591
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 13638,
+      "count": 490,
+      "breakdownKb": {
+        "html": 156,
+        "js": 12592,
+        "css": 672,
+        "images": 132,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "privacy",
+    "name": "Privacy and Cookies",
+    "url": "http://localhost:3000/privacy-and-cookies",
+    "route": "/privacy-and-cookies",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 1972,
+      "fcp": 2793,
+      "lcp": 3395,
+      "cls": 0.0009,
+      "domContentLoaded": 4817,
+      "loadTime": 4854
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 13688,
+      "count": 488,
+      "breakdownKb": {
+        "html": 154,
+        "js": 12596,
+        "css": 683,
+        "images": 170,
+        "fonts": 74,
+        "api": 9,
+        "other": 3
+      }
+    }
+  },
+  {
+    "key": "tour_detail",
+    "name": "Tour Detail",
+    "url": "http://localhost:3000/tour/pyramids-nile-cruise-by-train",
+    "route": "/tour/pyramids-nile-cruise-by-train",
+    "success": true,
+    "error": null,
+    "metrics": {
+      "ttfb": 4510,
+      "fcp": 5014,
+      "lcp": 5014,
+      "cls": 0.0083,
+      "domContentLoaded": 7920,
+      "loadTime": 0
+    },
+    "hydrationMismatch": true,
+    "resources": {
+      "totalKb": 17489,
+      "count": 622,
+      "breakdownKb": {
+        "html": 853,
+        "js": 15352,
+        "css": 810,
+        "images": 72,
+        "fonts": 74,
+        "api": 326,
+        "other": 3
+      }
+    }
+  }
+]

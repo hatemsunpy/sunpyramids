@@ -86,6 +86,7 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxt/image",
+    "@vercel/speed-insights",
     "@vercel/speed-insights/nuxt",
   ],
   lottie: {

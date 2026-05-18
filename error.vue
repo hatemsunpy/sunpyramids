@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <SharedError :title="error.statusMessage.split(':')[0]" :status="error.statusCode" />
+    <SharedError :title="error?.statusMessage?.split(':')?.[0] ?? ''" :status="error?.statusCode" />
   </NuxtLayout>
 </template>
 

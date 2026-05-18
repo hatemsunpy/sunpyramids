@@ -3,7 +3,14 @@ export default defineEventHandler(async (event) => {
     let request_url = getRequestURL(event);
     const originalUrl = request_url.href;
     
-    if (originalUrl.includes("__nuxt_error")) {
+    const pathname = request_url.pathname;
+    if (
+      originalUrl.includes("__nuxt_error") ||
+      pathname.startsWith("/_ipx") ||
+      pathname.startsWith("/_nuxt") ||
+      pathname.startsWith("/images") ||
+      /\.[a-zA-Z0-9]+$/.test(pathname)
+    ) {
       return; // Stop further processing
     }
     const hasUppercase = /[A-Z]/.test(originalUrl);

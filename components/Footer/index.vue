@@ -160,7 +160,9 @@ onMounted(() => {
     script.setAttribute('data-type', 'stripe');
     script.setAttribute('data-location', 'footer-cert');
 
-    trustindexContainerFooterCert.value.appendChild(script);
+    if (trustindexContainerFooterCert.value) {
+      trustindexContainerFooterCert.value.appendChild(script);
+    }
   }
 });
 </script>

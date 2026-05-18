@@ -4,7 +4,8 @@ const ALL_LOCALES = langsConfig.map((l) => l.code);
 const NON_DEFAULT_LOCALES = ALL_LOCALES.filter((c) => c !== "en");
 
 export const getPathWithoutLocale = () => {
-  const fullPath = useRoute().fullPath;
+  const route = useRoute();
+  const fullPath = route?.fullPath || "";
   let segments = fullPath.split("/");
   if (segments.length > 1 && NON_DEFAULT_LOCALES.includes(segments[1])) {
     segments.splice(0, 2);

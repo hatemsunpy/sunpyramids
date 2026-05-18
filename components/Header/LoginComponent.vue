@@ -4,7 +4,7 @@
     <div @click="isShowModel = !isShowModel" class="flex items-center gap-[6px]">
       <img src="../../assets/icons/user.svg" width="28" height="28" class="text-primary" />
 
-      <p>{{ user.name.split(" ")[0] }}</p>
+      <p>{{ user?.name?.split(' ')?.[0] ?? '' }}</p>
     </div>
 
     <NuxtImg @click="isShowModel = !isShowModel" class="w-5 opacity-50" src="/icons/arrow-down.svg" alt="logo" />

@@ -1,10 +1,3 @@
-export default defineNuxtPlugin(() => {
-  if (process.client) {
-    const script = document.createElement('script')
-    script.src = '/_vercel/insights/script.js'
-    script.defer = true
-    script.setAttribute('data-sdkn', '@vercel/analytics')
-    script.setAttribute('data-sdkv', '1.0.0')
-    document.head.appendChild(script)
-  }
-})
+// Disabled: The @vercel/speed-insights Nuxt module is already configured in nuxt.config.ts.
+// This custom plugin was causing a 404 on /_vercel/insights/script.js.
+export default defineNuxtPlugin(() => {})

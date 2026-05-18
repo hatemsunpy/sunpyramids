@@ -51,7 +51,8 @@
       "Bash(git commit -m ' *)",
       "Bash(lrc review *)",
       "Bash(git push *)",
-      "Bash(Get-ChildItem *)"
+      "Bash(Get-ChildItem *)",
+      "WebFetch(domain:sunpyramids.vercel.app)"
     ]
   },
   "enableAllProjectMcpServers": true,

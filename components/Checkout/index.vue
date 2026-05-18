@@ -45,8 +45,8 @@ const submitPayment = async (data) => {
   paymentData.value = data
 
   const body = {
-    first_name: paymentData.value.fullName.split(" ")[0],
-    last_name: paymentData.value.fullName.split(" ")[1] ?? "none",
+    first_name: paymentData.value?.fullName?.split(' ')?.[0] ?? '',
+    last_name: paymentData.value?.fullName?.split(' ')?.[1] ?? 'none',
     phone: paymentData.value.phone,
     email: paymentData.value.email,
     country: paymentData.value.country,

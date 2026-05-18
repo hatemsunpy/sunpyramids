@@ -99,7 +99,7 @@ useHead({
     return [{
       rel: 'preload',
       as: 'image',
-      href: firstImage,
+      href: `/_ipx/w_1920,f_webp/${firstImage}`,
       fetchpriority: 'high',
     }]
   },

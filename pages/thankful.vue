@@ -12,6 +12,7 @@ useHead({
 })
 
 function getInitials(input) {
+  if (!input || typeof input !== 'string') return '';
   return input
     .split(' ')
     .filter(word => word)
