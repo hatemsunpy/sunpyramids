@@ -6,7 +6,7 @@
         <div class="bg-no-repeat object-center bg-cover bg-center h-full w-full backgroundhover cursor-pointer"
           v-for="offer in 1" :key="offer">
 
-          <NuxtImg :src="props.data?.featured_image" class="w-full h-full object-cover" />
+          <NuxtImg :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" sizes="xs:100vw sm:50vw md:33vw lg:25vw" width="600" height="400" style="aspect-ratio: 3 / 2;" />
           <!-- <NuxtImg src="/images/IMG_3817.jpg" class="w-full h-full object-cover" /> -->
         </div>
 
