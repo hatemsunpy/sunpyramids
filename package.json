@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.72",
@@ -36,7 +37,9 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.15.2",
     "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.4",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
   }
