@@ -24,10 +24,10 @@
         <div v-for="item in gallary" class="grid-flow-col relative rounded-2xl overflow-hidden"
           :class="[item.value.includes('youtube-video') ? 'row-span-1' : ' row-span-2']">
           <NuxtLink :to="getLinkOnly(item.value)" target="_blank">
-            <img :src="item?.img" class="w-full h-full" />
+            <img :src="item?.img" class="w-full h-full" loading="lazy" alt="" />
           </NuxtLink>
 
-          <img :src="item?.icon" @click="getLink(item.value)"
+          <img :src="item?.icon" @click="getLink(item.value)" alt="" role="button" aria-label="Open link"
             class="absolute w-[4.5rem] h-[4.5rem] rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
         </div>
       </div>
@@ -61,8 +61,8 @@
           <swiper-slide class=" group cursor-pointer !h-[20rem]  rounded-2xl overflow-hidden"
             v-for="item in gallaryMob">
             <div class="h-full">
-              <img :src="item?.img" class="w-full !h-full object-cover" />
-              <img :src="item?.icon" @click="getLink(item.value)"
+              <img :src="item?.img" class="w-full !h-full object-cover" loading="lazy" alt="" />
+              <img :src="item?.icon" @click="getLink(item.value)" alt="" role="button" aria-label="Open link"
                 class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
             </div>
           </swiper-slide>

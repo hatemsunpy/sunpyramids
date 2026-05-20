@@ -7,7 +7,7 @@
         <swiper-slide class="  w-full lg:!h-[60vh]   " v-for="item in props.data?.gallery">
           <div class="lg:w-[60%] mx-auto lg:rounded-2xl overflow-hidden">
             <!-- <img v-if="!item.video" :src="item.photo" class="w-full  !h-[60vh] object-cover" /> -->
-            <NuxtImg :src="item" class="w-full  lg:!h-[60vh]  object-cover" loading="lazy" sizes="lg:60vw md:80vw" width="1200" height="675" style="aspect-ratio: 16 / 9;" />
+            <img :src="item" class="w-full  lg:!h-[60vh]  object-cover" loading="lazy" width="1200" height="675" style="aspect-ratio: 16 / 9;" />
 
             <!-- <UIVideo :class="'min-h-[60vh] max-h-[60vh]'" :timeNow="timeNow" v-else :photo="item.photo"
               :video="item.video" /> -->
@@ -34,7 +34,7 @@
         },
       }" :freeMode="true" :modules="modules" class="tourSwiperModal">
         <swiper-slide v-for="item in props.data?.gallery" class="relative">
-          <NuxtImg :src="item" class="w-full h-full object-cover " loading="lazy" sizes="64px" width="64" height="64" style="aspect-ratio: 1 / 1;" />
+          <img :src="item" class="w-full h-full object-cover " loading="lazy" width="64" height="64" style="aspect-ratio: 1 / 1;" />
           <!-- <img :src="item.photo" class="w-full h-full object-cover " /> -->
 
           <!-- <div v-if="item.video"

@@ -35,8 +35,8 @@
       <swiper-slide class=" group cursor-pointer !h-[24.375rem]  rounded-2xl overflow-hidden"
         v-for="(item, index) in props.socials" :key="index">
         <div class="h-full">
-          <NuxtImg :src="item.image ? item.image : getStyles(item.type) ? getStyles(item.type).img : ''"
-            @click="getSpecialLink(item.url)" class="w-full !h-full object-cover" loading="lazy" sizes="xs:250px sm:300px" />
+          <img :src="item.image ? item.image : getStyles(item.type) ? getStyles(item.type).img : ''"
+            @click="getSpecialLink(item.url)" class="w-full !h-full object-cover" loading="lazy" width="300" height="390" />
 
           <NuxtImg :src="getStyles(item.type) ? getStyles(item.type).icon : ''" @click="getSpecialLink(item.url)"
             class="absolute w-[4.5rem] h-[4.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" loading="lazy" />

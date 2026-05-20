@@ -2,7 +2,7 @@
   <section
     class="w-full text-center text-white relative bg-no-repeat bg-cover xl:pt-20 md:pt-10 pt-[4rem] md:pb-[4.5rem] pb-[6rem] overflow-hidden">
     <div>
-      <img :src="data?.banner" class="absolute z-[1]  object-cover w-full top-0 start-0 " />
+      <img :src="data?.banner" class="absolute z-[1]  object-cover w-full h-full top-0 start-0 " alt="" />
 
       <h1 class="xl:text-5xl md:text-4xl text-3xl relative !z-10 textshadow font-bold mb-5">
         {{ $t("labels.contact") }}

@@ -7,7 +7,7 @@
           class="w-full h-56 rounded-2xl cursor-pointer categoryBox relative overflow-hidden group">
           <NuxtLink
             :to="route.params.cate ? localePath(`/egypt-travel-guide/${route.params.cate}/${item?.slug}`) : localePath(`/egypt-travel-guide/${item?.slug}`)">
-            <img class="w-full h-full group-hover:scale-110 transition-all" :src="item?.featured_image" />
+            <img class="w-full h-full group-hover:scale-110 transition-all" :src="item?.featured_image" loading="lazy" :alt="item?.title || 'Category image'" />
   
             <div class="h-[80%] w-full absolute bottom-0 start-0 flex items-end">
               <span class="text-white textShadow px-[2.125rem] group-hover:-translate-y-2 transition-all mb-4">
@@ -38,7 +38,7 @@
         class="w-full h-56 rounded-2xl cursor-pointer categoryBox relative overflow-hidden group">
         <NuxtLink
           :to="route.params.cate ? localePath(`/egypt-travel-guide/${route.params.cate}/${item?.slug}`) : localePath(`/egypt-travel-guide/${item?.slug}`)">
-          <img class="w-full h-full group-hover:scale-110 transition-all" :src="item?.featured_image" />
+          <img class="w-full h-full group-hover:scale-110 transition-all" :src="item?.featured_image" loading="lazy" :alt="item?.title || 'Category image'" />
 
           <div class="h-[80%] w-full absolute bottom-0 start-0 flex items-end">
             <span class="text-white textShadow px-[2.125rem] group-hover:-translate-y-2 transition-all mb-4">

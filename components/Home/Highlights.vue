@@ -52,7 +52,7 @@
         v-for="item in data" :key="item?.id">
         <NuxtLink :to="localePath(`/egypt-tours/one-day-tours/${item.slug}`)">
           <img class="w-full group-hover:scale-125 transition-all h-full object-cover bg-cover"
-            :src="item?.featured_image" loading="lazy"
+            :src="item?.featured_image" :alt="item?.title || 'Featured image'" loading="lazy"
             width="400" height="400" style="aspect-ratio: 1 / 1;" />
 
           <p class="absolute absoluteTextShadow bottom-[0.875rem] start-[0.875rem] z-10 text-xl font-bold text-white">{{

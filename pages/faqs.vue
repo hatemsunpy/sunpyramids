@@ -1,8 +1,8 @@
 <template>
   <section class="w-full h-[16.6875rem] flex relative items-end ">
     <div class="w-full h-full absolute top-0 categoryBox start-0 " :class="[privacyData ? '' : 'blur-lg']">
-      <NuxtImg class="w-full h-full  object-cover object-top z-0" v-if="feqsData && feqsData.banner"
-        :src="feqsData.banner" />
+      <img class="w-full h-full  object-cover object-top z-0" v-if="feqsData && feqsData.banner"
+        :src="feqsData.banner" alt="" loading="lazy" width="1200" height="267" />
 
       <NuxtImg class="w-full h-full  object-cover object-center z-0" v-else src="/images/faqs-banner.png" />
 

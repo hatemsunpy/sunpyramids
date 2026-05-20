@@ -2,7 +2,7 @@
   <section class="w-full h-[16.6875rem] flex relative items-end ">
     <div class="w-full h-full absolute top-0 categoryBox start-0" :class="[privacyData ? '' : 'blur-lg']">
       <img class="w-full h-full  object-cover object-center z-0" v-if="privacyData && privacyData.banner"
-        :src="privacyData.banner" />
+        :src="privacyData.banner" alt="" loading="lazy" />
 
       <NuxtImg class="w-full h-full  object-cover object-center z-0" v-else src="/images/faqs-banner.png" />
 
