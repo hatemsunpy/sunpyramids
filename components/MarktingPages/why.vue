@@ -13,7 +13,7 @@
         <div
           class="flex lg:flex-col flex-row gap-3 lg:gap-0 items-center jus py-8 xl:px-16 lg:px-10 px-4 w-full text-center border border-dark rounded-3xl">
           <!-- <NuxtIcon :name="step.icon" class="text-[4rem] lg:mb-5 text-primary" /> -->
-           <NuxtImg :src="card.icon" width="64" height="64" class="lg:mb-5" />
+           <img :src="card.icon" width="64" height="64" class="lg:mb-5" />
 
           <div class="lg:text-center text-start text-">
             <h4 class="font-bold lg:mt-4 xl:text-4xl text-2xl lg:mb-4">

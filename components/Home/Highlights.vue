@@ -51,8 +51,8 @@
         class="xl:w-[15rem] group cursor-pointer xl:h-[15rem] !h-[20rem] rounded-2xl overflow-hidden relative categoryBox"
         v-for="item in data" :key="item?.id">
         <NuxtLink :to="localePath(`/egypt-tours/one-day-tours/${item.slug}`)">
-          <NuxtImg class="w-full group-hover:scale-125 transition-all h-full object-cover bg-cover"
-            :src="item?.featured_image" loading="lazy" sizes="xs:40vw sm:40vw md:40vw lg:33vw xl:15rem"
+          <img class="w-full group-hover:scale-125 transition-all h-full object-cover bg-cover"
+            :src="item?.featured_image" loading="lazy"
             width="400" height="400" style="aspect-ratio: 1 / 1;" />
 
           <p class="absolute absoluteTextShadow bottom-[0.875rem] start-[0.875rem] z-10 text-xl font-bold text-white">{{

@@ -2,7 +2,7 @@
   <div class="bg-white rounded-3xl p-6">
     <div class="flex justify-between lg:items-center items-start mb-5">
       <div class="flex gap-3">
-        <NuxtImg class="w-16 h-16 object-cover rounded-2xl" :src="tour.tour.featured_image ?? tour.tour.gallary[0]" loading="lazy" sizes="64px" width="64" height="64" />
+        <img class="w-16 h-16 object-cover rounded-2xl" :src="tour.tour.featured_image ?? tour.tour.gallary[0]" loading="lazy" width="64" height="64" />
 
         <div>
           <h6 class="text-xk font-medium">{{ tour.tour.title }}</h6>

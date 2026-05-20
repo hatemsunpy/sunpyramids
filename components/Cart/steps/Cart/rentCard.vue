@@ -2,7 +2,7 @@
   <div class="bg-white rounded-3xl p-6">
     <div class="flex justify-between items-center mb-5">
       <div class="flex gap-3">
-        <NuxtImg class="w-16 h-16 object-cover rounded-2xl" :src="props.tour.car_image" />
+        <img class="w-16 h-16 object-cover rounded-2xl" :src="props.tour.car_image" />
 
         <div>
           <h6 class="text-xk font-medium">{{ props.tour.car_type }}</h6>

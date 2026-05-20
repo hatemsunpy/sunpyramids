@@ -7,7 +7,7 @@
           disableOnInteraction: false,
         }">
         <swiper-slide v-for="(item, index) in homeData.gallery" :key="item">
-          <NuxtImg width="1920" height="1080" class="w-full h-full object-cover brightness-[85%]" :src="item"
+          <img width="1920" height="1080" class="w-full h-full object-cover brightness-[85%]" :src="item"
             :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'"
             :fetchpriority="index === 0 ? 'high' : 'auto'" />
         </swiper-slide>

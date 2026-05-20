@@ -3,8 +3,8 @@
     <div class="h-[75vh] relative -z-10 2xl:-mt-[11rem] flex items-end -mt-[16rem]">
       <div class="mainSwiper !h-3/4" >
         <div class="bg-no-repeat bg-cover bg-center" v-for="offer in 1" :key="offer">
-          <NuxtImg :src="props.img" class="w-full h-full object-cover lg:block hidden" />
-          <NuxtImg :src="props.imgPhone ?? props.img" class="!w-full !min-h-[65vh] object-cover lg:hidden block" />
+          <img :src="props.img" class="w-full h-full object-cover lg:block hidden" />
+          <img :src="props.imgPhone ?? props.img" class="!w-full !min-h-[65vh] object-cover lg:hidden block" />
         </div>
         <div
           class="text-center font-bold text-white xl:px-48 h-full flex items-center justify-center absolute top-0 start-0 w-full flex-col z-10">
