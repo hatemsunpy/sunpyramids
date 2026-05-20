@@ -36,7 +36,7 @@
       },
     }" :freeMode="true">
       <swiper-slide class="rounded-[2.25rem] overflow-hidden" v-for="img in props.gallery" :key="img">
-        <img class="h-[20.75rem] object-cover" :src="img" />
+        <img class="h-[20.75rem] object-cover" :src="img" :alt="props.altText" />
       </swiper-slide>
     </swiper>
   </section>
@@ -54,6 +54,10 @@ const props = defineProps({
     type: Array,
     required: true,
     default: () => []
+  },
+  altText: {
+    type: String,
+    default: ''
   }
 })
 </script>
