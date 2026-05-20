@@ -23,7 +23,7 @@
     </div>
 
     <div class="b mx-4 xl:mx-0 xl:h-[30rem] xl:min-w-[39.375rem] h-[377px] md:h-[500px] w-full rounded-[2.375rem]">
-      <NuxtImg :src="props.img" class="rounded-[2.375rem] h-full w-full object-cover" alt="distination image" />
+      <img :src="props.img" class="rounded-[2.375rem] h-full w-full object-cover" alt="distination image" />
     </div>
   </section>
 </template>

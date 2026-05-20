@@ -1,8 +1,8 @@
 <template>
   <section class="">
     <div class="h-[60vh] relative flex">
-      <NuxtImg :src="props.img" class="absolute start-0 w-full h-full object-cover lg:block hidden" />
-      <NuxtImg :src="props.imgPhone ?? props.img" class="absolute start-0 w-full h-full object-cover lg:hidden block" />
+      <img :src="props.img" class="absolute start-0 w-full h-full object-cover lg:block hidden" />
+      <img :src="props.imgPhone ?? props.img" class="absolute start-0 w-full h-full object-cover lg:hidden block" />
 
       <!-- <NuxtImg src="/images/IMG_3817.jpg" class="absolute start-0 w-full h-full" /> -->
       <div

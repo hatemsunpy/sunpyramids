@@ -22,7 +22,7 @@
       },
     }" :freeMode="true">
       <swiper-slide class=" !w-[109.36px ]" v-for="partner in partners" :key="partner">
-        <NuxtImg class="w-full h-auto" :src="partner" loading="lazy" sizes="109px" width="109" height="60" />
+        <img class="w-full h-auto" :src="partner" loading="lazy" width="109" height="60" />
       </swiper-slide>
     </swiper>
   </section>

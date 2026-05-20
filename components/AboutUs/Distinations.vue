@@ -2,7 +2,7 @@
   <section class="xl:px-20 px-4 py-[4.5rem] flex flex-col-reverse xl:flex-row items-center gap-12 justify-between">
     <div
       class=" mx-4 xl:mx-0 xl:h-[30rem] xl:min-w-[39.375rem] h-[377px] md:h-[500px] w-full rounded-[2.375rem]">
-      <NuxtImg
+      <img
         :src="props.img"
         class="rounded-[2.375rem] h-full w-full object-cover"
         alt="distination image" />

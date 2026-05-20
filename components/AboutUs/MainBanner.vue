@@ -36,7 +36,7 @@
       },
     }" :freeMode="true">
       <swiper-slide class="rounded-[2.25rem] overflow-hidden" v-for="img in props.gallery" :key="img">
-        <NuxtImg class="h-[20.75rem] object-cover" :src="img" />
+        <img class="h-[20.75rem] object-cover" :src="img" />
       </swiper-slide>
     </swiper>
   </section>

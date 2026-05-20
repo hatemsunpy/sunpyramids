@@ -8,7 +8,7 @@
       class="grid xl:grid-cols-5 md:grid-cols-3 lg:grid-cols-4  grid-cols-2 xl:gap-8 gap-6 gap-y-4">
       <div v-for="item in ourTeam" :key="item.name"
         class="col-span-1 py-8 flex flex-col items-center gap-4 border border-[#E6E6E6] rounded-[2rem]">
-        <NuxtImg :src="item.image" class="w-[8.5rem] h-[8.5rem] mx-auto rounded-3xl" />
+        <img :src="item.image" class="w-[8.5rem] h-[8.5rem] mx-auto rounded-3xl" />
 
         <h5 class="text-[#125E87] font-medium md:text-2xl text-center">{{ item.name }}</h5>
 
