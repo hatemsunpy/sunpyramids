@@ -4,7 +4,7 @@
       <SharedBreadcrumb :items="breadcrumbItems" :mobItem="breadcrumbItems[breadcrumbItems.length - 1]" />
     </div>
 
-    <img class="w-full h-full  object-cover object-center z-0" :src="props.data?.featured_image" />
+    <img class="w-full h-full  object-cover object-center z-0" :src="props.data?.featured_image" alt="" />
 
 
     <div class="absolute linearBG right-0 bottom-0  w-full flex items-center pb-[2.625rem] h-[60%]">

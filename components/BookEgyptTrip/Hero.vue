@@ -1,8 +1,8 @@
 <template>
   <section class="">
     <div class="md:h-[45vh] h-[60vh] relative flex">
-      <img :src="props.img" class="absolute start-0 w-full h-full object-cover lg:block hidden" />
-      <img :src="props.imgPhone ?? props.img"
+      <img :src="props.img" class="absolute start-0 w-full h-full object-cover lg:block hidden" alt="" aria-hidden="true" />
+      <img :src="props.imgPhone ?? props.img" alt="" aria-hidden="true"
         class="absolute start-0 w-full h-full object-cover lg:hidden block brightness-[70%]" />
 
       <div

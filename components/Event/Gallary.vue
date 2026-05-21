@@ -32,7 +32,7 @@
       }" :freeMode="true">
       <swiper-slide class=" group !h-[24.375rem]  rounded-2xl overflow-hidden" v-for="img in props.gallary">
         <div class="h-full">
-          <img :src="img" class="w-full !h-full object-cover" />
+          <img :src="img" class="w-full !h-full object-cover" alt="" />
         </div>
       </swiper-slide>
     </swiper>
