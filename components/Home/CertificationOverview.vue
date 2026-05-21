@@ -51,7 +51,7 @@
 
     <div
       class="overflow- mx-4 xl:mx-0 flex items-center justify-center  rounded-[2.375rem]">
-      <NuxtImg class="w-3/4  h-full" src="/images/certified-logo.png" loading="lazy" />
+      <NuxtImg class="w-3/4  h-full" src="/images/certified-logo.webp" loading="lazy" />
     </div>
   </section>
 </template>

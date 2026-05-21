@@ -157,7 +157,7 @@
   <!-- <div v-if="route.fullPath != localePath('/event/egypt-christmas-event-2025')"
     class="fixed -translate-x-1/2 start-1/2 md:-top-[10px] sm:top-[36px] top-[52px] transition-all duration-700 sm:w-fit w-3/4 z-[31]"
     :class="[isFirstStyle ? 'xl:hover:top-[5.2125rem] lg:hover:top-[4.8125rem] md:hover:top-[5.9125rem] hover:top-[6.8125rem] tree' : !isFirstStyle && !isMobile ? 'xl:top-[8.9rem] lg:top-[8.5rem] md:top-[5.9125rem] top-[6.8125rem]' : !isFirstStyle && isMobile ? 'xl:hover:top-[5.2125rem] lg:hover:top-[4.8125rem] md:hover:top-[5.9125rem] hover:top-[6.8125rem] tree' : '']">
-    <NuxtImg src="/images/cri-container.png" class="!w-[460px]" />
+    <NuxtImg src="/images/cri-container.webp" class="!w-[460px]" />
 
     <NuxtLink :to="localePath('/event/egypt-christmas-event-2025')"
       class="absolute sm:top-8 top-6 start-1/2 -translate-x-1/2 -translate-y-1/2 md:text-lg text-sm  text-center font-medium">

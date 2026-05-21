@@ -1,5 +1,5 @@
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/006-core-web-vitals-optimization/plan.md.
+at specs/007-image-optimization/plan.md.
 <!-- SPECKIT END -->

@@ -4,7 +4,7 @@
       <img class="w-full h-full  object-cover object-top z-0" v-if="feqsData && feqsData.banner"
         :src="feqsData.banner" alt="" loading="lazy" width="1200" height="267" />
 
-      <NuxtImg class="w-full h-full  object-cover object-center z-0" v-else src="/images/faqs-banner.png" />
+      <NuxtImg class="w-full h-full  object-cover object-center z-0" v-else src="/images/faqs-banner.webp" />
 
       <div class="absolute bottom-0 start-0 w-full h-[70%] categoryBox"></div>
     </div>

@@ -11,7 +11,7 @@
         <div class="bg-no-repeat object-center bg-cover bg-center h-full w-full backgroundhover cursor-pointer"
           v-for="offer in 1" :key="offer">
 
-          <img :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" style="aspect-ratio: 3 / 2;" />
+          <img :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" style="aspect-ratio: 3 / 2;" decoding="async" />
         </div>
 
         <h4

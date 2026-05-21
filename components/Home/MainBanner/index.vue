@@ -9,7 +9,8 @@
         <swiper-slide v-for="(item, index) in homeData.gallery" :key="item">
           <img width="1920" height="1080" class="w-full h-full object-cover brightness-[85%]" :src="item"
             :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'"
-            :fetchpriority="index === 0 ? 'high' : 'auto'" />
+            :fetchpriority="index === 0 ? 'high' : 'auto'"
+            :decoding="index === 0 ? 'auto' : 'async'" />
         </swiper-slide>
 
         <div class="absolute top-0 start-0 xl lg:mt-[10rem] mt-[14rem] h-full w-full flex flex-col  gap-24 z-10">

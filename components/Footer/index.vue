@@ -18,7 +18,7 @@
           </button>
         </section>
 
-        <NuxtImg @click="router.push(localePath('/sustainability'))" src="/images/certified_footer_white.png" alt="certified footer" class="w-[18.25rem] cursor-pointer -ms-2 mb-4 brightness-150" loading="lazy" width="292" height="80" />
+        <NuxtImg @click="router.push(localePath('/sustainability'))" src="/images/certified_footer_white.webp" alt="certified footer" class="w-[18.25rem] cursor-pointer -ms-2 mb-4 brightness-150" loading="lazy" width="292" height="80" />
 
       </div>
 
