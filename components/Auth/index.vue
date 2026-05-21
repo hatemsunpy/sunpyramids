@@ -18,7 +18,7 @@
     </div>
 
     <div class="max-h-screen sticky lg:block hidden  top-0 overflow-hidden py-8">
-      <NuxtImg class="object-cover sticky top-8 rounded-[2.5rem] h-full w-full" src="/images/authHero.png" />
+      <NuxtImg class="object-cover sticky top-8 rounded-[2.5rem] h-full w-full" src="/images/authHero.webp" />
     </div>
   </section>
 </template>

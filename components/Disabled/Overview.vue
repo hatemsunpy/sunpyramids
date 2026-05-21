@@ -85,7 +85,7 @@
     </div>
 
     <div class="overflow- !w-3/4 blob-wrapper  mx-4 xl:mx-0 flex items-start justify-center  rounded-[2.375rem]">
-      <img class="w-full object-cover object-top  h-full" src="~/assets/imgs/wheelChair.png" />
+      <img class="w-full object-cover object-top  h-full" src="~/assets/imgs/wheelChair.webp" />
     </div>
   </section>
 </template>

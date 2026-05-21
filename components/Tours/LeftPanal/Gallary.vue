@@ -111,14 +111,14 @@ const getLink = (value) => {
   }
 }
 
-const gallary = [{ img: "/images/shorts.png", icon: "/images/shorts-gallary.png", value: "shorts" }, { img: "/images/youtubeone.png", icon: "/images/youtube-gallary.png", value: "youtube-video-1" }, { img: "/images/tiktok.png", icon: "/images/tiktok-gallary.png", value: "tiktok" }, { img: "/images/instagram.png", icon: "/images/insta-gallary.png", value: "insta-link" }, {
-  img: "/images/youtubetwo.png", icon: "/images/youtube-gallary.png", value: "facebook"
+const gallary = [{ img: "/images/shorts.webp", icon: "/images/shorts-gallary.png", value: "shorts" }, { img: "/images/youtubeone.png", icon: "/images/youtube-gallary.png", value: "youtube-video-1" }, { img: "/images/tiktok.webp", icon: "/images/tiktok-gallary.png", value: "tiktok" }, { img: "/images/instagram.webp", icon: "/images/insta-gallary.png", value: "insta-link" }, {
+  img: "/images/youtubetwo.webp", icon: "/images/youtube-gallary.png", value: "facebook"
 },]
-const gallaryMob = [{ img: "/images/shorts.png", icon: "/images/shorts-gallary.png", value: "shorts" }, {
-  img: "/images/youtubetwo.png", icon: "/images/youtube-gallary.png", value: "youtube-video-2"
+const gallaryMob = [{ img: "/images/shorts.webp", icon: "/images/shorts-gallary.png", value: "shorts" }, {
+  img: "/images/youtubetwo.webp", icon: "/images/youtube-gallary.png", value: "youtube-video-2"
 }, {
-  img: "/images/youtubetwo.png", icon: "/images/fb-logo.webp", value: "facebook"
-}, { img: "/images/youtubeone.png", icon: "/images/youtube-gallary.png", value: "youtube-video-1" }, { img: "/images/tiktok.png", icon: "/images/tiktok-gallary.png", value: "tiktok" }, { img: "/images/instagram.png", icon: "/images/insta-gallary.png", value: "insta-link" },]
+  img: "/images/youtubetwo.webp", icon: "/images/fb-logo.webp", value: "facebook"
+}, { img: "/images/youtubeone.png", icon: "/images/youtube-gallary.png", value: "youtube-video-1" }, { img: "/images/tiktok.webp", icon: "/images/tiktok-gallary.png", value: "tiktok" }, { img: "/images/instagram.webp", icon: "/images/insta-gallary.png", value: "insta-link" },]
 
 
 const getStyles = (val) => {

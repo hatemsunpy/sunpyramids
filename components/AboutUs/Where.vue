@@ -12,7 +12,7 @@
     <h6 class="xl:text-xl text-base  text-[#A6BCF2] xl:mt-5 mt-2 mb-12"> {{ $t("labels.aboutus.where.overall") }}
     </h6>
 
-    <NuxtImg src="/images/map.png" class="w-full" />
+    <NuxtImg src="/images/map.webp" class="w-full" />
   </section>
 </template>
 
