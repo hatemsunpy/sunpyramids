@@ -17,7 +17,7 @@ Defer all non-critical third-party scripts (reCAPTCHA Enterprise, Google Tag Man
 **Project Type**: Nuxt 3 SSR web application (tourism/travel booking)
 **Performance Goals**: >=10% FCP improvement, >=15% TBT improvement, zero third-party scripts in initial page load waterfall, zero regressions in reCAPTCHA form submission, zero regressions in TrustIndex widget rendering
 **Constraints**: Must preserve SSR SEO (no changes to server-rendered content), must preserve GTM `<noscript>` fallback for no-JS visitors, must respect existing `?no-third-party` query param, must not cause layout shift from deferred TrustIndex loading, must load each script exactly once per session
-**Scale/Scope**: 1 new plugin file, modifications to 8 existing files (nuxt.config.ts, app.vue, composables/recapcha.js, 5 components with TrustIndex containers), 2 TrustIndex container IDs, 3 third-party services (reCAPTCHA, GTM+GA4, TrustIndex)
+**Scale/Scope**: 1 new plugin file, modifications to 7 existing files (nuxt.config.ts, app.vue, composables/recapcha.js, 4 components with TrustIndex containers), 2 TrustIndex container IDs, 3 third-party services (reCAPTCHA, GTM+GA4, TrustIndex)
 
 ## Constitution Check
 

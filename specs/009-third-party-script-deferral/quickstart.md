@@ -21,7 +21,7 @@ npm run build
 ### 2. No Third-Party Scripts in Initial HTML
 
 ```bash
-curl -s https://localhost:3000/ | grep -c "googletagmanager\|recaptcha\|trustindex"
+curl -s http://localhost:3000/ | grep -c "googletagmanager\|recaptcha\|trustindex"
 ```
 
 **Expected**: `0` (no third-party script URLs in raw HTML)
@@ -29,7 +29,7 @@ curl -s https://localhost:3000/ | grep -c "googletagmanager\|recaptcha\|trustind
 ### 3. GTM `<noscript>` Preserved
 
 ```bash
-curl -s https://localhost:3000/ | grep -c "gtm-iframe\|googletagmanager.com/ns.html"
+curl -s http://localhost:3000/ | grep -c "gtm-iframe\|googletagmanager.com/ns.html"
 ```
 
 **Expected**: `1` (noscript iframe still present for no-JS fallback)
@@ -60,7 +60,7 @@ curl -s https://localhost:3000/ | grep -c "gtm-iframe\|googletagmanager.com/ns.h
 ### 7. `?no-third-party` Query Param
 
 ```bash
-curl -s "https://localhost:3000/?no-third-party" | grep -c "googletagmanager\|recaptcha\|trustindex"
+curl -s "http://localhost:3000/?no-third-party" | grep -c "googletagmanager\|recaptcha\|trustindex"
 ```
 
 **Expected**: `0`

@@ -139,8 +139,8 @@ Instead of injecting TrustIndex scripts in each component's `onMounted`, the def
 
 ### Implementation Details
 1. In `plugins/third-party-scripts.client.ts`:
-   - Define `TRUSTINDEX_CONTAINERS` map: `{ '#home-reviews': '<loader.js URL>', '#footer-cert': '<loader-cert.js URL>' }`
-   - On idle (requestIdleCallback): iterate containers, check `document.getElementById(id)`, inject script if present and not already loaded
+   - Define `TRUSTINDEX_CONTAINERS` map: `{ 'home-reviews': '<loader.js URL>', 'footer-cert': '<loader-cert.js URL>' }`
+   - On idle (requestIdleCallback): iterate containers, check `document.getElementById(id)` with raw IDs (no `#` prefix), inject script if present and not already loaded
    - On route change (watch `useRouter().currentRoute`): re-run detection after `nextTick`
    - Track loaded scripts in a `Set<string>` to prevent duplicates
 
