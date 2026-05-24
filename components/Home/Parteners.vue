@@ -31,7 +31,6 @@
 <script setup lang="js">
 import { Swiper } from "swiper/vue";
 import { Autoplay, FreeMode } from 'swiper/modules';
-import "swiper/css";
 const props = defineProps({
   showTitle: {
     type: Boolean,

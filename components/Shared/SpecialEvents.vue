@@ -80,7 +80,6 @@
 <script setup lang="js">
 import { Swiper } from "swiper/vue";
 import { Autoplay, FreeMode } from 'swiper/modules';
-import "swiper/css";
 import SeeMore from "./SeeMore.vue";
 
 const props = defineProps({

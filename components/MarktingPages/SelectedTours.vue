@@ -91,7 +91,6 @@ const props = defineProps({
 });
 import { Swiper } from "swiper/vue";
 import { Autoplay, FreeMode } from 'swiper/modules';
-import "swiper/css";
 let modules = [Autoplay, FreeMode];
 // const { getData } = useApi()
 // const data = ref([])
