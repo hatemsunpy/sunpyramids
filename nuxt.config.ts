@@ -98,13 +98,7 @@ export default defineNuxtConfig({
         { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/TripSans-Medium.woff2", crossorigin: "anonymous" },
         { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/TripSans-Bold.woff2", crossorigin: "anonymous" },
       ],
-      script: [
-        {
-          src: "https://www.google.com/recaptcha/enterprise.js?render=6LeaVMEqAAAAANXKFLnQvxeAoWvTeEOUlatRYIFn",
-          async: true,
-          defer: true,
-        },
-      ],
+      script: [],
     },
   },
   runtimeConfig: {
