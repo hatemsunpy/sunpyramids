@@ -1,0 +1,1 @@
+import{s as a}from"./DN9d0Ebm.js";import{ab as o,U as n}from"./BujINdVi.js";import"./DeD__cyG.js";import"./Ckdc_dGr.js";const f={__name:"auth",async setup(_){let t,r;const{getCurrancies:e}=a();return[t,r]=o(()=>e()),await t,r(),(s,m)=>n(s.$slots,"default")}};export{f as default};

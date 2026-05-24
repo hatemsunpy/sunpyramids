@@ -1,0 +1,1 @@
+import{_ as s}from"./DeD__cyG.js";import{P as t,Q as n,a0 as o}from"./BujINdVi.js";const c={},r={class:"w-full h-36 flex justify-center items-center"};function _(a,e){return t(),n("div",r,e[0]||(e[0]=[o("div",{class:"spinner"},null,-1)]))}const l=s(c,[["render",_],["__scopeId","data-v-3766cf75"]]);export{l as _};
