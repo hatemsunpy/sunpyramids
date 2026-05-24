@@ -8,7 +8,7 @@
 
     <LazyMarktingPagesContactUs />
 
-    <div class="w-full py-20 xl:px-20" id="home-reviews" ref="trustindexContainer"></div>
+    <div class="w-full py-20 xl:px-20" id="home-reviews" style="min-height: 100px"></div>
 
     <LazyHomeGallary />
   </div>
@@ -25,25 +25,6 @@ PageData.value = await getData('custom-pages/'+route.params.slug).then((res) => 
 
 addSeo(PageData.value)
 
-const trustindexContainer = ref(null);
-
-onMounted(() => {
-  // Check if running on client side
-  if (process.client) {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e';
-    script.async = true;
-    script.defer = true;
-
-    // Add data attributes if needed by TrustIndex
-    script.setAttribute('data-type', 'stripe');
-    script.setAttribute('data-location', 'home-reviews');
-
-    if (trustindexContainer.value) {
-      trustindexContainer.value.appendChild(script);
-    }
-  }
-});
 </script>
 
 <style scoped lang='scss'></style>

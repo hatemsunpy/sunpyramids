@@ -16,7 +16,7 @@
           {{ $t("labels.ClientsFeedback") }}
         </h3>
 
-        <div class="w-full xl:px-20 bg-w" id="home-reviews" ref="trustindexContainer"></div>
+        <div class="w-full xl:px-20 bg-w" id="home-reviews" style="min-height: 100px"></div>
       </div>
 
 
@@ -42,25 +42,6 @@ PageData.value = await getData('pages/events?includes=seo').then((res) => {
 addSeo(PageData.value)
 breadcrumbItems.value.push({ title: PageData.value.title, directTitle: true, disabled: true, path: "" })
 
-const trustindexContainer = ref(null);
-
-onMounted(() => {
-  // Check if running on client side
-  if (process.client) {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e';
-    script.async = true;
-    script.defer = true;
-
-    // Add data attributes if needed by TrustIndex
-    script.setAttribute('data-type', 'stripe');
-    script.setAttribute('data-location', 'home-reviews');
-
-    if (trustindexContainer.value) {
-      trustindexContainer.value.appendChild(script);
-    }
-  }
-});
 </script>
 
 <style scoped lang='scss'></style>

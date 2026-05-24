@@ -87,7 +87,7 @@
           </div>
 
           <ClientOnly>
-            <div id="footer-cert" ref="trustindexContainerFooterCert"></div>
+            <div id="footer-cert" style="min-height: 60px"></div>
           </ClientOnly>
         </div>
       </div>
@@ -115,7 +115,6 @@ import { sharedStore } from '~/stores/sharedStore.js'
 
 const { settings } = storeToRefs(sharedStore())
 const socials = [{ title: "Youtube", icon: "youtube-white", value: "youtube" }, { title: "Google", icon: "g-plus", value: "google-plus" }, { title: "Facebook", icon: "facebook", value: "facebook" }, { title: "Instagram", icon: "instagram", value: "instagram" }]
-const trustindexContainerFooterCert = ref(null);
 
 const getURL = (val) => {
   window.open(settings.value.find(setting => setting.option_key == 'social_links').option_value.find(ele => ele.type == val).url, "_blank")
@@ -148,23 +147,6 @@ const goToWhatsApp = () => {
   window.open('https://api.whatsapp.com/send?phone=201095888830', '_blank')
 }
 
-onMounted(() => {
-  // Check if running on client side
-  if (process.client) {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a';
-    script.async = true;
-    script.defer = true;
-
-    // Add data attributes if needed by TrustIndex
-    script.setAttribute('data-type', 'stripe');
-    script.setAttribute('data-location', 'footer-cert');
-
-    if (trustindexContainerFooterCert.value) {
-      trustindexContainerFooterCert.value.appendChild(script);
-    }
-  }
-});
 </script>
 
 <style scoped lang='scss'></style>

@@ -27,43 +27,6 @@ useHead(() => ({
     lang: locale.value
   }
 }))
-
-useHead(() => {
-  if (route.query['no-third-party']) return {}
-
-  return {
-    script: [
-      {
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-NKZ6W32C4J',
-        async: true,
-        defer: true
-      },
-      {
-        children: `
-          (function(){
-            function loadGtm(){
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-NKZ6W32C4J');
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-KDF33T7');
-            }
-            if(document.readyState==='complete'){ loadGtm(); }
-            else { window.addEventListener('load', loadGtm); }
-          })();
-        `,
-        type: 'text/javascript'
-      }
-    ]
-  }
-})
 </script>
 
 <style lang="scss">
