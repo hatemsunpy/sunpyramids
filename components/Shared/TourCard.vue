@@ -143,8 +143,6 @@ watch(isHoverIn, (newVal) => {
 //swiper setup
 import { Swiper } from "swiper/vue";
 import { Pagination, Autoplay } from 'swiper/modules';
-import "swiper/css";
-import "swiper/css/pagination";
 let modules = [Pagination, Autoplay];
 
 const { selectedCurrancies } = storeToRefs(sharedStore())

@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       inline: ["@googlemaps/markerclusterer"],
     },
   },
-  css: ["~/assets/styles/main.scss"],
+  css: ["~/assets/styles/main.scss", "swiper/css", "swiper/css/pagination", "swiper/css/navigation", "swiper/css/free-mode", "swiper/css/thumbs"],
 
   postcss: {
     plugins: {
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: ["~/plugins/vue3-toastify.js"],
+  plugins: ["~/plugins/vue3-toastify.client.js"],
   build: {
     transpile: ["vue3-toastify", "swiper", "@fawmi/vue-google-maps", "@googlemaps/markerclusterer"],
   },
@@ -77,7 +77,7 @@ export default defineNuxtConfig({
       "@nuxtjs/i18n",
       {
         locales: langsConfig,
-        lazy: false,
+        lazy: true,
         langDir: "locales/",
         defaultLocale: "en",
         detectBrowserLanguage: false,
@@ -85,7 +85,6 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxt/image",
-    "@vercel/speed-insights",
     "@vercel/speed-insights/nuxt",
   ],
   app: {

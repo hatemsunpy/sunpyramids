@@ -16,7 +16,6 @@
 </template>
 
 <script setup lang="js">
-import '@vuepic/vue-datepicker/dist/main.css'
 const {locale} = useI18n()
 const route = useRoute()
 const noThirdPartyQuery = computed(() => !!route.query['no-third-party'])

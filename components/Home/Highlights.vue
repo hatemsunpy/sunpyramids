@@ -72,9 +72,6 @@
 <script setup lang="js">
 import { Swiper } from "swiper/vue";
 import { Pagination, Autoplay, FreeMode } from 'swiper/modules';
-import "swiper/css";
-import "swiper/css/pagination";
-import 'swiper/css/navigation';
 let modules = [Pagination, Autoplay, FreeMode];
 const { getData } = useApi()
 const swiperInstance = ref(null);

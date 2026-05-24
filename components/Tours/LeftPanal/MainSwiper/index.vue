@@ -62,10 +62,6 @@
 
 <script setup lang="js">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 const modules = [FreeMode, Navigation, Thumbs];
 

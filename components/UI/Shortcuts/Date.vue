@@ -28,6 +28,7 @@
 import { useField } from 'vee-validate'
 
 import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css'
 
 const props = defineProps({
   icon: {

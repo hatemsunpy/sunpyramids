@@ -45,8 +45,9 @@
 
         <div class="grid gap-4 grid-cols-2 sm:grid-cols-3">
           <NuxtLink v-for="lang in langsConfig" :key="`lang-${lang.code}`" :to="switchLocalPath(lang.code)"
+            @click.prevent="switchLocale(lang.code)"
             class="py-2 px-3 cursor-pointer rounded-lg"
-            :class="[lang.code == locale ? 'bg-textDark text-white' : 'hover:text-primary hover:bg-[#f9fafb]']">
+            :class="[lang.code == locale ? 'bg-textDark text-white' : 'hover:text-primary hover:bg-[#f9fafb]', isLocaleLoading ? 'pointer-events-none opacity-50' : '']">
             <p class="text-sm mb-2">{{ lang.country }}</p>
 
             <p class="text-sm font-medium">{{ lang.language }}</p>
@@ -75,10 +76,23 @@ let switchLocalPath = useSwitchLocalePath();
 const { currancies, selectedCurrancies } = storeToRefs(sharedStore())
 const { updateCurrancies } = sharedStore()
 const isOpen = ref(false)
+const isLocaleLoading = ref(false)
 
 const getLanguage = computed(() => {
   return langsConfig.find((lang) => lang.code == locale.value)
 })
+
+const switchLocale = async (langCode) => {
+  if (isLocaleLoading.value) return
+  isLocaleLoading.value = true
+  try {
+    await navigateTo(switchLocalPath(langCode))
+  } catch (err) {
+    console.error('Locale switch failed:', err)
+  } finally {
+    isLocaleLoading.value = false
+  }
+}
 
 </script>
 

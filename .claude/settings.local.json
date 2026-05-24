@@ -72,7 +72,21 @@
       "PowerShell(.specify/scripts/powershell/setup-tasks.ps1 -Json)",
       "Bash(cwebp *)",
       "Bash(npx sharp *)",
-      "Bash(convert --version)"
+      "Bash(convert --version)",
+      "Bash(npx skills *)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(npm install *)",
+      "Bash(lighthouse *)",
+      "Bash(Select-String -Pattern \"json output|Runtime error|Error:\")",
+      "PowerShell(lighthouse *)",
+      "Bash(Test-Path *)",
+      "PowerShell(.\\\\.specify\\\\extensions\\\\git\\\\scripts\\\\powershell\\\\create-new-feature.ps1 -Json -ShortName \"js-bundle-reduction\" \"phase 8: JavaScript Bundle Reduction\")",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\i18n\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\locales\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\plugins\" -File | ForEach-Object { $_.FullName })",
+      "PowerShell(if \\(Test-Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\locales\"\\) { Get-ChildItem \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\locales\" -Recurse -File | ForEach-Object { $_.FullName } } else { Write-Output \"locales/ directory does NOT exist at root\" })",
+      "PowerShell(npm run *)",
+      "PowerShell(Get-ChildItem -Path '.output/public/_nuxt' -Recurse | Where-Object { $_.Name -match 'locale|i18n|lang|en\\\\.|fr\\\\.|de\\\\.|it\\\\.|pt\\\\.|es\\\\.|zh\\\\.' } | Select-Object Name, @{N='Size_KB';E={[math]::Round\\($_.Length/1KB,2\\)}} | Format-Table -AutoSize)"
     ]
   },
   "enableAllProjectMcpServers": true,

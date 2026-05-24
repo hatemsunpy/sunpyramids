@@ -112,10 +112,10 @@
 
 **Purpose**: Verification, performance validation, and cleanup
 
-- [ ] T041 [P] Run Lighthouse audit on homepage (mobile emulation) and record LCP, CLS, and total image payload
-- [ ] T042 [P] Run Lighthouse audit on a tour listing page (mobile emulation) and record CLS from tour cards
-- [ ] T043 Verify no layout shift when tour card images load on a throttled connection
-- [ ] T044 Verify hero banner loads fast on throttled connection; non-first slides do not block main thread
+- [X] T041 [P] Run Lighthouse audit on homepage (mobile emulation) and record LCP, CLS, and total image payload
+- [X] T042 [P] Run Lighthouse audit on a tour listing page (mobile emulation) and record CLS from tour cards
+- [X] T043 Verify no layout shift when tour card images load on a throttled connection
+- [X] T044 Verify hero banner loads fast on throttled connection; non-first slides do not block main thread
 - [X] T045 [P] Compare before/after total image payload and confirm ≥80% reduction
 - [X] T046 Verify no PNG files >100KB remain in `public/images/` (except flagged must-keep files)
 - [X] T047 Verify all API-image components still use plain `<img>` and do NOT use `<NuxtImg>` (regression check)

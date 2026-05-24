@@ -1,4 +1,25 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0",
+    "CLAUDE_FLOW_V3_ENABLED": "false",
+    "CLAUDE_FLOW_HOOKS_ENABLED": "false"
+  },
+  "attribution": {
+    "commit": "Co-Authored-By: RuFlo <ruv@ruv.net>",
+    "pr": "🤖 Generated with [RuFlo](https://github.com/ruvnet/ruflo)"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npx @claude-flow*)",
+      "Bash(npx claude-flow*)",
+      "Bash(node .claude/*)",
+      "mcp__claude-flow__:*"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -56,27 +77,6 @@
   "statusLine": {
     "type": "command",
     "command": "sh -c 'exec node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/statusline.cjs\"'"
-  },
-  "permissions": {
-    "allow": [
-      "Bash(npx @claude-flow*)",
-      "Bash(npx claude-flow*)",
-      "Bash(node .claude/*)",
-      "mcp__claude-flow__:*"
-    ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)"
-    ]
-  },
-  "attribution": {
-    "commit": "Co-Authored-By: RuFlo <ruv@ruv.net>",
-    "pr": "🤖 Generated with [RuFlo](https://github.com/ruvnet/ruflo)"
-  },
-  "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0",
-    "CLAUDE_FLOW_V3_ENABLED": "false",
-    "CLAUDE_FLOW_HOOKS_ENABLED": "false"
   },
   "claudeFlow": {
     "version": "3.0.0",
@@ -164,5 +164,8 @@
       "cveCheck": false,
       "threatModel": false
     }
+  },
+  "enabledPlugins": {
+    "claude-code-setup@claude-plugins-official": true
   }
 }
