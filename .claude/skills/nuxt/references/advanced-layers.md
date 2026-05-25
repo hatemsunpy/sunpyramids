@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 
 Place in `layers/` directory for automatic discovery:
 
-```
+```text
 my-app/
 ├── layers/
 │   ├── base/
@@ -67,7 +67,7 @@ my-app/
 
 Minimal layer structure:
 
-```
+```text
 my-layer/
 ├── nuxt.config.ts       # Required
 ├── app/
@@ -137,7 +137,7 @@ Override order (highest to lowest):
 
 Control order with prefixes:
 
-```
+```text
 layers/
 ├── 1.base/      # Lower priority
 └── 2.theme/     # Higher priority
@@ -246,7 +246,7 @@ npx nuxi init --template layer my-layer
 
 ## Example: Theme Layer
 
-```
+```text
 theme-layer/
 ├── nuxt.config.ts
 ├── app/

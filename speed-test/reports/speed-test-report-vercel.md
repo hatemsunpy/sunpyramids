@@ -1,6 +1,6 @@
-# ⚡ Playwright Web Speed Test Report — Sun Pyramids Tours
+# ⚡ Playwright Web Speed Test Report — Sun Pyramids Tours (Live Vercel)
 
-**Date**: 2026-05-17
+**Date**: 2026-05-25
 **Environment**: Vercel Production Edge CDN (https://sunpyramids.vercel.app)
 **Audit Engine**: Playwright Chromium (CDP + Resource Timings)
 
@@ -8,89 +8,83 @@
 
 ## 1. Executive Summary
 
-This report analyses the web performance of **15 page categories** on the local Docker build of Sun Pyramids Tours. Measurements represent direct **lab metrics** with simulated fresh browser visits (no browser caching).
+This report analyses the web performance of **15 page categories** on the live Vercel production deployment of Sun Pyramids Tours. Measurements represent direct **lab metrics** with simulated fresh browser visits (no browser caching).
 
 ### 📈 Performance Scorecard
 
 | Category | URL | TTFB | FCP | LCP | CLS | Hydration Mismatch | Total Weight | Requests |
 |----------|-----|------|-----|-----|-----|--------------------|--------------|----------|
-| **Homepage** | `/` | 🟡 1245ms | 🟡 2439ms | 🟡 3811ms | 🔴 0.6502 | ✅ No | **8,306 KB** | 225 |
-| **About Us** | `/about-us` | 🟡 1103ms | 🔴 3388ms | 🔴 4518ms | 🟢 0.0862 | ❌ Yes | **6,501 KB** | 213 |
-| **Accessible Travel** | `/accessible-travel` | 🟡 1115ms | 🟢 1711ms | 🟡 2645ms | 🟡 0.1457 | ✅ No | **8,693 KB** | 174 |
-| **Blogs List** | `/blogs/all-blogs` | 🟡 1076ms | 🟢 1587ms | 🟢 2089ms | 🟢 0.0763 | ❌ Yes | **3,635 KB** | 176 |
-| **Blog Detail** | `/blog/best-easter-destinations` | 🔴 2506ms | 🔴 3370ms | 🔴 5324ms | 🟢 0.0011 | ✅ No | **20,396 KB** | 130 |
-| **Contact Us** | `/contact-us` | 🟡 1265ms | 🟡 2269ms | 🟢 2465ms | 🟢 0.0021 | ✅ No | **3,593 KB** | 184 |
-| **Egypt Tours Category** | `/egypt-tours/one-day-tours` | 🟡 975ms | 🟢 1776ms | 🟢 2214ms | 🟢 0.0034 | ❌ Yes | **4,340 KB** | 182 |
-| **Egypt Travel Guide** | `/egypt-travel-guide` | 🟢 799ms | 🟢 1765ms | 🟢 2009ms | 🟢 0.0006 | ✅ No | **3,199 KB** | 169 |
-| **Events** | `/events` | 🟢 792ms | 🟢 1483ms | 🟡 2855ms | 🟢 0.0026 | ❌ Yes | **10,277 KB** | 170 |
-| **FAQs** | `/faqs` | 🟡 987ms | 🟢 1798ms | 🔴 7200ms | 🟢 0.0008 | ✅ No | **2,622 KB** | 100 |
-| **Rent Car** | `/rent-car` | 🟡 1121ms | 🟡 1883ms | 🟡 2695ms | 🟢 0.0265 | ✅ No | **2,992 KB** | 161 |
-| **Sustainability** | `/sustainability` | 🟡 909ms | 🟡 2613ms | 🔴 4598ms | 🟡 0.1648 | ✅ No | **4,874 KB** | 170 |
-| **Terms and Conditions** | `/terms-and-conditions` | 🟢 765ms | 🟡 1856ms | 🟢 2015ms | 🟢 0.0014 | ❌ Yes | **3,056 KB** | 163 |
-| **Privacy and Cookies** | `/privacy-and-cookies` | 🟡 805ms | 🟢 1664ms | 🟢 1804ms | 🟢 0.0009 | ❌ Yes | **3,071 KB** | 162 |
-| **Tour Detail** | `/tour/pyramids-nile-cruise-by-train` | 🟡 1777ms | 🟡 2412ms | 🟡 3759ms | 🟢 0.0084 | ❌ Yes | **5,728 KB** | 231 |
+| **Homepage** | `/` | 🟢 66ms | 🟡 3698ms | 🟡 3644ms | 🟢 0 | ✅ No | **8,219 KB** | 193 |
+| **About Us** | `/about-us` | 🟢 69ms | 🟡 2920ms | 🟡 3036ms | 🟢 0 | ✅ No | **4,652 KB** | 124 |
+| **Accessible Travel** | `/accessible-travel` | 🟢 65ms | 🟡 3715ms | 🟡 3826ms | 🟢 0 | ✅ No | **2,754 KB** | 101 |
+| **Blogs List** | `/blogs/all-blogs` | 🟢 61ms | 🟡 2913ms | 🟢 2717ms | 🟢 0 | ✅ No | **3,013 KB** | 116 |
+| **Blog Detail** | `/blog/why-choose-egypt-desert-tours` | 🟢 62ms | 🟡 3371ms | 🟡 3898ms | 🟢 0 | ✅ No | **15,506 KB** | 108 |
+| **Contact Us** | `/contact-us` | 🟢 61ms | 🟡 2917ms | 🟡 2839ms | 🟢 0 | ✅ No | **2,558 KB** | 116 |
+| **Egypt Tours Category** | `/egypt-tours/one-day-tours` | 🟢 68ms | 🟡 3513ms | 🟡 3363ms | 🟢 0 | ✅ No | **2,999 KB** | 112 |
+| **Egypt Travel Guide** | `/egypt-travel-guide` | 🟢 68ms | 🟡 2327ms | 🟢 2275ms | 🟢 0 | ✅ No | **1,685 KB** | 84 |
+| **Events** | `/events` | 🟢 79ms | 🟡 3003ms | 🟡 2844ms | 🟢 0 | ✅ No | **8,192 KB** | 93 |
+| **FAQs** | `/faqs` | 🟢 63ms | 🟡 2802ms | 🟡 2802ms | 🟢 0 | ✅ No | **1,700 KB** | 85 |
+| **Rent Car** | `/rent-car` | 🟢 72ms | 🟡 2888ms | 🟡 2888ms | 🟢 0 | ✅ No | **2,119 KB** | 92 |
+| **Sustainability** | `/sustainability` | 🟢 62ms | 🟡 2893ms | 🟡 2893ms | 🟢 0 | ✅ No | **3,416 KB** | 100 |
+| **Terms and Conditions** | `/terms-and-conditions` | 🟢 64ms | 🟡 2812ms | 🟡 3152ms | 🟢 0 | ✅ No | **1,668 KB** | 83 |
+| **Privacy and Cookies** | `/privacy-and-cookies` | 🟢 61ms | 🟡 2482ms | 🟡 2856ms | 🟢 0 | ✅ No | **1,582 KB** | 82 |
+| **Tour Detail** | `/tour/pyramids-nile-cruise-by-train` | 🟢 72ms | 🟡 3062ms | 🟡 3542ms | 🟢 0 | ✅ No | **5,381 KB** | 155 |
 
 > [!NOTE]
-> **Legend**: 🟢 Good | 🟡 Needs Improvement | 🔴 Poor
-> Metrics align with Google's Core Web Vitals thresholds.
+> **Legend**: 🟢 Good (< 1.8s FCP, < 2.5s LCP, < 0.1 CLS) | 🟡 Needs Improvement | 🔴 Poor
+> Metrics align with Google Core Web Vitals thresholds.
 
 ---
 
 ## 2. Resource Breakdown by Page Category
 
-Analyzing page weight is critical. High page weights delay paints, inflate bandwidth costs, and slow down hydration.
-
 | Category | Total Weight | HTML | JS | CSS | Images | Fonts | API | Requests |
 |----------|--------------|------|----|-----|--------|-------|-----|----------|
-| **Homepage** | **8,306 KB** | 966 KB | 2,368 KB | 77 KB | 4,773 KB | 118 KB | 0 KB | 225 |
-| **About Us** | **6,501 KB** | 359 KB | 2,345 KB | 77 KB | 3,599 KB | 118 KB | 0 KB | 213 |
-| **Accessible Travel** | **8,693 KB** | 398 KB | 2,368 KB | 79 KB | 5,727 KB | 118 KB | 0 KB | 174 |
-| **Blogs List** | **3,635 KB** | 324 KB | 2,335 KB | 77 KB | 479 KB | 118 KB | 298 KB | 176 |
-| **Blog Detail** | **20,396 KB** | 716 KB | 1,888 KB | 68 KB | 17,604 KB | 118 KB | 0 KB | 130 |
-| **Contact Us** | **3,593 KB** | 307 KB | 2,408 KB | 158 KB | 304 KB | 118 KB | 296 KB | 184 |
-| **Egypt Tours Category** | **4,340 KB** | 332 KB | 2,336 KB | 77 KB | 1,474 KB | 118 KB | 0 KB | 182 |
-| **Egypt Travel Guide** | **3,199 KB** | 266 KB | 2,336 KB | 78 KB | 395 KB | 118 KB | 3 KB | 169 |
-| **Events** | **10,277 KB** | 336 KB | 2,356 KB | 77 KB | 7,387 KB | 118 KB | 0 KB | 170 |
-| **FAQs** | **2,622 KB** | 339 KB | 1,894 KB | 59 KB | 253 KB | 74 KB | 0 KB | 100 |
-| **Rent Car** | **2,992 KB** | 279 KB | 2,336 KB | 77 KB | 203 KB | 94 KB | 0 KB | 161 |
-| **Sustainability** | **4,874 KB** | 312 KB | 2,406 KB | 78 KB | 1,957 KB | 118 KB | 0 KB | 170 |
-| **Terms and Conditions** | **3,056 KB** | 278 KB | 2,341 KB | 77 KB | 239 KB | 118 KB | 0 KB | 163 |
-| **Privacy and Cookies** | **3,071 KB** | 274 KB | 2,334 KB | 77 KB | 264 KB | 118 KB | 0 KB | 162 |
-| **Tour Detail** | **5,728 KB** | 853 KB | 2,428 KB | 167 KB | 1,722 KB | 203 KB | 348 KB | 231 |
+| **Homepage** | **8,219 KB** | 1,350 KB | 1,185 KB | 64 KB | 5,301 KB | 74 KB | 243 KB | 193 |
+| **About Us** | **4,652 KB** | 891 KB | 787 KB | 37 KB | 2,756 KB | 74 KB | 105 KB | 124 |
+| **Accessible Travel** | **2,754 KB** | 844 KB | 801 KB | 40 KB | 872 KB | 74 KB | 121 KB | 101 |
+| **Blogs List** | **3,013 KB** | 667 KB | 774 KB | 38 KB | 1,051 KB | 74 KB | 407 KB | 116 |
+| **Blog Detail** | **15,506 KB** | 809 KB | 784 KB | 40 KB | **13,526 KB** | 74 KB | 270 KB | 108 |
+| **Contact Us** | **2,558 KB** | 965 KB | 849 KB | 118 KB | 117 KB | 74 KB | 434 KB | 116 |
+| **Egypt Tours Category** | **2,999 KB** | 747 KB | 766 KB | 39 KB | 1,253 KB | 74 KB | 118 KB | 112 |
+| **Egypt Travel Guide** | **1,685 KB** | 539 KB | 733 KB | 38 KB | 240 KB | 74 KB | 60 KB | 84 |
+| **Events** | **8,192 KB** | 758 KB | 702 KB | 40 KB | 6,539 KB | 74 KB | 77 KB | 93 |
+| **FAQs** | **1,700 KB** | 694 KB | 759 KB | 37 KB | 61 KB | 74 KB | 73 KB | 85 |
+| **Rent Car** | **2,119 KB** | 715 KB | 1,094 KB | 61 KB | 48 KB | 74 KB | 126 KB | 92 |
+| **Sustainability** | **3,416 KB** | 819 KB | 841 KB | 39 KB | 1,538 KB | 74 KB | 102 KB | 100 |
+| **Terms and Conditions** | **1,668 KB** | 619 KB | 757 KB | 37 KB | 84 KB | 74 KB | 95 KB | 83 |
+| **Privacy and Cookies** | **1,582 KB** | 510 KB | 757 KB | 37 KB | 109 KB | 74 KB | 93 KB | 82 |
+| **Tour Detail** | **5,381 KB** | 841 KB | 1,144 KB | 151 KB | 2,428 KB | 74 KB | 736 KB | 155 |
 
 ---
 
 ## 3. Key Findings & Performance Anomalies
 
-### ⚠️ Hydration Mismatches Detected
-The following categories contain **Hydration Mismatches**:
-- **About Us**
-- **Blogs List**
-- **Egypt Tours Category**
-- **Events**
-- **Terms and Conditions**
-- **Privacy and Cookies**
-- **Tour Detail**
+### 🟢 TTFB Is Excellent Across the Board
+All pages show TTFB between **61–79ms**. This confirms Vercel Edge CDN is doing its job. HTML is cached and served quickly. The performance bottleneck is **not** the server — it is client-side rendering and asset weight.
 
-**Impact**: A hydration mismatch causes the browser to discard the server-rendered DOM nodes and recreate them on the client. This leads to flashing layouts (worsening **CLS**), breaks dynamic functionality, and wastes CPU cycles on main-thread work, pushing **TBT** up.
+### 🟡 FCP / LCP Are the Main Bottlenecks
+FCP ranges from **2.3s** (Egypt Travel Guide) to **3.7s** (Homepage, Accessible Travel). LCP ranges from **2.3s** to **3.9s** (Blog Detail). No page passes the < 1.8s FCP threshold. This is primarily driven by:
+- Heavy image payloads
+- Blocking JavaScript execution
+- Large HTML documents
 
 ### 🐘 Heavyweight Pages (Over 3 MB)
-The following page categories transfer excessive payloads:
-- **Homepage** (8,306 KB across 225 requests)
-- **About Us** (6,501 KB across 213 requests)
-- **Accessible Travel** (8,693 KB across 174 requests)
-- **Blogs List** (3,635 KB across 176 requests)
-- **Blog Detail** (20,396 KB across 130 requests)
-- **Contact Us** (3,593 KB across 184 requests)
-- **Egypt Tours Category** (4,340 KB across 182 requests)
-- **Egypt Travel Guide** (3,199 KB across 169 requests)
-- **Events** (10,277 KB across 170 requests)
-- **Sustainability** (4,874 KB across 170 requests)
-- **Terms and Conditions** (3,056 KB across 163 requests)
-- **Privacy and Cookies** (3,071 KB across 162 requests)
-- **Tour Detail** (5,728 KB across 231 requests)
+The following pages transfer excessive payloads:
+- **Homepage** (8,219 KB — images: 5,301 KB)
+- **About Us** (4,652 KB — images: 2,756 KB)
+- **Blog Detail** (15,506 KB — images: **13,526 KB**)
+- **Events** (8,192 KB — images: 6,539 KB)
+- **Sustainability** (3,416 KB — images: 1,538 KB)
+- **Tour Detail** (5,381 KB — images: 2,428 KB)
 
-**Impact**: High payload weights slow down loading speeds (worsening **FCP** and **LCP**), particularly on mobile or slower connections.
+**Impact**: High payload weights delay paints and inflate bandwidth, particularly on mobile or slower connections.
+
+### 🟢 CLS Is Fixed
+All audited pages report **CLS = 0**. The severe layout shift issues from the previous audit (e.g., homepage CLS 0.65) appear to be resolved. This is a major improvement.
+
+### ✅ No Hydration Mismatches
+Zero hydration mismatches were detected across all 15 pages. Another significant improvement from the previous audit.
 
 ### 📸 Visual Reference Map
 Screenshots captured during audits are available under:
@@ -114,17 +108,28 @@ Screenshots captured during audits are available under:
 
 ## 4. Priority Recommendation Action Plan
 
-### 1. Fix Layout Shifts (CLS) on dynamic cards
-Dynamic card grids (Tours, Blogs) cause severe layout shifts because their image heights are undefined before loading. Add CSS `aspect-ratio` or reserve spaces with explicit skeleton loaders.
+### 1. Optimize Blog Detail Images (Critical)
+Blog Detail pages transfer **15.5 MB**, with images alone accounting for **13.5 MB**. These are almost certainly full-resolution photos served without compression or responsive sizing. Ensure `@nuxt/image` is applied to **all** blog content images with WebP/AVIF conversion and breakpoint-based srcsets.
 
-### 2. Optimize Social & Badges Assets Weight
-Many footers and card headers load large PNG icons (`tiktok.png`, `shorts.png`) which consume close to **800 KB** of transfer. Replace all custom PNG social media icons with **optimized inline SVGs** or lightweight SVG sprites.
+### 2. Optimize Homepage & Events Hero Images (Critical)
+Homepage (5.3 MB images) and Events (6.5 MB images) are the next heaviest. Audit hero banners, carousel images, and gallery thumbnails. Compress to quality 80, serve WebP/AVIF, and ensure `sizes` attribute matches the rendered width.
 
-### 3. Defer CSS chunk loading
-Nuxt outputs 11+ blocking CSS link tags, delaying FCP and LCP. Configure Vite inside `nuxt.config.ts` to inline critical above-the-fold styling and load component-specific styles asynchronously.
+### 3. Reduce Blocking JavaScript
+Every page loads **700–1,100 KB of JavaScript**. While not catastrophic, it still delays interactivity. Audit the bundle with Nuxt DevTools:
+- Lazy-load below-the-fold components (tour cards, maps, accordions)
+- Code-split heavy libraries (Swiper, Lottie, Google Maps)
+- Defer non-critical third-party scripts (analytics, pixels)
 
-### 4. Hydration Mismatch Resolution
-Audit components with dynamic state (e.g. date formats, user profiles, or browser-specific fields) and wrap them with `<ClientOnly>` to prevent Vue from mismatching server-rendered elements.
+### 4. Reduce HTML Payload
+Homepage HTML is **1,350 KB**. This is unusually large for an HTML document and suggests the server is embedding massive JSON data or inline images. Audit the SSR output for embedded base64 images or bloated API responses inlined in the HTML.
+
+### 5. Implement Resource Hints for API Calls
+Tour Detail loads **736 KB of API responses**. Add `preconnect` hints to the API origin (`sunpyramidtours.com`) and consider SWR/stale-while-revalidate caching for repeated tour data.
+
+### 6. Keep Monitoring CLS & Hydration
+Both metrics are now clean (0 CLS, no mismatches). Ensure any future component changes preserve this by:
+- Adding explicit `width`/`height` or `aspect-ratio` to all images
+- Avoiding client-only state inside server-rendered markup
 
 ---
 

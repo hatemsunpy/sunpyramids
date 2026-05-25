@@ -55,7 +55,7 @@ export default defineNuxtModule({
 
 ```ts
 // modules/ui/index.ts
-import { addComponent, createResolver } from '@nuxt/kit'
+import { addComponent, addComponentsDir, createResolver } from '@nuxt/kit'
 
 export default defineNuxtModule({
   setup(options, nuxt) {
@@ -80,7 +80,7 @@ export default defineNuxtModule({
 
 ```ts
 // modules/utils/index.ts
-import { addImports, createResolver } from '@nuxt/kit'
+import { addImports, addImportsDir, createResolver } from '@nuxt/kit'
 
 export default defineNuxtModule({
   setup() {
@@ -172,6 +172,8 @@ export default defineNuxtModule({
 ```ts
 export default defineNuxtModule({
   setup(options, nuxt) {
+    const { resolve } = createResolver(import.meta.url)
+
     // Build-time hooks
     nuxt.hook('modules:done', () => {
       console.log('All modules loaded')
@@ -242,7 +244,7 @@ export default defineNuxtConfig({
 
 Place in `modules/` directory:
 
-```
+```text
 modules/
 ├── my-module/
 │   ├── index.ts

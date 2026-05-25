@@ -35,7 +35,7 @@
 ### Implementation for User Story 1
 
 - [X] T003 [US1] In `nuxt.config.ts`, change i18n module config `lazy: false` to `lazy: true` and `langDir: "locales/"` to `langDir: "i18n/locales/"` (corrects the directory path so lazy fetches resolve locale files)
-- [X] T004 [US1] In the language switcher component (find in `components/Shared/LangAndCurrancies.vue` or `components/Models/languages&currancies.vue`), add debounce logic to prevent repeated language switch clicks while a locale fetch is pending. Track a `isLocaleLoading` ref; disable or debounce `setLocale()` calls when true. Ensure the UI keeps displaying the current language until the new locale is fully loaded, then swaps atomically.
+- [X] T004 [US1] In the active language switcher component (check both `components/Shared/LangAndCurrancies.vue` and `components/Models/languages&currancies.vue`), add debounce logic to prevent repeated language switch clicks while a locale fetch is pending. Track an `isLocaleLoading` ref; disable or debounce `setLocale()` calls when true. Ensure the UI keeps displaying the current language until the new locale is fully loaded, then swaps atomically.
 - [X] T005 [US1] In the language switcher component, wrap `setLocale()` in a try/catch. On fetch failure, keep the current language active (do NOT call `setLocale` with the failed code), log the error, and optionally show a non-disruptive toast via `useNuxtApp().$toast`.
 - [X] T006 [US1] Verify SSR behavior: run `npm run build`, then verify the homepage raw HTML (view-source) contains translated content for the default locale (en). All 7 language prefixes (`/fr`, `/de`, `/it`, `/pt`, `/es`, `/zh`) must render locale-specific translated content in their raw HTML.
 - [X] T007 [US1] Verify lazy loading: in the browser Network tab, confirm only one locale JSON file (e.g., `en.json`) is fetched during initial page load. Switch language and confirm the new locale file is fetched on demand.
@@ -81,7 +81,7 @@
   - `components/Home/gallary.vue` (line ~82)
   - `components/MarktingPages/SelectedTours.vue` (line ~94)
   - `components/Shared/SpecialEvents.vue` (line ~83)
-- [X] T014 [P] [US3] Remove all Swiper CSS imports (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) from these 12 multi-import components:
+- [X] T014 [P] [US3] Remove all Swiper CSS imports (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) from these 14 multi-import components:
   - `components/Blogs/Blog/MainBanner.vue` (lines ~37-39)
   - `components/Disabled/RelatedTours.vue` (lines ~53-55)
   - `components/Event/Gallary.vue` (lines ~45-47)

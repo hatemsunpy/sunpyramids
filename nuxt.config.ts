@@ -37,14 +37,7 @@ export default defineNuxtConfig({
       inline: ["@googlemaps/markerclusterer"],
     },
   },
-  css: ["~/assets/styles/main.scss", "swiper/css", "swiper/css/pagination", "swiper/css/navigation", "swiper/css/free-mode", "swiper/css/thumbs"],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  css: ["~/assets/styles/main.scss"],
 
   plugins: ["~/plugins/vue3-toastify.client.js"],
   build: {
@@ -59,6 +52,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "~/modules/critical-css",
     "@pinia/nuxt",
     "nuxt-swiper",
     "nuxt-icons",
@@ -87,6 +81,10 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vercel/speed-insights/nuxt",
   ],
+  criticalCSS: {
+    routes: ['/', '/tours', '/about-us', '/contact-us', '/events', '/make-your-trip'],
+    locales: ['en', 'fr', 'de', 'it', 'pt', 'es', 'zh'],
+  },
   app: {
     head: {
       link: [
