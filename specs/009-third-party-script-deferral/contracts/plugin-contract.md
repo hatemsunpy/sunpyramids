@@ -65,7 +65,7 @@ All form submit handlers that call `generateRecaptchaToken()` receive a thrown e
 
 ### Script Injection Order
 
-```
+```text
 1. reCAPTCHA Enterprise   (priority: 1 — needed by forms)
 2. GTM + GA4              (priority: 2 — analytics, not user-facing)
 [TrustIndex is loaded on idle, not interaction — separate trigger]

@@ -24,7 +24,7 @@ jobs:
         run: npm run generate # The build command of your project
 
       - name: Push
-        uses: s0/git-publish-subdir-action@develop
+        uses: s0/git-publish-subdir-action@v0.1.1
         env:
           REPO: self
           BRANCH: deploy # The branch name where you want to push the assets

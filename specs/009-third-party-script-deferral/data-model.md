@@ -73,11 +73,11 @@ A DOM element with a known `id` attribute that serves as the mount point for a T
 ```
 Page idle (requestIdleCallback / 5s timeout fallback)
   │
-  ├── document.getElementById('#home-reviews') exists?
+  ├── document.getElementById('home-reviews') exists?
   │   ├── Yes → inject loader.js, mark loaded
   │   └── No  → skip
   │
-  ├── document.getElementById('#footer-cert') exists?
+  ├── document.getElementById('footer-cert') exists?
   │   ├── Yes → inject loader-cert.js, mark loaded
   │   └── No  → skip
   │
