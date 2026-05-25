@@ -85,6 +85,8 @@
 
 <script setup lang="js">
 import { Swiper } from "swiper/vue";
+import 'swiper/css'
+import 'swiper/css/free-mode'
 import { Autoplay, FreeMode } from 'swiper/modules';
 let modules = [Autoplay, FreeMode];
 const router = useRouter()

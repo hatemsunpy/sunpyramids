@@ -78,6 +78,8 @@
 import { sharedStore } from '~/stores/sharedStore.js'
 import { storeToRefs } from 'pinia'
 import { Swiper } from "swiper/vue";
+import 'swiper/css'
+import 'swiper/css/free-mode'
 import { Autoplay, FreeMode } from 'swiper/modules';
 
 let modules = [Autoplay, FreeMode];

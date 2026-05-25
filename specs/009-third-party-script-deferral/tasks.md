@@ -97,7 +97,7 @@
 
 **Purpose**: Final verification and edge case hardening
 
-- [X] T020 Run the full quickstart.md verification checklist: (1) build passes, (2) no third-party scripts in initial HTML, (3) GTM noscript preserved, (4) reCAPTCHA forms work, (5) GTM/GA4 loads after interaction, (6) TrustIndex loads on idle, (7) `?no-third-party` respected, (8) no duplicate scripts on SPA nav, (9) CLS not worsened, (10) ESLint passes.
+- [X] T020 Run the full quickstart.md verification checklist: (1) build passes, (2) no third-party scripts in initial HTML, (3) GTM noscript preserved, (4) reCAPTCHA forms work, (5) GTM/GA4 loads after interaction, (6) TrustIndex loads on idle, (7) `?no-third-party` respected, (8) no duplicate scripts on SPA nav, (9) CLS not worsened, (10) ESLint passes. (11) Measure final FCP and TBT via 5 Lighthouse mobile runs (median) and compare against the T001 baseline to confirm SC-004 (≥10% FCP) and SC-005 (≥15% TBT).
 - [X] T021 Verify edge cases from spec.md: (a) submit a form requiring reCAPTCHA immediately after page load (before interaction/timeout) — form must still submit successfully, (b) verify slow-connection scenario by throttling in DevTools — scripts must not block rendering, (c) verify reCAPTCHA load failure by temporarily blocking `google.com` in DevTools — form must show user-friendly toast error, (d) verify no layout shift around TrustIndex containers after widgets load.
 
 ---

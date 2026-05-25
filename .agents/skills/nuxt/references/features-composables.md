@@ -116,7 +116,7 @@ const { user, isLoggedIn, login } = useAuth()
 
 Only top-level files are scanned:
 
-```
+```text
 composables/
 ├── useAuth.ts         → useAuth() ✓
 ├── useCounter.ts      → useCounter() ✓
@@ -256,13 +256,9 @@ export function useMyComposable() {
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  // Disable all auto-imports
+  // Disable all auto-imports (includes disabling directory scanning)
   imports: {
     autoImport: false,
-  },
-
-  // Or disable only directory scanning (keep Vue/Nuxt imports)
-  imports: {
     scan: false,
   },
 })

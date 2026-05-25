@@ -98,7 +98,7 @@ specs/009-third-party-script-deferral/
 plugins/
 └── third-party-scripts.client.ts    # NEW: unified deferred script loader
 
-# Files to MODIFY (8 existing)
+# Files to MODIFY (7 existing)
 nuxt.config.ts                       # Remove reCAPTCHA from app.head.script
 app.vue                              # Remove GTM/GA4 useHead() block (lines 31-66), keep noscript + noThirdPartyQuery
 composables/recapcha.js              # Add await $ensureRecaptchaLoaded() with error handling

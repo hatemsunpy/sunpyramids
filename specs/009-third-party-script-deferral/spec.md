@@ -101,8 +101,8 @@ As a developer maintaining the site, I want all third-party script loading logic
 - **SC-001**: Google Tag Manager and Google Analytics script requests are absent from the network waterfall during the initial page load (before user interaction or 5-second timeout).
 - **SC-002**: reCAPTCHA Enterprise script request is absent from the initial page render waterfall.
 - **SC-003**: TrustIndex script requests are absent from the initial page load waterfall on pages that include them.
-- **SC-004**: First Contentful Paint (FCP) improves by at least 10% as measured by Lighthouse or PageSpeed Insights on the homepage.
-- **SC-005**: Total Blocking Time (TBT) improves by at least 15% as measured by Lighthouse or PageSpeed Insights on the homepage.
+- **SC-004**: First Contentful Paint (FCP) improves by at least 10% as measured by the median of 5 Lighthouse mobile runs with simulated throttling on the homepage.
+- **SC-005**: Total Blocking Time (TBT) improves by at least 15% as measured by the median of 5 Lighthouse mobile runs with simulated throttling on the homepage.
 - **SC-006**: All form submissions that require reCAPTCHA (Contact Us, Make Your Trip, Need Help, Event Booking) continue to produce valid tokens and submit successfully.
 - **SC-007**: All TrustIndex review widgets (homepage, events, event detail, marketing pages, footer certification) render identically to their current appearance after deferred loading completes.
 - **SC-008**: When `?no-third-party` is present in the URL, zero third-party script requests appear in the network tab.

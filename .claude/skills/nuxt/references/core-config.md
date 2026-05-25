@@ -5,7 +5,7 @@ description: Nuxt configuration files including nuxt.config.ts, app.config.ts, a
 
 # Nuxt Configuration
 
-Nuxt uses configuration files to customize application behavior. The main configuration options are `nuxt.config.ts` for build-time settings and `app.config.ts` for runtime settings.
+Nuxt uses configuration files to customize application behavior. The main configuration options are `nuxt.config.ts` for build-time settings and `app.config.ts` for application public config bundled with the app. Use `runtimeConfig` in `nuxt.config.ts` for environment-specific and server-side settings.
 
 ## nuxt.config.ts
 

@@ -34,6 +34,9 @@
 
 <script setup lang="js">
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 import { Navigation, Pagination } from 'swiper/modules';
 const modules = [Navigation, Pagination];
 const props = defineProps({

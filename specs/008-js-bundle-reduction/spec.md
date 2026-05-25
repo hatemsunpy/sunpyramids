@@ -49,14 +49,14 @@ As a visitor on any page, I want the server-rendered HTML to arrive quickly with
 
 As a visitor on pages using the Swiper carousel (homepage, tour pages), I want the Swiper CSS to load once globally instead of being duplicated across multiple component bundles, so that less redundant CSS is downloaded.
 
-**Why this priority**: Swiper CSS (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) is imported separately in 5+ Vue components. Each import adds the same CSS to that component's chunk. Moving to a single global import eliminates the duplication and reduces total CSS payload.
+**Why this priority**: Swiper CSS (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) is imported separately in 27 Vue components. Each import adds the same CSS to that component's chunk. Moving to a single global import eliminates the duplication and reduces total CSS payload.
 
 **Independent Test**: Verify that Swiper CSS is loaded exactly once in the page (check Network tab) and that all carousels/sliders render correctly on the homepage and tour pages.
 
 **Acceptance Scenarios**:
 
 1. **Given** Swiper CSS is imported globally, **When** any page with a Swiper carousel loads, **Then** the Swiper CSS is loaded once and all carousels display correctly.
-2. **Given** the old per-component Swiper CSS imports are removed, **When** a page without any carousel loads, **Then** no unused Swiper CSS is loaded.
+2. **Given** the old per-component Swiper CSS imports are removed and a single global Swiper CSS import is in place, **When** a page without any carousel loads, **Then** no duplicate or per-component Swiper CSS is loaded; only the single global Swiper stylesheet is present.
 
 ---
 
@@ -92,11 +92,11 @@ As a visitor on any page, I want the application to avoid loading duplicate modu
 
 - **FR-001**: The i18n module MUST be configured with `lazy: true` so that only the active locale messages are loaded on initial page render.
 - **FR-002**: Non-active locale files MUST NOT be included in the initial JavaScript bundle; they MUST load on demand when the user switches languages.
-- **FR-002a**: During a language switch, the UI MUST keep displaying the current language until the new locale is fully loaded, then swap atomically. Raw translation keys MUST NOT be shown. Repeated language switch clicks MUST be debounced while a fetch is pending.
-- **FR-002b**: If a locale fetch fails, the UI MUST retain the current language and MUST NOT crash. A non-disruptive error message may be shown.
+- **FR-002a**: During a language switch, the UI MUST keep displaying the current language until the new locale is fully loaded, then swap atomically. Raw translation keys MUST NOT be shown. Repeated language switch clicks MUST be debounced (300ms) while a fetch is pending.
+- **FR-002b**: If a locale fetch fails, the UI MUST retain the current language and MUST NOT crash. A toast notification may be shown to inform the user of the failure.
 - **FR-003**: The vue3-toastify plugin MUST be renamed to use the `.client.js` suffix so it is excluded from server-side rendering.
 - **FR-004**: The nuxt.config.ts plugin reference for vue3-toastify MUST be updated to match the renamed file.
-- **FR-005**: Swiper CSS imports (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) MUST be moved to a single global entry in nuxt.config.ts.
+- **FR-005**: Swiper CSS imports (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`, `swiper/css/free-mode`, `swiper/css/thumbs`) MUST be moved to a single global entry in nuxt.config.ts.
 - **FR-006**: All per-component `import "swiper/css"` (and sub-module) statements MUST be removed from individual Vue components.
 - **FR-007**: All existing Swiper carousels (homepage main banner, tour detail gallery, travel blogs, partners, special offers) MUST render correctly after the CSS import change.
 - **FR-008**: Toast notifications MUST continue to function identically after the plugin rename (form validation errors, success messages, etc.).
@@ -105,12 +105,13 @@ As a visitor on any page, I want the application to avoid loading duplicate modu
 - **FR-011**: The datepicker CSS (`@vuepic/vue-datepicker/dist/main.css`) MUST be removed from the global app.vue import.
 - **FR-012**: The datepicker CSS MUST be imported only in the specific components or pages that use the datepicker (booking/checkout flows).
 - **FR-013**: The datepicker UI MUST render with correct styling and no layout shift when opened after the CSS is scoped to its consuming components.
+- **FR-014**: Disabled no-op plugin files (`plugins/vercel-analytics.client.ts`, `plugins/clear-payload.client.ts`) MUST be removed from the codebase.
 
 ### Key Entities
 
 - **Locale file**: A JSON file containing translated UI strings for a single language (e.g., `en.json`, `ar.json`). Seven locales exist in the project.
 - **Client-only plugin**: A Nuxt plugin suffixed `.client.js` that executes only in the browser, not during server-side rendering.
-- **Swiper CSS**: Third-party stylesheet modules required by the Swiper.js carousel library for pagination, navigation, and core styles.
+- **Swiper CSS**: Third-party stylesheet modules required by the Swiper.js carousel library: core styles, pagination, navigation, free-mode scrolling, and thumbnail sync.
 
 ## Success Criteria *(mandatory)*
 
