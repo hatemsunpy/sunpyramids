@@ -163,7 +163,7 @@ Delete the two disabled no-op plugins: `plugins/vercel-analytics.client.ts` and 
 - `vercel-analytics.client.ts` was already superseded by the @vercel/speed-insights Nuxt module.
 - `clear-payload.client.ts` was disabled because it caused hydration crashes. If the clearing logic is needed in the future, it should be re-implemented with proper safeguards.
 - Neither plugin is registered in `nuxt.config.ts`, so deleting them has zero impact on the build or app behavior.
-- Nuxt 3 does NOT auto-register plugins — only those listed in `nuxt.config.ts` plugins array are loaded. The three active plugins are `vue3-toastify.js`, `vue-awesome-paginate.client.js`, and `vueGoogleMaps.client.ts`.
+- Nuxt 3 auto-registers plugins placed in the top-level `plugins/` directory, so the three active plugins (`vue3-toastify.js`, `vue-awesome-paginate.client.js`, and `vueGoogleMaps.client.ts`) are picked up automatically. The `nuxt.config.ts` plugins array is only required for plugins in subdirectories or when custom ordering/explicit registration is needed.
 
 ### Implementation Details
 1. Delete `plugins/vercel-analytics.client.ts`

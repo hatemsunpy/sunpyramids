@@ -38,7 +38,7 @@ A JSON file containing translated UI strings for a single language.
 
 ### Loading Mode State Transition
 
-```
+```text
 BEFORE (lazy: false):                AFTER (lazy: true):
                                      
   All 7 files bundled eagerly         Active locale bundled eagerly

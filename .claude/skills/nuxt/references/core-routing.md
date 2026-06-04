@@ -9,7 +9,7 @@ Nuxt uses file-system routing based on vue-router. Files in `app/pages/` automat
 
 ## Basic Routing
 
-```
+```text
 pages/
 ├── index.vue      → /
 ├── about.vue      → /about
@@ -22,7 +22,7 @@ pages/
 
 Use brackets for dynamic segments:
 
-```
+```text
 pages/
 ├── users/
 │   └── [id].vue       → /users/:id

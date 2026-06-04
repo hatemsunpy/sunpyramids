@@ -7,10 +7,8 @@ description: Nuxt project folder structure, conventions, and file organization
 
 Nuxt uses conventions-based directory structure. Understanding it is key to effective development.
 
-## Standard Project Structure
-
-```
-my-nuxt-app/
+## ```
+```text
 ├── app/                    # Application source (can be at root level)
 │   ├── app.vue             # Root component
 │   ├── app.config.ts       # App configuration (runtime)
@@ -55,7 +53,7 @@ export default defineNuxtConfig({
 
 Vue components auto-imported by name:
 
-```
+```text
 components/
 ├── Button.vue           → <Button />
 ├── Card.vue             → <Card />
@@ -77,7 +75,7 @@ components/
 
 **Client/Server only**:
 
-```
+```text
 components/
 ├── Comments.client.vue  → Only rendered on client
 └── ServerData.server.vue → Only rendered on server
@@ -87,7 +85,7 @@ components/
 
 Vue composables auto-imported (top-level files only):
 
-```
+```text
 composables/
 ├── useAuth.ts           → useAuth()
 ├── useFoo.ts            → useFoo()
@@ -106,7 +104,7 @@ export { useHelper } from './nested/utils'
 
 File-based routing:
 
-```
+```text
 pages/
 ├── index.vue            → /
 ├── about.vue            → /about
@@ -128,7 +126,7 @@ pages/
 
 Layout components wrapping pages:
 
-```
+```text
 layouts/
 ├── default.vue          → Default layout
 ├── admin.vue            → Admin layout
@@ -161,7 +159,7 @@ definePageMeta({
 
 Route middleware:
 
-```
+```text
 middleware/
 ├── auth.ts              → Named middleware
 ├── admin.ts             → Named middleware
@@ -172,7 +170,7 @@ middleware/
 
 Nuxt plugins (auto-registered):
 
-```
+```text
 plugins/
 ├── 01.analytics.ts      → Order with number prefix
 ├── 02.auth.ts
@@ -184,7 +182,7 @@ plugins/
 
 Nitro server code:
 
-```
+```text
 server/
 ├── api/
 │   ├── users.ts         → GET /api/users
@@ -204,7 +202,7 @@ server/
 
 Static assets served at root URL:
 
-```
+```text
 public/
 ├── favicon.ico          → /favicon.ico
 ├── robots.txt           → /robots.txt
@@ -216,7 +214,7 @@ public/
 
 Build-processed assets:
 
-```
+```text
 assets/
 ├── css/
 │   └── main.css

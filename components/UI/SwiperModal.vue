@@ -52,7 +52,11 @@
   </section>
 </template>
 
-<script setup lang='js'>import { Swiper, SwiperSlide } from 'swiper/vue';
+<script setup lang='js'>import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/free-mode'
+import 'swiper/css/thumbs'
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 const modules = [FreeMode, Navigation, Thumbs];
 

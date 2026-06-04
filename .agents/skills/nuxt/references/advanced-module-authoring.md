@@ -11,7 +11,7 @@ This guide covers creating publishable Nuxt modules with proper structure, type 
 
 Recommended structure for a publishable module:
 
-```
+```text
 my-nuxt-module/
 ├── src/
 │   ├── module.ts          # Module entry
@@ -284,7 +284,7 @@ declare module '#my-module' {
 import config from '#build/my-config.mjs'
 
 // In server routes
-import { config } from '#my-module/config.js'
+import { config } from '#my-module/config.mjs'
 ```
 
 ## Extending Pages and Routes

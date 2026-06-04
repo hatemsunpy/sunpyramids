@@ -145,10 +145,12 @@ Don't block navigation:
 <script setup lang="ts">
 // Using lazy option
 const { data, status } = await useFetch('/api/posts', { lazy: true })
+</script>
 
-// Or use lazy variants
-const { data, status } = await useLazyFetch('/api/posts')
-const { data, status } = await useLazyAsyncData('key', fetchFn)
+<script setup lang="ts">
+// Or use lazy variants (alternative examples)
+const { data: lazyData, status: lazyStatus } = await useLazyFetch('/api/posts')
+const { data: asyncData, status: asyncStatus } = await useLazyAsyncData('key', fetchFn)
 </script>
 ```
 
