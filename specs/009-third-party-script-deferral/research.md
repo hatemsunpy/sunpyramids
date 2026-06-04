@@ -129,8 +129,8 @@ Instead of injecting TrustIndex scripts in each component's `onMounted`, the def
 
 | Container ID | Script URL | Used In |
 |---|---|---|
-| `#home-reviews` | `https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e` | `components/MarktingPages/index.vue`, `components/Events/index.vue`, `components/Event/index.vue` |
-| `#footer-cert` | `https://cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a` | `components/Footer/index.vue` |
+| `home-reviews` | `https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e` | `components/MarktingPages/index.vue`, `components/Events/index.vue`, `components/Event/index.vue` |
+| `footer-cert` | `https://cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a` | `components/Footer/index.vue` |
 
 ### Alternatives Considered
 - **IntersectionObserver for viewport detection**: More precise (loads when user scrolls near widget) but TrustIndex widgets are not always visible on initial viewport — they're further down the page. `requestIdleCallback` is simpler and achieves the same TBT benefit.
@@ -141,6 +141,8 @@ Instead of injecting TrustIndex scripts in each component's `onMounted`, the def
 1. In `plugins/third-party-scripts.client.ts`:
    - Define `TRUSTINDEX_CONTAINERS` map: `{ 'home-reviews': '<loader.js URL>', 'footer-cert': '<loader-cert.js URL>' }`
    - On idle (requestIdleCallback): iterate containers, check `document.getElementById(id)` with raw IDs (no `#` prefix), inject script if present and not already loaded
+
+> **Note**: `TRUSTINDEX_CONTAINERS` keys must be raw DOM IDs (e.g., `"home-reviews"`, not `"#home-reviews"`). The code uses `document.getElementById(id)`, which expects a raw ID without the `#` selector prefix.
    - On route change (watch `useRouter().currentRoute`): re-run detection after `nextTick`
    - Track loaded scripts in a `Set<string>` to prevent duplicates
 

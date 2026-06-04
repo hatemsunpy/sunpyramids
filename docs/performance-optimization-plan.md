@@ -117,8 +117,8 @@ Toastify loads its CSS and JS on both server and client. Make it client-only:
 + plugins: ["~/plugins/vue3-toastify.client.js"],
 ```
 
-#### Deduplicate Swiper CSS imports
-Swiper CSS is imported in **5+ components** separately (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`). Move to a single global import in [nuxt.config.ts](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/nuxt.config.ts):
+#### ✅ COMPLETED — Deduplicate Swiper CSS imports
+Swiper CSS is imported in **27 components** separately (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`, `swiper/css/free-mode`, `swiper/css/thumbs`). Moved to a single global import in [nuxt.config.ts](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/nuxt.config.ts):
 
 ```diff
   css: [
@@ -255,9 +255,9 @@ Remove the entire GTM/GA4 `useHead()` block (lines 32-67) since the plugin handl
 > if (route.query['no-third-party']) return  // Skip all third-party scripts
 > ```
 
-#### [MODIFY] [index.vue](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/pages/index.vue) — Defer TrustIndex loading
+#### ✅ COMPLETED — [MODIFY] [index.vue](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/pages/index.vue) — Defer TrustIndex loading
 
-TrustIndex widget loads immediately on mount. Defer it with `requestIdleCallback`:
+TrustIndex widget loaded immediately on mount. **Removed** the immediate injection and now relies on the existing `third-party-scripts.client.ts` plugin which already handles deferral via `requestIdleCallback` + interaction listeners:
 
 ```diff
   onMounted(() => {
@@ -324,9 +324,9 @@ Move this import to the components that actually use the datepicker (e.g., booki
 
 ### 5. 🌊 API Waterfall Elimination (Medium Impact — LCP/FCP)
 
-#### [MODIFY] [Header/index.vue](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/components/Header/index.vue)
+#### ✅ COMPLETED — [MODIFY] [Header/index.vue](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/components/Header/index.vue)
 
-The Header calls `await getnationalities()` which **blocks the entire page render** during SSR:
+The Header called `await getnationalities()` which **blocked the entire page render** during SSR. **Fixed** by wrapping in `if (process.client)`:
 
 ```diff
 - await getnationalities()
@@ -384,22 +384,26 @@ Also, currently preloading **3 font weights**. Consider preloading only Regular 
 
 ### 7. 📋 Caching & Delivery Optimization (Low Impact — Repeat Visits)
 
-#### [MODIFY] [nuxt.config.ts](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/nuxt.config.ts) — Keep ipx for local images only
+#### [KEEP] [nuxt.config.ts](file:///d:/Sun%20Pyramids/sun%20pyramids%20tours%20-%20Web/sun-front/nuxt.config.ts) — Preserve `domains` for dynamic `<NuxtImg>` usage
 
-> [!WARNING]
-> Do **NOT** switch to the `vercel` image provider. Since API images use plain `<img>` tags (not `<NuxtImg>`), the provider only affects **local** images from `/public/`. The `ipx` provider works correctly for local images. Switching to `vercel` would add unnecessary complexity with no benefit for API images.
+> [!NOTE]
+> Keep the current `domains` whitelist as-is. Although the **majority** of API images intentionally use plain `<img>` (to avoid ipx proxying issues with external CDN URLs), several components **do** use `<NuxtImg>` for backend images:
+> - `components/Tours/LeftPanal/Gallary.vue` — `<NuxtImg :src="item?.img" ... />` (dynamic gallery images)
+> - `components/Home/Parteners.vue` — partner logos from `sunpyramidtours.com/storage/...`
+>
+> Removing the domains would break ipx optimization for these cases.
 
-Keep the current config but ensure `domains` only lists domains for `<NuxtImg>` usage (local paths):
-
-```diff
+```ts
   image: {
     provider: 'ipx',
     quality: 80,
     format: ['webp', 'avif'],
--   domains: ['sunpyramidtours.com', 'pub-5ccb6ad334fb427684d7f3fa11a34197.r2.dev'],
-+   // No external domains needed — API images use plain <img>, not <NuxtImg>
+    domains: ['sunpyramidtours.com', 'pub-5ccb6ad334fb427684d7f3fa11a34197.r2.dev'], // KEEP — required for <NuxtImg> with backend URLs
   },
 ```
+
+> [!WARNING]
+> Do **NOT** switch to the `vercel` image provider. The `ipx` provider works correctly for local images and the whitelisted domains above. Switching to `vercel` would add unnecessary complexity.
 
 #### Existing cache headers — already good ✅
 - `/_ipx/**` and `/_nuxt/**` have `max-age=31536000, immutable` — correct
@@ -418,7 +422,7 @@ Keep the current config but ensure `domains` only lists domains for `<NuxtImg>` 
 > **Image conversion**: Should I auto-convert the `/public/images/*.png` files to WebP format and update all references? This would permanently reduce the repo size by ~80%.
 
 > [!IMPORTANT]
-> **Backend CDN images**: Can you ask the backend team to serve images in WebP/AVIF format from the CDN? This is the only way to optimize API-fetched images since we can't proxy them through ipx/Vercel.
+> **Backend CDN images**: Can you ask the backend team to serve images in WebP/AVIF format from the CDN? While ipx can optimize `<NuxtImg>` references from the whitelisted domains, most API images use plain `<img>` for compatibility, so server-side format optimization remains the best path for those.
 
 ---
 

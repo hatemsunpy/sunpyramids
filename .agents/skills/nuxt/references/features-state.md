@@ -120,10 +120,6 @@ export const useUserStore = defineStore('user', () => {
   const user = ref<User | null>(null)
   const isLoggedIn = computed(() => !!user.value)
 
-  async function fetchUser() {
-    user.value = await $fetch('/api/user')
-  }
-
   async function login(credentials: Credentials) {
     user.value = await $fetch('/api/login', {
       method: 'POST',
@@ -131,7 +127,7 @@ export const useUserStore = defineStore('user', () => {
     })
   }
 
-  return { user, isLoggedIn, fetchUser, login }
+  return { user, isLoggedIn, login }
 })
 ```
 

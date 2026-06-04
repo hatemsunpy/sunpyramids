@@ -65,8 +65,8 @@ A DOM element with a known `id` attribute that serves as the mount point for a T
 
 | Container ID | Script URL | Components |
 |---|---|---|
-| `#home-reviews` | `cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e` | `MarktingPages/index.vue`, `Events/index.vue`, `Event/index.vue` |
-| `#footer-cert` | `cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a` | `Footer/index.vue` |
+| `home-reviews` | `cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e` | `MarktingPages/index.vue`, `Events/index.vue`, `Event/index.vue` |
+| `footer-cert` | `cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a` | `Footer/index.vue` |
 
 ### Detection Flow
 

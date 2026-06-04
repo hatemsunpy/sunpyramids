@@ -17,7 +17,7 @@ Optimize CSS delivery for improved First Contentful Paint by: (1) inlining criti
 **Project Type**: Nuxt 3 SSR web application (tourism/travel booking)
 **Performance Goals**: ≥8% FCP improvement, ≥30% CSS size reduction, zero visual regressions, ≤30s build time increase
 **Constraints**: Must preserve SSR SEO (no changes to server-rendered content structure), must preserve all 7 locales, must not modify third-party CSS content, critical CSS limited to static top-level pages only, 14KB inline cap per page
-**Scale/Scope**: 1 new Nuxt module file, 1 modified PostCSS config, modifications to ~4 component files (CSS import additions), 1 modified nuxt.config.ts, ~6 static page routes + locale variants receive critical CSS
+**Scale/Scope**: 1 new Nuxt module file, 1 modified PostCSS config, modifications to ~30+ component files (Swiper CSS relocation), 1 modified nuxt.config.ts, ~6 static page routes + locale variants receive critical CSS
 
 ## Constitution Check
 

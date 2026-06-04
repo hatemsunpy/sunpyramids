@@ -54,7 +54,11 @@ export default defineNuxtPlugin((nuxtApp) => {
         script.onload = () => resolve()
         script.onerror = () => {
           recaptchaPromise = null
-          document.head.removeChild(script)
+          try {
+            script.remove()
+          } catch {
+            // ignore cleanup errors
+          }
           reject(new Error('reCAPTCHA load failed'))
         }
         document.head.appendChild(script)

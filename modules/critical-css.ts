@@ -12,6 +12,25 @@ interface CriticalCSSOptions {
   enabled: boolean
 }
 
+interface NuxtRenderContext extends NuxtRenderHTMLContext {
+  event: {
+    path: string
+    node: {
+      req: {
+        headers: {
+          cookie?: string
+        }
+        url?: string
+      }
+      res: {
+        getHeader?: (name: string) => string | string[] | undefined
+        getHeaders?: () => Record<string, string | string[]>
+        setHeader: (name: string, value: string | string[]) => void
+      }
+    }
+  }
+}
+
 export default defineNuxtModule<CriticalCSSOptions>({
   meta: {
     name: 'critical-css',
@@ -41,33 +60,40 @@ export default defineNuxtModule<CriticalCSSOptions>({
       }
     }
 
-    nuxt.hook('render:response', async (context: NuxtRenderHTMLContext) => {
+    nuxt.hook('render:response', async (context: NuxtRenderContext) => {
       // Check for css-cached cookie
       try {
-        const event = (context as any).event
+        const event = context.event
         if (!event?.node) return
 
         const cookies = event.node.req.headers?.cookie || ''
-        if (cookies.includes(`${options.cookieName}=true`)) {
+        const cookieEntries = cookies.split(';').map((c) => c.trim())
+        const hasCachedCookie = cookieEntries.some(
+          (c) => c === `${options.cookieName}=true`
+        )
+        if (hasCachedCookie) {
           return // Skip: CSS already cached
         }
 
         // Strip locale prefix and check against whitelist
         const pathname = event.path || ''
         // Remove locale prefix for matching (e.g., /fr/tours -> /tours)
-        const stripped = pathname.replace(/^\/([a-z]{2})(\/|$)/, '/$2').replace(/\/$/, '') || '/'
+        const stripped = pathname.replace(/^\/([a-z]{2})(?=\/|$)/, '').replace(/\/$/, '') || '/'
 
         if (!expandedRoutes.has(pathname) && !expandedRoutes.has(stripped)) {
           return // Route not in whitelist
         }
 
         // Process with beasties
-        const Beasties = await import('beasties').then((m: any) => m.default || m)
+        const Beasties = await import('beasties').then(
+          (m: { default?: unknown } | unknown) =>
+            (m as { default?: unknown }).default || m
+        )
         const beasties = new Beasties({
           inlineThreshold: options.inlineThreshold,
           preload: options.preload,
           compress: options.compress,
-          path: event.node.req.url || '/',
+          path: pathname || '/',
         })
 
         const processedHTML = await beasties.process(context.html)

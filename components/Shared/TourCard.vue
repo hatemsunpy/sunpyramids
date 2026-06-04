@@ -142,8 +142,6 @@ watch(isHoverIn, (newVal) => {
 
 //swiper setup
 import { Swiper } from "swiper/vue";
-import 'swiper/css'
-import 'swiper/css/pagination'
 import { Pagination, Autoplay } from 'swiper/modules';
 let modules = [Pagination, Autoplay];
 

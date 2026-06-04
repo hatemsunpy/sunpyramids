@@ -122,8 +122,8 @@
   {
     "key": "blog_detail",
     "name": "Blog Detail",
-    "url": "https://sunpyramids.vercel.app/blog/why-choose-egypt%20-desert-tours",
-    "route": "/blog/why-choose-egypt%20-desert-tours",
+    "url": "https://sunpyramids.vercel.app/blog/why-choose-egypt-desert-tours",
+    "route": "/blog/why-choose-egypt-desert-tours",
     "success": true,
     "error": null,
     "metrics": {

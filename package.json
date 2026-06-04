@@ -40,7 +40,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "@nuxt/eslint": "^1.15.2",
-    "@playwright/test": "^1.60.0",
+    "@playwright/test": "1.60.0",
     "autoprefixer": "^10.4.20",
     "beasties": "^0.4.2",
     "eslint": "^9.39.4",
