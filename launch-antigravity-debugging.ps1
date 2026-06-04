@@ -5,5 +5,5 @@ Start-Sleep -Seconds 2
 
 # Start Antigravity IDE with remote debugging enabled on port 9000
 Write-Host "Starting Antigravity IDE with remote debugging enabled on port 9000..."
-Start-Process "C:\Users\HaTeM\AppData\Local\Programs\Antigravity IDE\Antigravity IDE.exe" -ArgumentList "--remote-debugging-port=9000"
+Start-Process "$env:LOCALAPPDATA\Programs\Antigravity IDE\Antigravity IDE.exe" -ArgumentList "--remote-debugging-port=9000"
 Write-Host "Done!"

@@ -37,7 +37,14 @@ export default defineNuxtConfig({
       inline: ["@googlemaps/markerclusterer"],
     },
   },
-  css: ["~/assets/styles/main.scss"],
+  css: [
+    "~/assets/styles/main.scss",
+    "swiper/css",
+    "swiper/css/pagination",
+    "swiper/css/navigation",
+    "swiper/css/free-mode",
+    "swiper/css/thumbs",
+  ],
 
   plugins: ["~/plugins/vue3-toastify.client.js"],
   build: {

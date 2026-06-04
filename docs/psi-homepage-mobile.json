@@ -1,1 +1,6 @@
-null
+{
+  "status": "unavailable",
+  "data": {},
+  "error": "psi report not generated",
+  "generatedAt": null
+}

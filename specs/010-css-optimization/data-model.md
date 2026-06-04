@@ -34,7 +34,7 @@ Mapping between application routes and their CSS dependencies.
 | `sourceComponent` | `string` | Component path that imports the CSS (for traceability) |
 
 **Example**:
-```
+```json
 { route: '/tours',         cssFiles: ['swiper/css', 'swiper/css/pagination', 'swiper/css/navigation'], sourceComponent: 'components/Tours/index.vue' }
 { route: '/event/:id',     cssFiles: ['swiper/css', 'swiper/css/pagination'], sourceComponent: 'components/Event/index.vue' }
 { route: '/contact-us',    cssFiles: [], sourceComponent: null }
@@ -56,7 +56,7 @@ Configuration for unused CSS removal.
 | `enabled` | `boolean` | Enable purging (production only) |
 
 **Safelist entries** (initial):
-```
+```text
 /^nuxt-icon/,      // Nuxt Icons module
 /^swiper-/,        // Swiper library
 /^vee-/,           // VeeValidate
@@ -91,7 +91,7 @@ Simple boolean state tracked via HTTP cookie.
 
 ## Relationships
 
-```
+```text
 CriticalCSSConfig
   └─ controls → RouteCSSMap (determines which routes receive inline CSS)
 

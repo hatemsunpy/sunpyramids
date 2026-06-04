@@ -273,10 +273,9 @@ export default defineNuxtPlugin((nuxtApp) => {
 // server/plugins/inject.ts
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('render:html', (html) => {
-    const config = useRuntimeConfig()
     html.head.push(`
       <script>
-        window.APP_CONFIG = ${JSON.stringify(config.public)}
+        window.APP_CONFIG = ${JSON.stringify(config)}
       </script>
     `)
   })

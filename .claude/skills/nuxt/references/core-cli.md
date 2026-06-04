@@ -29,7 +29,6 @@ npx nuxi@latest init my-app --no-modules
 ```
 
 **Options:**
-
 | Option | Description |
 |--------|-------------|
 | `-t, --template` | Template name |
@@ -66,7 +65,6 @@ npx nuxt dev --tunnel
 ```
 
 **Options:**
-
 | Option | Description |
 |--------|-------------|
 | `-p, --port` | Port to listen on |

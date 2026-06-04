@@ -86,7 +86,7 @@ interface CriticalCSSOptions {
 
 2. **Error handling**:
    - If `beasties` errors, log a warning and return the unprocessed HTML — never fail the response.
-   - If processing time exceeds a reasonable threshold (e.g., 500ms per page), log a warning (degraded gracefully, not a build failure).
+   - TBD / not implemented: If processing time exceeds a reasonable threshold (e.g., 500ms per page), log a warning. Implementing this would require per-page timing instrumentation (measuring start/end timestamps around the CSS optimization processing function) and logging logic in the runtime module.
 
 ### Dependencies
 

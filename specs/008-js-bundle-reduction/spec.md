@@ -49,7 +49,7 @@ As a visitor on any page, I want the server-rendered HTML to arrive quickly with
 
 As a visitor on pages using the Swiper carousel (homepage, tour pages), I want the Swiper CSS to load once globally instead of being duplicated across multiple component bundles, so that less redundant CSS is downloaded.
 
-**Why this priority**: Swiper CSS (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`) is imported separately in 27 Vue components. Each import adds the same CSS to that component's chunk. Moving to a single global import eliminates the duplication and reduces total CSS payload.
+**Why this priority**: Swiper CSS (`swiper/css`, `swiper/css/pagination`, `swiper/css/navigation`, `swiper/css/free-mode`, `swiper/css/thumbs`) is imported separately in 27 Vue components. Each import adds the same CSS to that component's chunk. Moving to a single global import eliminates the duplication and reduces total CSS payload.
 
 **Independent Test**: Verify that Swiper CSS is loaded exactly once in the page (check Network tab) and that all carousels/sliders render correctly on the homepage and tour pages.
 

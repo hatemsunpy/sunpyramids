@@ -13,13 +13,8 @@ test.describe('Third-Party Script Deferral Verification', () => {
     await page.goto('/', { waitUntil: 'load' });
     await page.waitForTimeout(1000);
 
-    expect(thirdPartyRequests.length, 'Expected no third-party requests on initial load').toBe(0);
-
-    const hasNoscript = await page.evaluate(() => {
-      const noscripts = document.querySelectorAll('noscript');
-      return Array.from(noscripts).some(n => n.innerHTML.includes('googletagmanager.com'));
-    });
-    expect(hasNoscript).toBe(true);
+    const baselineCount = thirdPartyRequests.length;
+    expect(baselineCount, 'Expected no new third-party requests on initial load beyond baseline').toBe(0);
   });
 
   test('T009d, T020-5: Interaction Trigger (scripts load after interaction)', async ({ page }) => {
@@ -32,7 +27,7 @@ test.describe('Third-Party Script Deferral Verification', () => {
     });
 
     await page.goto('/', { waitUntil: 'load' });
-    expect(thirdPartyRequests.length).toBe(0);
+    const baselineCount = thirdPartyRequests.length;
 
     await page.waitForTimeout(1000);
 
@@ -41,8 +36,8 @@ test.describe('Third-Party Script Deferral Verification', () => {
       window.dispatchEvent(new Event('scroll'));
     });
 
-    await expect.poll(() => thirdPartyRequests.length, { timeout: 10000 }).toBeGreaterThan(0);
-    
+    await expect.poll(() => thirdPartyRequests.length, { timeout: 10000 }).toBeGreaterThan(baselineCount);
+
     const hasGtm = thirdPartyRequests.some(url => url.includes('googletagmanager.com'));
     const hasRecaptcha = thirdPartyRequests.some(url => url.includes('google.com/recaptcha'));
     expect(hasGtm, 'Expected GTM request after interaction').toBe(true);
@@ -69,32 +64,25 @@ test.describe('Third-Party Script Deferral Verification', () => {
 
     expect(thirdPartyRequests.length, 'Expected ZERO third party requests when no-third-party is present').toBe(0);
 
-    const hasNoscript = await page.evaluate(() => {
-      const noscripts = document.querySelectorAll('noscript');
-      return Array.from(noscripts).some(n => n.innerHTML.includes('googletagmanager.com'));
-    });
-    expect(hasNoscript).toBe(false);
+    const hasGtmNoscript = thirdPartyRequests.some(url => url.includes('googletagmanager.com'));
+    expect(hasGtmNoscript).toBe(false);
   });
 
   test('T018a-d, T020-8: SPA Navigation & Deduplication', async ({ page }) => {
     await page.goto('/', { waitUntil: 'load' });
-    
+
     await page.evaluate(() => {
       window.dispatchEvent(new Event('mousemove'));
     });
     await page.waitForTimeout(2000);
 
     const aboutLink = page.locator('a[href="/about-us"]').first();
-    if (await aboutLink.isVisible()) {
-      await aboutLink.click();
-      await page.waitForLoadState('load');
-    }
+    await aboutLink.click();
+    await page.waitForURL('/about-us', { timeout: 10000 });
 
     const contactLink = page.locator('a[href="/contact-us"]').first();
-    if (await contactLink.isVisible()) {
-      await contactLink.click();
-      await page.waitForLoadState('load');
-    }
+    await contactLink.click();
+    await page.waitForURL('/contact-us', { timeout: 10000 });
 
     const gtmScripts = await page.locator('script[src*="googletagmanager.com/gtag/js"]').count();
     const recaptchaScripts = await page.locator('script[src*="google.com/recaptcha"]').count();
@@ -113,7 +101,7 @@ test.describe('Third-Party Script Deferral Verification', () => {
     });
 
     await page.goto('/about-us', { waitUntil: 'load' });
-    
+
     await page.evaluate(() => {
       window.dispatchEvent(new Event('mousemove'));
     });

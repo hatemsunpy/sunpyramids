@@ -132,7 +132,7 @@ Set a `css-cached` cookie on first page load when critical CSS is inlined. On su
 - Set cookie in Nitro response via `event.node.res.setHeader('Set-Cookie', ...)`.
 - Cookie: `css-cached=true; Path=/; Max-Age=2592000; SameSite=Lax` (30 days).
 - Check `event.node.req.headers.cookie` before running `beasties` processing.
-- Cookie is set regardless of whether critical CSS was inlined (to cover the "budget exceeded" fallback case where optimization is skipped on some pages).
+- The `css-cached` cookie is set only after successful critical CSS processing and inlining on eligible routes (i.e., only when the optimization run completes).
 
 ---
 

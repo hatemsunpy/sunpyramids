@@ -162,7 +162,7 @@ nuxt generate
 // nuxt.config.ts
 export default defineNuxtConfig({
   hooks: {
-    async 'prerender:routes'({ routes }) {
+    'prerender:routes'({ routes }) {
       // Add dynamic routes
       const posts = await fetchPostSlugs()
       for (const slug of posts) {

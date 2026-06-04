@@ -70,8 +70,6 @@
 </template>
 
 <script setup lang="js">
-import 'swiper/css'
-import 'swiper/css/pagination'
 import { Pagination, Autoplay } from 'swiper/modules';
 
 const props = defineProps({

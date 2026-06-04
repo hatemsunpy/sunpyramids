@@ -1,10 +1,8 @@
 {
-  "ai": "agy",
-  "ai_skills": true,
+  "ai": "opencode",
   "branch_numbering": "sequential",
-  "context_file": "AGENTS.md",
   "here": true,
-  "integration": "agy",
+  "integration": "opencode",
   "script": "ps",
-  "speckit_version": "0.8.9.dev0"
+  "speckit_version": "0.9.4.dev0"
 }
