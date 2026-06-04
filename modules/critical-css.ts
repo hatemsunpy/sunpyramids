@@ -78,7 +78,7 @@ export default defineNuxtModule<CriticalCSSOptions>({
         // Strip locale prefix and check against whitelist
         const pathname = event.path || ''
         // Remove locale prefix for matching (e.g., /fr/tours -> /tours)
-        const localePattern = new RegExp(`^\/(${options.locales.join('|')})(?=\/|$)`)
+        const localePattern = new RegExp(`^/(${options.locales.join('|')})(?=/|$)`)
         const stripped = pathname.replace(localePattern, '').replace(/\/$/, '') || '/'
 
         if (!expandedRoutes.has(pathname) && !expandedRoutes.has(stripped)) {
