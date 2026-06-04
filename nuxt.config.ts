@@ -46,6 +46,13 @@ export default defineNuxtConfig({
     "swiper/css/thumbs",
   ],
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   plugins: ["~/plugins/vue3-toastify.client.js"],
   build: {
     transpile: ["vue3-toastify", "swiper", "@fawmi/vue-google-maps", "@googlemaps/markerclusterer"],

@@ -249,7 +249,7 @@ const scrollExceeded = ref(true)
 import { sharedStore } from '~/stores/sharedStore.js'
 
 const { getnationalities } = sharedStore()
-if (process.client) {
+if (import.meta.client) {
   getnationalities()
 }
 const isSearchOpen = useSearchOpenState()
