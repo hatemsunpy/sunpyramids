@@ -33,9 +33,6 @@ export default defineNuxtConfig({
       routes: [],
       ignore: ["/*"],
     },
-    externals: {
-      inline: ["@googlemaps/markerclusterer"],
-    },
   },
   css: [
     "~/assets/styles/main.scss",
@@ -55,14 +52,30 @@ export default defineNuxtConfig({
 
   plugins: ["~/plugins/vue3-toastify.client.js"],
   build: {
-    transpile: ["vue3-toastify", "swiper", "@fawmi/vue-google-maps", "@googlemaps/markerclusterer"],
+    transpile: ["vue3-toastify", "swiper"],
   },
   vite: {
-    ssr: {
-      noExternal: ["@googlemaps/markerclusterer"],
-    },
     build: {
       cssMinify: true,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("node_modules")) {
+              if (id.includes("swiper")) return "vendor-swiper";
+              if (id.includes("@vuepic/vue-datepicker")) return "vendor-datepicker";
+              if (id.includes("vue-awesome-paginate")) return "vendor-paginate";
+              if (id.includes("vue3-toastify")) return "vendor-toastify";
+              if (id.includes("vue-i18n") || id.includes("@nuxtjs/i18n")) return "vendor-i18n";
+              if (id.includes("vee-validate")) return "vendor-forms";
+              if (id.includes("pinia") || id.includes("@pinia")) return "vendor-state";
+              if (id.includes("vue-router") || id.includes("@vue/runtime") || id.includes("@vue/shared") || id.includes("@vue/reactivity")) return "vendor-vue";
+              if (id.includes("nuxt") && !id.includes("nuxt-swiper") && !id.includes("nuxt-icons")) return "vendor-nuxt";
+              if (id.includes("@fawmi/vue-google-maps") || id.includes("@googlemaps")) return "vendor-maps";
+              return "vendor-common";
+            }
+          },
+        },
+      },
     },
   },
   modules: [

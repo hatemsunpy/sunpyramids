@@ -22,7 +22,8 @@
       },
     }" :freeMode="true">
       <swiper-slide class=" !w-[109.36px ]" v-for="partner in partners" :key="partner.url">
-        <img class="w-full h-auto" :src="partner.url" :alt="partner.name + ' logo'" loading="lazy" width="109" height="60" />
+        <NuxtImg class="w-full h-auto" :src="partner.url" :alt="partner.name + ' logo'" loading="lazy" width="109" height="60"
+          format="webp" sizes="(max-width: 768px) 20vw, 15vw" />
       </swiper-slide>
     </swiper>
   </section>
