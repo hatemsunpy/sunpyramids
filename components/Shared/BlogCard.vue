@@ -8,8 +8,9 @@
           params: { slug: props.blog.slug }
           })" -->
         <div class="h-[12.0625rem] cursor-pointer rounded-[1.1rem] overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-125 transition-all duration-300"
-            :src="props.blog.featured_image" alt="BlogCard" loading="lazy" width="400" height="193" />
+          <NuxtImg class="w-full h-full object-cover group-hover:scale-125 transition-all duration-300"
+            :src="props.blog.featured_image" alt="BlogCard" loading="lazy" width="400" height="193"
+            format="webp" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" />
         </div>
       </NuxtLink>
       <div class="mt-4 px-2 flex flex-col gap-2">

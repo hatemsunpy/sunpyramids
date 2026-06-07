@@ -11,7 +11,7 @@
   </div>
   <ToursLeftPanalAffordable v-if="props.tour?.seasons.length" :tour="props.tour" />
 
-  <ToursLeftPanalGallary v-if="props.tour" :socials="props.tour?.social_links" />
+  <LazyToursLeftPanalGallary v-if="props.tour" :socials="props.tour?.social_links" />
 
   <!-- <ToursLeftPanalReviews /> -->
 
