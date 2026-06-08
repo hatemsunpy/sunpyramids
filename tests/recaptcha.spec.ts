@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 
+interface Window {
+  grecaptcha?: unknown;
+}
+
 /**
  * T032: reCAPTCHA Functionality Verification
  *
@@ -30,7 +34,7 @@ test.describe('reCAPTCHA — On-Demand Loading', () => {
     const grecaptchaReady = await page.evaluate(() => {
       return new Promise<boolean>(resolve => {
         const check = () => {
-          if (typeof (window as any).grecaptcha !== 'undefined') {
+          if (typeof window.grecaptcha !== 'undefined') {
             resolve(true);
           } else {
             setTimeout(check, 500);
@@ -63,7 +67,7 @@ test.describe('reCAPTCHA — On-Demand Loading', () => {
     const grecaptchaReady = await page.evaluate(() => {
       return new Promise<boolean>(resolve => {
         const check = () => {
-          if (typeof (window as any).grecaptcha !== 'undefined') {
+          if (typeof window.grecaptcha !== 'undefined') {
             resolve(true);
           } else {
             setTimeout(check, 500);
