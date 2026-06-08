@@ -11,7 +11,7 @@
             :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'"
             :fetchpriority="index === 0 ? 'high' : 'auto'"
             :decoding="index === 0 ? 'auto' : 'async'"
-            format="webp" sizes="100vw" />
+            format="webp" />
         </swiper-slide>
 
         <div class="absolute top-0 start-0 xl lg:mt-[10rem] mt-[14rem] h-full w-full flex flex-col  gap-24 z-10">
@@ -93,7 +93,7 @@ const img = useImage()
 const heroSrc = computed(() => {
   const firstImage = homeData.value?.gallery?.[0]
   if (!firstImage) return null
-  return img(firstImage, { width: 1536, quality: 80 })
+  return img(firstImage, { width: 1920, height: 1080, format: 'webp', quality: 80 })
 })
 
 useHead(() => {
