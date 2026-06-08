@@ -7,7 +7,7 @@
           disableOnInteraction: false,
         }">
         <swiper-slide v-for="(item, index) in homeData.gallery" :key="item">
-          <NuxtImg width="1920" height="1080" class="w-full h-full object-cover brightness-[85%]" :src="item"
+          <NuxtImg width="1536" height="864" class="w-full h-full object-cover brightness-[85%]" :src="item"
             :alt="'main-banner-images-' + index" :loading="index === 0 ? 'eager' : 'lazy'"
             :fetchpriority="index === 0 ? 'high' : 'auto'"
             :decoding="index === 0 ? 'auto' : 'async'"
@@ -93,7 +93,7 @@ const img = useImage()
 const heroSrc = computed(() => {
   const firstImage = homeData.value?.gallery?.[0]
   if (!firstImage) return null
-  return img(firstImage, { width: 1920, height: 1080, format: 'webp', quality: 80 })
+  return img(firstImage, { width: 1536, height: 864, format: 'webp', quality: 80 })
 })
 
 useHead(() => {
