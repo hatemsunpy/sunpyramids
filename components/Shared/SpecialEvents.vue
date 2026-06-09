@@ -20,7 +20,7 @@
           class=" min-w-fit lg:hidden text-base text-primary md:text-lg flex  items-center gap-1  font-medium cursor-pointer">
           <p>{{ $t('labels.seeMore') }}</p>
 
-          <NuxtImg src="/images/line-arrow-right.svg" class="w-4" />
+          <img src="/images/line-arrow-right.svg" class="w-4" alt="" />
         </div>
       </div>
     </div>

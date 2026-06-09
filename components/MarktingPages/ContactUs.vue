@@ -36,7 +36,7 @@
 
     <!-- <div @click="openLocation(settings.find((option) => option.option_key == 'company_location_url')?.option_value)"
       class="w-full cursor-pointer rounded-[2rem] h-[53.5rem] overflow-hidden">
-      <NuxtImg class="w-full h-full  object-cover" src="/images/realLocation.svg" />
+      <img class="w-full h-full  object-cover" src="/images/realLocation.svg" />
     </div> -->
   </div>
 </template>

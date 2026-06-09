@@ -5,11 +5,11 @@
 
   <button @click="goToWhatsApp"
     class="fixed z-40 right-20 bottom-20 w-[60px] h-[60px] gradient-whatsapp b rounded-full lg:flex hidden justify-center items-center">
-    <NuxtImg src="/images/whatsapp.png" class="w-10 h-10" />
+    <img src="/images/whatsapp.png" class="w-10 h-10" />
   </button>
 
-  <HomeChairIcon />
-  <Footer />
+  <LazyHomeChairIcon />
+  <LazyFooter />
 
 </template>
 

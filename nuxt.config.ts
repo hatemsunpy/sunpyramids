@@ -2,7 +2,7 @@
 import langsConfig from "./i18n/Helpers/config";
 import RedirectRules from "./redirect-rules";
 
-const appURL = process.env.APP_URL || "https://new-sunpyramids-demo.vercel.app";
+const appURL = process.env.APP_URL || "https://sunpyramids.vercel.app";
 const baseURL = process.env.API_URL || "https://sunpyramidtours.com/api/";
 const redirect_rules: any = RedirectRules;
 
@@ -79,7 +79,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "~/modules/critical-css",
     "@pinia/nuxt",
     "nuxt-swiper",
     "nuxt-icons",
@@ -108,10 +107,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vercel/speed-insights/nuxt",
   ],
-  criticalCSS: {
-    routes: ['/', '/tours', '/about-us', '/contact-us', '/events', '/make-your-trip'],
-    locales: ['en', 'fr', 'de', 'it', 'pt', 'es', 'zh'],
-  },
   app: {
     head: {
       link: [

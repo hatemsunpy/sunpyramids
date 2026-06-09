@@ -11,7 +11,7 @@
 
             <button @click="isShowModel = true"
               class="flex  justify-center rounded-full hover:bg-[#c57007] items-center gap-2 ml-auto text-white bg-secondary px-[10px] py-3">
-              <NuxtImg src="/images/eye-white.png" class="text-xl w-5 h-5" />
+              <img src="/images/eye-white.png" class="text-xl w-5 h-5" />
 
               <span class="font-medium"> {{ $t('labels.tours.viewDistination') }}
               </span>

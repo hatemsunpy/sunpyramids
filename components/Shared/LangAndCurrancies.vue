@@ -1,14 +1,14 @@
 <template>
   <button @click="isOpen = true" v-if="props.isAuth"
     class="border  min-h-fit w-fit border-[#EEEEEE] px-4 py-2 rounded-full flex items-center gap-2">
-    <NuxtImg class="w-5" src="/icons/language.svg" alt="logo" />
+    <img class="w-5" src="/icons/language.svg" alt="logo" />
 
     <span class="font-medium">{{ getLanguage?.language }}</span>
   </button>
 
   <div v-else @click="isOpen = true"
     class="flex items-center gap-2 hover:bg-dark transition-all px-4 py-2 rounded-full cursor-pointer">
-    <NuxtImg class="w-5" src="/icons/language.svg" alt="logo" />
+    <img class="w-5" src="/icons/language.svg" alt="logo" />
 
     <span class="font-medium">{{ locale.toLocaleUpperCase() }} - {{ selectedCurrancies?.name ?? "USD" }}</span>
   </div>

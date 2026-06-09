@@ -44,7 +44,7 @@
 
           <div class="flex justify-between mb-8">
             <div class="flex items-center gap-2">
-              <NuxtImg src="/images/team/Mahmoud_badia.png" class="w-16 h-16 rounded-full" />
+              <img src="/images/team/Mahmoud_badia.png" class="w-16 h-16 rounded-full" />
               <div>
                 <h6 class="text-xl leading-8 font-medium">Mahmoud Badia</h6>
 
@@ -52,7 +52,7 @@
               </div>
             </div>
 
-            <NuxtImg src="/images/team/doupleQuote.png" class="w-20 h-[3.375rem]" />
+            <img src="/images/team/doupleQuote.png" class="w-20 h-[3.375rem]" />
           </div>
         </div>
       </swiper-slide>

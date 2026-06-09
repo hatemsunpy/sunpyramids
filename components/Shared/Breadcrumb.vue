@@ -12,12 +12,12 @@
           {{ item.directTitle ? item.title : $t("labels." + item.title) }}
         </p>
 
-        <NuxtImg v-if="index + 1 != props.items.length" src="/icons/arrow-right.png" class="w-5 h-5" />
+        <img v-if="index + 1 != props.items.length" src="/icons/arrow-right.png" class="w-5 h-5" />
       </li>
     </ul>
 
     <div class="flex lg:hidden items-center gap-4">
-      <NuxtImg @click="router.go(-1)" src="/icons/arrow-left.png"
+      <img @click="router.go(-1)" src="/icons/arrow-left.png"
         class="p-3 min-w-[18px] min-h-[18px] hover:bg-dark transition-colors rounded-full border cursor-pointer" />
 
       <h5 class="font-normal truncate">{{ props.mobItem.directTitle ? props.mobItem.title : $t("labels." +
