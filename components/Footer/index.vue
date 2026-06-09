@@ -3,7 +3,7 @@
     class="w-full pt-11 xl:px-20  bg-no-repeat bg-cover px-4 lg:pb-8 pb-32 bg-[#181818] bg-[url(/images/footerbg.svg)]">
     <section class="grid grid-cols-5 gap-5">
       <div class="lg:col-span-2 col-span-5  flex flex-col gap-8">
-        <NuxtImg src="/images/logo.png" alt="logo" class="w-[16.25rem] mb-4" width="260" height="56" />
+        <img src="/images/logo.png" alt="logo" class="w-[16.25rem] mb-4" width="260" height="56" />
 
 
         <p class="text-white leading- text-xl font-medium">Need Our Help ?
@@ -18,7 +18,7 @@
           </button>
         </section>
 
-        <NuxtImg @click="router.push(localePath('/sustainability'))" src="/images/certified_footer_white.webp" alt="certified footer" class="w-[18.25rem] cursor-pointer -ms-2 mb-4 brightness-150" loading="lazy" width="292" height="80" />
+        <img @click="router.push(localePath('/sustainability'))" src="/images/certified_footer_white.webp" alt="certified footer" class="w-[18.25rem] cursor-pointer -ms-2 mb-4 brightness-150" loading="lazy" width="292" height="80" />
 
       </div>
 

@@ -7,7 +7,7 @@
       <p>{{ user?.name?.split(' ')?.[0] ?? '' }}</p>
     </div>
 
-    <NuxtImg @click="isShowModel = !isShowModel" class="w-5 opacity-50" src="/icons/arrow-down.svg" alt="logo" />
+    <img @click="isShowModel = !isShowModel" class="w-5 opacity-50" src="/icons/arrow-down.svg" alt="logo" />
 
 
     <ul @click="emit('closeModel')" v-if="isShowModel"
@@ -17,7 +17,7 @@
         class="lg:flex hover:text-primary group/link hover:bg-third hidden justify-between transition px-4 py-2 rounded-lg">
         <span class="font-medium">Profile</span>
 
-        <NuxtImg class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
+        <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
           alt="logo" />
       </li>
 
@@ -25,7 +25,7 @@
         class="lg:hidden hover:text-primary group/link hover:bg-third flex justify-between transition px-4 py-2 rounded-lg">
         <span class="font-medium">{{ $t('labels.myBookings') }}</span>
 
-        <NuxtImg class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
+        <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
           alt="logo" />
       </li>
 
@@ -34,7 +34,7 @@
         class="lg:hidden hover:text-primary group/link hover:bg-third flex justify-between transition px-4 py-2 rounded-lg">
         <span class="font-medium">{{ $t('labels.myFavorites') }}</span>
 
-        <NuxtImg class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
+        <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
           alt="logo" />
       </li>
 
@@ -43,7 +43,7 @@
         class="lg:hidden hover:text-primary group/link hover:bg-third flex justify-between transition px-4 py-2 rounded-lg">
         <span class="font-medium">{{ $t('labels.myProfile') }}</span>
 
-        <NuxtImg class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
+        <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
           alt="logo" />
       </li>
 
@@ -53,7 +53,7 @@
         class="hover:text-primary group/link hover:bg-third flex justify-between transition px-4 py-2 rounded-lg">
         <span class="font-medium">Log Out</span>
 
-        <NuxtImg class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
+        <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity" src="/icons/arrow-right.svg"
           alt="logo" />
       </li>
     </ul>

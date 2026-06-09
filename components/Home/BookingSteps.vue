@@ -16,7 +16,7 @@
         class=" min-w-fit lg:hidden text-base text-primary md:text-lg flex  items-center gap-1  font-medium cursor-pointer">
         <p>{{ $t('labels.seeMore') }}</p>
 
-        <NuxtImg src="/images/line-arrow-right.svg" class="w-4" />
+        <img src="/images/line-arrow-right.svg" class="w-4" alt="" />
       </div> -->
     </div>
 
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <NuxtImg v-if="index + 1 != steps.length" src="/images/arrow_steps.png" class="lg:w-24 w-12  lg:block hidden" />
+        <img v-if="index + 1 != steps.length" src="/images/arrow_steps.png" class="lg:w-24 w-12  lg:block hidden" />
       </template>
     </div>
   </section>

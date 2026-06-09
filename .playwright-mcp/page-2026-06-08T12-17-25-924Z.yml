@@ -1,0 +1,1147 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - img "logo" [ref=e5] [cursor=pointer]
+      - generic [ref=e6]:
+        - generic [ref=e8] [cursor=pointer]:
+          - img "logo" [ref=e9]
+          - generic [ref=e10]: EN - USD
+        - button [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+        - button "Sign in" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: Sign in
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - img [ref=e25]
+        - img [ref=e26]
+      - paragraph [ref=e27]: Book Your Egypt Easter Tour Now – Explore Pyramids, Nile Cruises & Limited Spring Offers - Book Our Egypt Easter Tour Itineraries
+      - button "View Easter Tours" [ref=e28] [cursor=pointer]:
+        - generic [ref=e29]: View Easter Tours
+  - generic [ref=e30]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - img "main-banner-images-0" [ref=e36]
+          - img "main-banner-images-1" [ref=e38]
+          - img "main-banner-images-2" [ref=e40]
+          - img "main-banner-images-3" [ref=e42]
+          - img "main-banner-images-4" [ref=e44]
+          - img "main-banner-images-5" [ref=e46]
+          - img "main-banner-images-6" [ref=e48]
+          - img "main-banner-images-7" [ref=e50]
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - heading "Get started your" [level=3] [ref=e53]
+            - heading "Exciting Journey With Us" [level=1] [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - img [ref=e59]
+                - button "Make Your Trip" [ref=e61] [cursor=pointer]:
+                  - generic [ref=e62]: Make Your Trip
+                - img [ref=e64]
+              - generic [ref=e66]:
+                - img [ref=e68]
+                - button "Find your trip" [ref=e70] [cursor=pointer]:
+                  - generic [ref=e71]: Find your trip
+                - img [ref=e73]
+              - generic [ref=e75]:
+                - img [ref=e77]
+                - button "Rent Car" [ref=e79] [cursor=pointer]:
+                  - generic [ref=e80]: Rent Car
+                - img [ref=e82]
+            - generic [ref=e86]:
+              - heading "When will you be traveling?" [level=6] [ref=e87]
+              - generic [ref=e88]:
+                - generic [ref=e92] [cursor=pointer]: Have An Exact Time
+                - generic [ref=e96] [cursor=pointer]: Have An Approximate Time
+                - generic [ref=e100] [cursor=pointer]: Not Sure Yet
+      - generic [ref=e101]:
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: +100K
+          - paragraph [ref=e105]: Happy customer
+        - generic [ref=e107]:
+          - paragraph [ref=e108]: "+50"
+          - paragraph [ref=e109]: Years of experience
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: "+60"
+          - paragraph [ref=e113]: Total Destinations
+        - generic [ref=e115]:
+          - paragraph [ref=e116]: "5.0"
+          - paragraph [ref=e117]: Rating in Tripadvisor
+    - generic [ref=e118]:
+      - generic [ref=e121]:
+        - heading "Egypt Easter Tours" [level=3] [ref=e123]
+        - heading "Celebrate Easter with unforgettable Egypt Itineraries" [level=6] [ref=e124]
+      - generic [ref=e125]:
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e132] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e133]
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e135] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e136]
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e138] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e139]
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e141] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e142]
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e144] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e145]
+                - link "Pyramids & Nile Cruise By Train During Easter image" [ref=e147] [cursor=pointer]:
+                  - /url: /tour/pyramids-nile-cruise-by-train
+                  - img "Pyramids & Nile Cruise By Train During Easter image" [ref=e148]
+              - button [ref=e149] [cursor=pointer]:
+                - img [ref=e151]
+            - generic [ref=e153]:
+              - link "Pyramids & Nile Cruise By Train During Easter" [ref=e154] [cursor=pointer]:
+                - /url: /tour/pyramids-nile-cruise-by-train
+                - heading "Pyramids & Nile Cruise By Train During Easter" [level=6] [ref=e155]
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - generic [ref=e158]:
+                    - img [ref=e160]
+                    - paragraph [ref=e164]: 4 Cities
+                  - paragraph [ref=e165]: Multi Days Tours
+                - generic [ref=e166]:
+                  - generic [ref=e167]:
+                    - paragraph [ref=e168]: Start From
+                    - paragraph [ref=e170]: $1940.00
+                  - generic [ref=e171]:
+                    - img [ref=e173]
+                    - paragraph [ref=e177]: 8 Days / 7 Night
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e182] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e183]'
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e185] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e186]'
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e188] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e189]'
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e191] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e192]'
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e194] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e195]'
+                - 'link "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e197] [cursor=pointer]':
+                  - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                  - 'img "4-Day Nile Cruise on the Royal Beau Rivage: Easter Hot Deals (Aswan to Luxor). image" [ref=e198]'
+              - button [ref=e199] [cursor=pointer]:
+                - img [ref=e201]
+            - generic [ref=e203]:
+              - 'link "4-Day Nile Cruise on the Royal Beau Rivage: E..." [ref=e204] [cursor=pointer]':
+                - /url: /tour/4-Day-Nile-Cruise-on-the-Royal-Beau-Rivage-Easter-Hot-Deals-Aswan-to-Luxor
+                - 'heading "4-Day Nile Cruise on the Royal Beau Rivage: E..." [level=6] [ref=e205]'
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - img [ref=e210]
+                    - paragraph [ref=e214]: Cairo
+                  - paragraph [ref=e215]: Easter Tours
+                - generic [ref=e216]:
+                  - generic [ref=e217]:
+                    - paragraph [ref=e218]: Start From
+                    - paragraph [ref=e220]: $1130.00
+                  - generic [ref=e221]:
+                    - img [ref=e223]
+                    - paragraph [ref=e227]: 4 Days
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e232] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e233]'
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e235] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e236]'
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e238] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e239]'
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e241] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e242]'
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e244] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e245]'
+                - 'link "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e247] [cursor=pointer]':
+                  - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                  - 'img "Easter Escape: 4-Day White Desert & Bahariya Oasis Adventure. image" [ref=e248]'
+              - button [ref=e249] [cursor=pointer]:
+                - img [ref=e251]
+            - generic [ref=e253]:
+              - 'link "Easter Escape: 4-Day White Desert & Bahariya ..." [ref=e254] [cursor=pointer]':
+                - /url: /tour/Easter-Escape-4-Day-White-Desert-Bahariya-Oasis-Adventure
+                - 'heading "Easter Escape: 4-Day White Desert & Bahariya ..." [level=6] [ref=e255]'
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - generic [ref=e258]:
+                    - img [ref=e260]
+                    - paragraph [ref=e264]: Cairo
+                  - paragraph [ref=e265]: Easter Tours
+                - generic [ref=e266]:
+                  - generic [ref=e267]:
+                    - paragraph [ref=e268]: Start From
+                    - paragraph [ref=e270]: $230.00
+                  - generic [ref=e271]:
+                    - img [ref=e273]
+                    - paragraph [ref=e277]: 4 Days
+          - generic [ref=e278]:
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e282] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e283]'
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e285] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e286]'
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e288] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e289]'
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e291] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e292]'
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e294] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e295]'
+                - 'link "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e297] [cursor=pointer]':
+                  - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                  - 'img "5-Day Private Tour: Easter Holiday Escape to Siwa’s Warmth & Oases image" [ref=e298]'
+              - button [ref=e299] [cursor=pointer]:
+                - img [ref=e301]
+            - generic [ref=e303]:
+              - 'link "5-Day Private Tour: Easter Holiday Escape to ..." [ref=e304] [cursor=pointer]':
+                - /url: /tour/5-Day-Private-Tour-Easter-Holiday-Escape-to-Siwa%E2%80%99s-Warmth-Oases
+                - 'heading "5-Day Private Tour: Easter Holiday Escape to ..." [level=6] [ref=e305]'
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - generic [ref=e308]:
+                    - img [ref=e310]
+                    - paragraph [ref=e314]: Cairo
+                  - paragraph [ref=e315]: Easter Tours
+                - generic [ref=e316]:
+                  - generic [ref=e317]:
+                    - paragraph [ref=e318]: Start From
+                    - paragraph [ref=e320]: $0.00
+                  - generic [ref=e321]:
+                    - img [ref=e323]
+                    - paragraph [ref=e327]: 5 days
+        - button "See more" [ref=e332] [cursor=pointer]:
+          - generic [ref=e333]: See more
+          - img [ref=e335]
+    - generic [ref=e339]:
+      - generic [ref=e341]:
+        - heading "Popular Distination" [level=3] [ref=e342]
+        - heading "Many very Exciting places for you to visit for the next trip" [level=6] [ref=e343]
+      - generic [ref=e345]:
+        - button "Recomanded" [ref=e346] [cursor=pointer]:
+          - generic [ref=e347]: Recomanded
+        - button "One Day" [ref=e348] [cursor=pointer]:
+          - generic [ref=e349]: One Day
+        - button "Multi Days" [ref=e350] [cursor=pointer]:
+          - generic [ref=e351]: Multi Days
+        - button "Nile Cruises" [ref=e352] [cursor=pointer]:
+          - generic [ref=e353]: Nile Cruises
+        - button "Shore Excursion" [ref=e354] [cursor=pointer]:
+          - generic [ref=e355]: Shore Excursion
+      - generic [ref=e356]:
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - generic [ref=e361]:
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e363] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e364]'
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e366] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e367]'
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e369] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e370]'
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e372] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e373]'
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e375] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e376]'
+                - 'link "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e378] [cursor=pointer]':
+                  - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                  - 'img "From Cairo: 6 Days Package to El Fayoum Oasis, White Desert and Bahariya Oasis image" [ref=e379]'
+              - button [ref=e380] [cursor=pointer]:
+                - img [ref=e382]
+            - generic [ref=e384]:
+              - 'link "From Cairo: 6 Days Package to El Fayoum Oasis..." [ref=e385] [cursor=pointer]':
+                - /url: /tour/from-cairo-6-days-package-to-el-fayoum-oasis-white-desert-and-bahariya-oasis
+                - 'heading "From Cairo: 6 Days Package to El Fayoum Oasis..." [level=6] [ref=e386]'
+              - generic [ref=e387]:
+                - generic [ref=e388]:
+                  - generic [ref=e389]:
+                    - img [ref=e391]
+                    - paragraph [ref=e395]: Cairo
+                  - paragraph [ref=e396]: Desert Tours
+                - generic [ref=e397]:
+                  - generic [ref=e398]:
+                    - paragraph [ref=e399]: Start From
+                    - paragraph [ref=e401]: $667.00
+                  - generic [ref=e402]:
+                    - img [ref=e404]
+                    - paragraph [ref=e408]: 6 Days
+          - generic [ref=e409]:
+            - generic [ref=e410]:
+              - generic [ref=e411]:
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e413] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e414]
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e416] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e417]
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e419] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e420]
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e422] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e423]
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e425] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e426]
+                - link "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e428] [cursor=pointer]:
+                  - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                  - img "Package 4 Days El-Fayoum Oasis, White Desert and Bahariya Oasis Tour image" [ref=e429]
+              - button [ref=e430] [cursor=pointer]:
+                - img [ref=e432]
+            - generic [ref=e434]:
+              - link "Package 4 Days El-Fayoum Oasis, White Desert ..." [ref=e435] [cursor=pointer]:
+                - /url: /tour/package-4-days-el-fayoum-oasis-white-desert-and-bahariya-oasis-tour
+                - heading "Package 4 Days El-Fayoum Oasis, White Desert ..." [level=6] [ref=e436]
+              - generic [ref=e437]:
+                - generic [ref=e438]:
+                  - generic [ref=e439]:
+                    - img [ref=e441]
+                    - paragraph [ref=e445]: Egypt
+                  - paragraph [ref=e446]: Desert Tours
+                - generic [ref=e447]:
+                  - generic [ref=e448]:
+                    - paragraph [ref=e449]: Start From
+                    - paragraph [ref=e451]: $360.00
+                  - generic [ref=e452]:
+                    - img [ref=e454]
+                    - paragraph [ref=e458]: 4 Days
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - generic [ref=e461]:
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e463] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e464]
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e466] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e467]
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e469] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e470]
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e472] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e473]
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e475] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e476]
+                - link "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e478] [cursor=pointer]:
+                  - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                  - img "5 Days Trip to Siwa and Bahariya Oasis image" [ref=e479]
+              - button [ref=e480] [cursor=pointer]:
+                - img [ref=e482]
+            - generic [ref=e484]:
+              - link "5 Days Trip to Siwa and Bahariya Oasis" [ref=e485] [cursor=pointer]:
+                - /url: /tour/5-days-trip-to-siwa-and-bahariya-oasis
+                - heading "5 Days Trip to Siwa and Bahariya Oasis" [level=6] [ref=e486]
+              - generic [ref=e487]:
+                - generic [ref=e488]:
+                  - generic [ref=e489]:
+                    - img [ref=e491]
+                    - paragraph [ref=e495]: Egypt
+                  - paragraph [ref=e496]: Desert Tours
+                - generic [ref=e497]:
+                  - generic [ref=e498]:
+                    - paragraph [ref=e499]: Start From
+                    - paragraph [ref=e501]: $505.00
+                  - generic [ref=e502]:
+                    - img [ref=e504]
+                    - paragraph [ref=e508]: 5 Days
+          - generic [ref=e509]:
+            - generic [ref=e510]:
+              - generic [ref=e511]:
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e513] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e514]
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e516] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e517]
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e519] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e520]
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e522] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e523]
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e525] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e526]
+                - link "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e528] [cursor=pointer]:
+                  - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                  - img "Classic 8 Days Egypt Tour Package To Pyramids, Luxor & Aswan by Train image" [ref=e529]
+              - button [ref=e530] [cursor=pointer]:
+                - img [ref=e532]
+            - generic [ref=e534]:
+              - link "Classic 8 Days Egypt Tour Package To Pyramids..." [ref=e535] [cursor=pointer]:
+                - /url: /tour/classic-8-days-egypt-tour-package-to-pyramids-luxor-aswan-by-train
+                - heading "Classic 8 Days Egypt Tour Package To Pyramids..." [level=6] [ref=e536]
+              - generic [ref=e537]:
+                - generic [ref=e538]:
+                  - generic [ref=e539]:
+                    - img [ref=e541]
+                    - paragraph [ref=e545]: 4 Cities
+                  - paragraph [ref=e546]: Egypt Classic Tours
+                - generic [ref=e547]:
+                  - generic [ref=e548]:
+                    - paragraph [ref=e549]: Start From
+                    - paragraph [ref=e551]: $975.00
+                  - generic [ref=e552]:
+                    - img [ref=e554]
+                    - paragraph [ref=e558]: 8 Days
+          - generic [ref=e559]:
+            - generic [ref=e560]:
+              - generic [ref=e561]:
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e563] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e564]
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e566] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e567]
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e569] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e570]
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e572] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e573]
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e575] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e576]
+                - link "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e578] [cursor=pointer]:
+                  - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                  - img "2-Day White Desert, Bahariya Oasis & Fayoum Adventure from Cairo image" [ref=e579]
+              - button [ref=e580] [cursor=pointer]:
+                - img [ref=e582]
+            - generic [ref=e584]:
+              - link "2-Day White Desert, Bahariya Oasis & Fayoum A..." [ref=e585] [cursor=pointer]:
+                - /url: /tour/2-day-white-desert-bahariya-fayoum-tour-from-cairo
+                - heading "2-Day White Desert, Bahariya Oasis & Fayoum A..." [level=6] [ref=e586]
+              - generic [ref=e587]:
+                - generic [ref=e588]:
+                  - generic [ref=e589]:
+                    - img [ref=e591]
+                    - paragraph [ref=e595]: 3 Cities
+                  - paragraph [ref=e596]: Multi Days Tours
+                - generic [ref=e597]:
+                  - generic [ref=e598]:
+                    - paragraph [ref=e599]: Start From
+                    - paragraph [ref=e601]: $315.00
+                  - generic [ref=e602]:
+                    - img [ref=e604]
+                    - paragraph [ref=e608]: 2 Days
+          - generic [ref=e609]:
+            - generic [ref=e610]:
+              - generic [ref=e611]:
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e613] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e614]'
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e616] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e617]'
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e619] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e620]'
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e622] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e623]'
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e625] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e626]'
+                - 'link "8 Day: Luxor Nile Cruise & Cairo image" [ref=e628] [cursor=pointer]':
+                  - /url: /tour/8-day-luxor-nile-cruise-cairo
+                  - 'img "8 Day: Luxor Nile Cruise & Cairo image" [ref=e629]'
+              - button [ref=e630] [cursor=pointer]:
+                - img [ref=e632]
+            - generic [ref=e634]:
+              - 'link "8 Day: Luxor Nile Cruise & Cairo" [ref=e635] [cursor=pointer]':
+                - /url: /tour/8-day-luxor-nile-cruise-cairo
+                - 'heading "8 Day: Luxor Nile Cruise & Cairo" [level=6] [ref=e636]'
+              - generic [ref=e637]:
+                - generic [ref=e638]:
+                  - generic [ref=e639]:
+                    - img [ref=e641]
+                    - paragraph [ref=e645]: 4 Cities
+                  - paragraph [ref=e646]: Culture Tours
+                - generic [ref=e647]:
+                  - generic [ref=e648]:
+                    - paragraph [ref=e649]: Start From
+                    - paragraph [ref=e651]: $1605.00
+                  - generic [ref=e652]:
+                    - img [ref=e654]
+                    - paragraph [ref=e658]: 8 Days
+          - generic [ref=e659]:
+            - generic [ref=e660]:
+              - generic [ref=e661]:
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e663] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e664]
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e666] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e667]
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e669] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e670]
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e672] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e673]
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e675] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e676]
+                - link "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e678] [cursor=pointer]:
+                  - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                  - img "7 Day Package For Cairo, Luxor, Aswan and Abu Simbel image" [ref=e679]
+              - button [ref=e680] [cursor=pointer]:
+                - img [ref=e682]
+            - generic [ref=e684]:
+              - link "7 Day Package For Cairo, Luxor, Aswan and Abu..." [ref=e685] [cursor=pointer]:
+                - /url: /tour/7-day-package-for-cairo-luxor-aswan-and-abu-simbel
+                - heading "7 Day Package For Cairo, Luxor, Aswan and Abu..." [level=6] [ref=e686]
+              - generic [ref=e687]:
+                - generic [ref=e688]:
+                  - generic [ref=e689]:
+                    - img [ref=e691]
+                    - paragraph [ref=e695]: 4 Cities
+                  - paragraph [ref=e696]: Culture Tours
+                - generic [ref=e697]:
+                  - generic [ref=e698]:
+                    - paragraph [ref=e699]: Start From
+                    - paragraph [ref=e701]: $387.00
+                  - generic [ref=e702]:
+                    - img [ref=e704]
+                    - paragraph [ref=e708]: 7 Days
+          - generic [ref=e709]:
+            - generic [ref=e710]:
+              - generic [ref=e711]:
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e713] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e714]
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e716] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e717]
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e719] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e720]
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e722] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e723]
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e725] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e726]
+                - link "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e728] [cursor=pointer]:
+                  - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                  - img "Package 8 Days 7 Nights to Pyramids, Luxor and Aswan by Train image" [ref=e729]
+              - button [ref=e730] [cursor=pointer]:
+                - img [ref=e732]
+            - generic [ref=e734]:
+              - link "Package 8 Days 7 Nights to Pyramids, Luxor an..." [ref=e735] [cursor=pointer]:
+                - /url: /tour/package-8-days-7-nights-to-pyramids-luxor-and-aswan-by-train
+                - heading "Package 8 Days 7 Nights to Pyramids, Luxor an..." [level=6] [ref=e736]
+              - generic [ref=e737]:
+                - generic [ref=e738]:
+                  - generic [ref=e739]:
+                    - img [ref=e741]
+                    - paragraph [ref=e745]: 4 Cities
+                  - paragraph [ref=e746]: Egypt Classic Tours
+                - generic [ref=e747]:
+                  - generic [ref=e748]:
+                    - paragraph [ref=e749]: Start From
+                    - paragraph [ref=e751]: $2095.00
+                  - generic [ref=e752]:
+                    - img [ref=e754]
+                    - paragraph [ref=e758]: 8 Days
+        - button "See more" [ref=e763] [cursor=pointer]:
+          - generic [ref=e764]: See more
+          - img [ref=e766]
+    - generic [ref=e771]:
+      - heading "Make Your Trip" [level=3] [ref=e772]
+      - generic [ref=e775]:
+        - heading "When will you be traveling?" [level=6] [ref=e776]
+        - generic [ref=e777]:
+          - generic [ref=e781] [cursor=pointer]: Have An Exact Time
+          - generic [ref=e785] [cursor=pointer]: Have An Approximate Time
+          - generic [ref=e789] [cursor=pointer]: Not Sure Yet
+    - generic [ref=e790]:
+      - generic [ref=e793]:
+        - generic [ref=e794]:
+          - img [ref=e796]
+          - heading "Special offers for you" [level=3] [ref=e798]
+        - heading "Find the right offer before it's too late" [level=6] [ref=e799]
+      - generic [ref=e800]:
+        - generic [ref=e802]:
+          - generic [ref=e803]:
+            - generic [ref=e804]:
+              - generic [ref=e805]:
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e807] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e808]
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e810] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e811]
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e813] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e814]
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e816] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e817]
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e819] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e820]
+                - link "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e822] [cursor=pointer]:
+                  - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                  - img "Package 12 Days 11 Nights Luxury Cairo, Luxor, Aswan & Lake Cruise image" [ref=e823]
+              - button [ref=e824] [cursor=pointer]:
+                - img [ref=e826]
+              - generic [ref=e828]:
+                - img [ref=e830]
+                - paragraph [ref=e832]: Special Offer
+            - generic [ref=e833]:
+              - link "Package 12 Days 11 Nights Luxury Cairo, Luxor..." [ref=e834] [cursor=pointer]:
+                - /url: /tour/package-12-days-11-nights-luxury-cairo-luxor-aswan-lake-cruise
+                - heading "Package 12 Days 11 Nights Luxury Cairo, Luxor..." [level=6] [ref=e835]
+              - generic [ref=e836]:
+                - generic [ref=e837]:
+                  - generic [ref=e838]:
+                    - img [ref=e840]
+                    - paragraph [ref=e844]: 5 Cities
+                  - paragraph [ref=e845]: Luxury Packages
+                - generic [ref=e846]:
+                  - generic [ref=e847]:
+                    - paragraph [ref=e848]: "00"
+                    - paragraph [ref=e849]: Days
+                  - generic [ref=e850]:
+                    - paragraph [ref=e851]: "00"
+                    - paragraph [ref=e852]: Hours
+                  - generic [ref=e853]:
+                    - paragraph [ref=e854]: "00"
+                    - paragraph [ref=e855]: Minutes
+                  - generic [ref=e856]:
+                    - paragraph [ref=e857]: "00"
+                    - paragraph [ref=e858]: Seconds
+                - generic [ref=e859]:
+                  - generic [ref=e860]:
+                    - paragraph [ref=e861]: Start From
+                    - generic [ref=e862]:
+                      - paragraph [ref=e863]: $3918.80
+                      - paragraph [ref=e864]: $4040.00
+                  - generic [ref=e865]:
+                    - img [ref=e867]
+                    - paragraph [ref=e871]: 12 Days / 11 Nights
+          - generic [ref=e872]:
+            - generic [ref=e873]:
+              - generic [ref=e874]:
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e876] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e877]
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e879] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e880]
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e882] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e883]
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e885] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e886]
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e888] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e889]
+                - link "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e891] [cursor=pointer]:
+                  - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                  - img "Package 13 Days 12 Nights To Cairo, Luxor, Aswan and Red Sea Vacation image" [ref=e892]
+              - button [ref=e893] [cursor=pointer]:
+                - img [ref=e895]
+              - generic [ref=e897]:
+                - img [ref=e899]
+                - paragraph [ref=e901]: Special Offer
+            - generic [ref=e902]:
+              - link "Package 13 Days 12 Nights To Cairo, Luxor, As..." [ref=e903] [cursor=pointer]:
+                - /url: /tour/package-13-days-12-nights-to-cairo-luxor-aswan-and-red-sea-vacation
+                - heading "Package 13 Days 12 Nights To Cairo, Luxor, As..." [level=6] [ref=e904]
+              - generic [ref=e905]:
+                - generic [ref=e906]:
+                  - generic [ref=e907]:
+                    - img [ref=e909]
+                    - paragraph [ref=e913]: 5 Cities
+                  - paragraph [ref=e914]: Luxury Packages
+                - generic [ref=e915]:
+                  - generic [ref=e916]:
+                    - paragraph [ref=e917]: "00"
+                    - paragraph [ref=e918]: Days
+                  - generic [ref=e919]:
+                    - paragraph [ref=e920]: "00"
+                    - paragraph [ref=e921]: Hours
+                  - generic [ref=e922]:
+                    - paragraph [ref=e923]: "00"
+                    - paragraph [ref=e924]: Minutes
+                  - generic [ref=e925]:
+                    - paragraph [ref=e926]: "00"
+                    - paragraph [ref=e927]: Seconds
+                - generic [ref=e928]:
+                  - generic [ref=e929]:
+                    - paragraph [ref=e930]: Start From
+                    - generic [ref=e931]:
+                      - paragraph [ref=e932]: $4413.50
+                      - paragraph [ref=e933]: $4550.00
+                  - generic [ref=e934]:
+                    - img [ref=e936]
+                    - paragraph [ref=e940]: 13 Days
+          - generic [ref=e941]:
+            - generic [ref=e942]:
+              - generic [ref=e943]:
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e945] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e946]
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e948] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e949]
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e951] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e952]
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e954] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e955]
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e957] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e958]
+                - link "Tour To Pyramids and The Egyptian Museum image" [ref=e960] [cursor=pointer]:
+                  - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                  - img "Tour To Pyramids and The Egyptian Museum image" [ref=e961]
+              - button [ref=e962] [cursor=pointer]:
+                - img [ref=e964]
+              - generic [ref=e966]:
+                - img [ref=e968]
+                - paragraph [ref=e970]: Special Offer
+            - generic [ref=e971]:
+              - link "Tour To Pyramids and The Egyptian Museum" [ref=e972] [cursor=pointer]:
+                - /url: /tour/tour-to-pyramids-and-the-egyptian-museum
+                - heading "Tour To Pyramids and The Egyptian Museum" [level=6] [ref=e973]
+              - generic [ref=e974]:
+                - generic [ref=e975]:
+                  - generic [ref=e976]:
+                    - img [ref=e978]
+                    - paragraph [ref=e982]: 3 Cities
+                  - paragraph [ref=e983]: Day Tour
+                - generic [ref=e984]:
+                  - generic [ref=e985]:
+                    - paragraph [ref=e986]: "00"
+                    - paragraph [ref=e987]: Days
+                  - generic [ref=e988]:
+                    - paragraph [ref=e989]: "00"
+                    - paragraph [ref=e990]: Hours
+                  - generic [ref=e991]:
+                    - paragraph [ref=e992]: "00"
+                    - paragraph [ref=e993]: Minutes
+                  - generic [ref=e994]:
+                    - paragraph [ref=e995]: "00"
+                    - paragraph [ref=e996]: Seconds
+                - generic [ref=e997]:
+                  - generic [ref=e998]:
+                    - paragraph [ref=e999]: Start From
+                    - generic [ref=e1000]:
+                      - paragraph [ref=e1001]: $75.33
+                      - paragraph [ref=e1002]: $81.00
+                  - generic [ref=e1003]:
+                    - img [ref=e1005]
+                    - paragraph [ref=e1009]: About 6 Hours
+          - generic [ref=e1010]:
+            - generic [ref=e1011]:
+              - generic [ref=e1012]:
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1014] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1015]
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1017] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1018]
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1020] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1021]
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1023] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1024]
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1026] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1027]
+                - link "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1029] [cursor=pointer]:
+                  - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                  - img "Package 7 Days 6 Nights to Egypt and Jordan image" [ref=e1030]
+              - button [ref=e1031] [cursor=pointer]:
+                - img [ref=e1033]
+              - generic [ref=e1035]:
+                - img [ref=e1037]
+                - paragraph [ref=e1039]: Special Offer
+            - generic [ref=e1040]:
+              - link "Package 7 Days 6 Nights to Egypt and Jordan" [ref=e1041] [cursor=pointer]:
+                - /url: /tour/Package-7-Days-6-Nights-to-Egypt-and-Jordan
+                - heading "Package 7 Days 6 Nights to Egypt and Jordan" [level=6] [ref=e1042]
+              - generic [ref=e1043]:
+                - generic [ref=e1044]:
+                  - generic [ref=e1045]:
+                    - img [ref=e1047]
+                    - paragraph [ref=e1051]: 3 Cities
+                  - paragraph [ref=e1052]: Egypt Classic Tours
+                - generic [ref=e1053]:
+                  - generic [ref=e1054]:
+                    - paragraph [ref=e1055]: "00"
+                    - paragraph [ref=e1056]: Days
+                  - generic [ref=e1057]:
+                    - paragraph [ref=e1058]: "00"
+                    - paragraph [ref=e1059]: Hours
+                  - generic [ref=e1060]:
+                    - paragraph [ref=e1061]: "00"
+                    - paragraph [ref=e1062]: Minutes
+                  - generic [ref=e1063]:
+                    - paragraph [ref=e1064]: "00"
+                    - paragraph [ref=e1065]: Seconds
+                - generic [ref=e1066]:
+                  - generic [ref=e1067]:
+                    - paragraph [ref=e1068]: Start From
+                    - generic [ref=e1069]:
+                      - paragraph [ref=e1070]: $1333.75
+                      - paragraph [ref=e1071]: $1375.00
+                  - generic [ref=e1072]:
+                    - img [ref=e1074]
+                    - paragraph [ref=e1078]: 7 days 6 nights
+        - button "See more" [ref=e1083] [cursor=pointer]:
+          - generic [ref=e1084]: See more
+          - img [ref=e1086]
+    - generic [ref=e1090]:
+      - generic [ref=e1091]:
+        - generic [ref=e1093]:
+          - heading "How it works ?" [level=3] [ref=e1094]
+          - heading "Only three steps away from Egypt" [level=6] [ref=e1095]
+        - generic [ref=e1096]:
+          - generic [ref=e1097]:
+            - generic [ref=e1098]: "1"
+            - generic [ref=e1099]:
+              - heading "Finding Trip" [level=4] [ref=e1100]
+              - paragraph [ref=e1101]: Select your favorite trip
+          - img [ref=e1102]
+          - generic [ref=e1103]:
+            - generic [ref=e1104]: "2"
+            - generic [ref=e1105]:
+              - heading "Booking" [level=4] [ref=e1106]
+              - paragraph [ref=e1107]: Trip booking and payment
+          - img [ref=e1108]
+          - generic [ref=e1109]:
+            - generic [ref=e1110]: "3"
+            - generic [ref=e1111]:
+              - heading "Enjoy" [level=4] [ref=e1112]
+              - paragraph [ref=e1113]: Start your Exciting Journey
+      - generic [ref=e1114]:
+        - generic [ref=e1116]:
+          - heading "Highlights of Egypt" [level=3] [ref=e1117]
+          - heading "Discover the most important landmarks in Egypt" [level=6] [ref=e1118]
+        - generic [ref=e1120]:
+          - link "Cairo Cairo" [ref=e1122] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/cairo
+            - img "Cairo" [ref=e1123]
+            - paragraph [ref=e1124]: Cairo
+          - link "Luxor Luxor" [ref=e1127] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/luxor
+            - img "Luxor" [ref=e1128]
+            - paragraph [ref=e1129]: Luxor
+          - link "Aswan Aswan" [ref=e1132] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/aswan
+            - img "Aswan" [ref=e1133]
+            - paragraph [ref=e1134]: Aswan
+          - link "Hurghada Hurghada" [ref=e1137] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/hurghada
+            - img "Hurghada" [ref=e1138]
+            - paragraph [ref=e1139]: Hurghada
+          - link "Sharm El Sheikh Sharm El Sheikh" [ref=e1142] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/sharm-el-sheikh
+            - img "Sharm El Sheikh" [ref=e1143]
+            - paragraph [ref=e1144]: Sharm El Sheikh
+          - link "Dahab Dahab" [ref=e1147] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/dahab
+            - img "Dahab" [ref=e1148]
+            - paragraph [ref=e1149]: Dahab
+          - link "Alexandria Alexandria" [ref=e1152] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/alexandria
+            - img "Alexandria" [ref=e1153]
+            - paragraph [ref=e1154]: Alexandria
+          - link "Taba Taba" [ref=e1157] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/taba
+            - img "Taba" [ref=e1158]
+            - paragraph [ref=e1159]: Taba
+          - link "Marsa Alam Marsa Alam" [ref=e1162] [cursor=pointer]:
+            - /url: /egypt-tours/one-day-tours/marsa-alam
+            - img "Marsa Alam" [ref=e1163]
+            - paragraph [ref=e1164]: Marsa Alam
+    - generic [ref=e1166]:
+      - heading "Our Travel Blogs" [level=3] [ref=e1168]
+      - generic [ref=e1169]:
+        - generic [ref=e1171]:
+          - generic [ref=e1173]:
+            - link "BlogCard" [ref=e1174] [cursor=pointer]:
+              - /url: /blog/desert-in-egypt
+              - img "BlogCard" [ref=e1176]
+            - link "Can You Camp in the Desert in Egypt? Complete Sahara Camping Guide" [ref=e1178] [cursor=pointer]:
+              - /url: /blog/desert-in-egypt
+              - heading "Can You Camp in the Desert in Egypt? Complete Sahara Camping Guide" [level=6] [ref=e1179]
+          - generic [ref=e1181]:
+            - link "BlogCard" [ref=e1182] [cursor=pointer]:
+              - /url: /blog/why-choose-egypt%20-desert-tours
+              - img "BlogCard" [ref=e1184]
+            - 'link "Experience the Sahara Desert of Egypt: Camping, Dunes & Stargazing Adventures" [ref=e1186] [cursor=pointer]':
+              - /url: /blog/why-choose-egypt%20-desert-tours
+              - 'heading "Experience the Sahara Desert of Egypt: Camping, Dunes & Stargazing Adventures" [level=6] [ref=e1187]'
+          - generic [ref=e1189]:
+            - link "BlogCard" [ref=e1190] [cursor=pointer]:
+              - /url: /blog/first-time-desert
+              - img "BlogCard" [ref=e1192]
+            - 'link "First Time Desert Camping in Egypt: Essential Sahara Travel Tips" [ref=e1194] [cursor=pointer]':
+              - /url: /blog/first-time-desert
+              - 'heading "First Time Desert Camping in Egypt: Essential Sahara Travel Tips" [level=6] [ref=e1195]'
+          - generic [ref=e1197]:
+            - link "BlogCard" [ref=e1198] [cursor=pointer]:
+              - /url: /blog/egypt-desert-tours
+              - img "BlogCard" [ref=e1200]
+            - 'link "Egypt Desert Tours: Discover Egypt’s Most Thrilling Desert Adventures" [ref=e1202] [cursor=pointer]':
+              - /url: /blog/egypt-desert-tours
+              - 'heading "Egypt Desert Tours: Discover Egypt’s Most Thrilling Desert Adventures" [level=6] [ref=e1203]'
+          - generic [ref=e1205]:
+            - link "BlogCard" [ref=e1206] [cursor=pointer]:
+              - /url: /blog/best-easter-destinations
+              - img "BlogCard" [ref=e1208]
+            - 'link "Best Easter Destinations for Families: Why Egypt Should Be Your Top Choice" [ref=e1210] [cursor=pointer]':
+              - /url: /blog/best-easter-destinations
+              - 'heading "Best Easter Destinations for Families: Why Egypt Should Be Your Top Choice" [level=6] [ref=e1211]'
+          - generic [ref=e1213]:
+            - link "BlogCard" [ref=e1214] [cursor=pointer]:
+              - /url: /blog/egyptian-pharaohs
+              - img "BlogCard" [ref=e1216]
+            - link "Top 10 Secrets You Didn't Know About Egyptian Pharaohs" [ref=e1218] [cursor=pointer]:
+              - /url: /blog/egyptian-pharaohs
+              - heading "Top 10 Secrets You Didn't Know About Egyptian Pharaohs" [level=6] [ref=e1219]
+          - generic [ref=e1221]:
+            - link "BlogCard" [ref=e1222] [cursor=pointer]:
+              - /url: /blog/how-the-pyramids-were-built
+              - img "BlogCard" [ref=e1224]
+            - 'link "How The Pyramids Were Built: Classic Vs. Alternative Theories" [ref=e1226] [cursor=pointer]':
+              - /url: /blog/how-the-pyramids-were-built
+              - 'heading "How The Pyramids Were Built: Classic Vs. Alternative Theories" [level=6] [ref=e1227]'
+          - generic [ref=e1229]:
+            - link "BlogCard" [ref=e1230] [cursor=pointer]:
+              - /url: /blog/white-desert-national-park
+              - img "BlogCard" [ref=e1232]
+            - 'link "White Desert National Park: Egypt’s Timeless Wilderness of Stars, Sand, and Stone" [ref=e1234] [cursor=pointer]':
+              - /url: /blog/white-desert-national-park
+              - 'heading "White Desert National Park: Egypt’s Timeless Wilderness of Stars, Sand, and Stone" [level=6] [ref=e1235]'
+        - button "See more" [ref=e1240] [cursor=pointer]:
+          - generic [ref=e1241]: See more
+          - img [ref=e1243]
+    - generic [ref=e1247]:
+      - generic [ref=e1248]:
+        - heading "Tailored guidance for your sustainability journey" [level=3] [ref=e1249]
+        - generic [ref=e1250]:
+          - paragraph [ref=e1252]: Sustainability is not an add-on — it is integrated into how we design, operate, and deliver travel experiences across Egypt.
+          - button "See more" [ref=e1255] [cursor=pointer]:
+            - generic [ref=e1256]: See more
+      - generic:
+        - img
+    - generic [ref=e1257]:
+      - generic [ref=e1259]:
+        - heading "Gallery of Exciting journeys" [level=3] [ref=e1260]
+        - heading "Follow us on social media to see more Exciting journeys" [level=6] [ref=e1261]
+      - generic [ref=e1263]:
+        - generic [ref=e1264]:
+          - link [ref=e1265] [cursor=pointer]:
+            - /url: https://youtube.com/shorts/kvS38V3N5_Q?si=ffmF622fPHZyKuRy
+          - button "Open link" [ref=e1266] [cursor=pointer]
+        - generic:
+          - link:
+            - /url: https://youtu.be/R8ToDUiuFyE?si=7-lQlKWMAFJUzGyn
+          - button "Open link" [ref=e1267] [cursor=pointer]
+        - generic [ref=e1268]:
+          - link [ref=e1269] [cursor=pointer]:
+            - /url: https://vt.tiktok.com/ZSAdunkgH/
+          - button "Open link" [ref=e1270] [cursor=pointer]
+        - generic [ref=e1271]:
+          - link [ref=e1272] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DBCmWQ0t_nr/?igsh=cDZ2M2xveXUweWM3
+          - button "Open link" [ref=e1273] [cursor=pointer]
+        - generic:
+          - link:
+            - /url: https://www.facebook.com/share/r/15ANuuE3pZb/
+          - button "Open link" [ref=e1274] [cursor=pointer]
+    - generic [ref=e1275]:
+      - heading "Frequently Asked Questions" [level=3] [ref=e1277]
+      - generic [ref=e1278]:
+        - generic [ref=e1280] [cursor=pointer]:
+          - heading "▪ Can I take pictures and videos everywhere?" [level=6] [ref=e1281]
+          - img [ref=e1283]
+        - generic [ref=e1286] [cursor=pointer]:
+          - heading "▪ Can I bring a drone to Egypt?" [level=6] [ref=e1287]
+          - img [ref=e1289]
+        - generic [ref=e1292] [cursor=pointer]:
+          - heading "▪ Is Egypt safe for female tourists?" [level=6] [ref=e1293]
+          - img [ref=e1295]
+        - generic [ref=e1298] [cursor=pointer]:
+          - heading "▪ Can unmarried couples stay together in Egypt?" [level=6] [ref=e1299]
+          - img [ref=e1301]
+        - generic [ref=e1304] [cursor=pointer]:
+          - heading "▪ Why should I book with a Travel agency and not by myself" [level=6] [ref=e1305]
+          - img [ref=e1307]
+        - button "See more" [ref=e1313] [cursor=pointer]:
+          - generic [ref=e1314]: See more
+          - img [ref=e1316]
+    - generic [ref=e1321]:
+      - heading "Need help to Finding your Trip?" [level=3] [ref=e1322]
+      - generic [ref=e1324]:
+        - generic [ref=e1328]:
+          - textbox "Full Name" [ref=e1329]:
+            - /placeholder: ""
+          - generic [ref=e1330]: Full Name
+        - button "Contact Now" [ref=e1333] [cursor=pointer]:
+          - generic [ref=e1334]: Contact Now
+    - generic [ref=e1337]:
+      - img "Partner1 logo" [ref=e1339]
+      - img "Civitatis logo" [ref=e1341]
+      - img "Partner logo" [ref=e1343]
+      - img "Partner2 logo" [ref=e1345]
+      - img "Partner3 logo" [ref=e1347]
+      - img "Partner4 logo" [ref=e1349]
+      - img "Partner5 logo" [ref=e1351]
+      - img "Partner6 logo" [ref=e1353]
+      - img "Partner7 logo" [ref=e1355]
+      - img "Partner8 logo" [ref=e1357]
+      - img "Partner9 logo" [ref=e1359]
+      - img "Partner12 logo" [ref=e1361]
+      - img "Partner99 logo" [ref=e1363]
+      - img "TourRadar logo" [ref=e1365]
+      - img "Viator logo" [ref=e1367]
+  - button [ref=e1368] [cursor=pointer]:
+    - img [ref=e1369]
+  - img "chair icon" [ref=e1372]
+  - contentinfo [ref=e1373]:
+    - generic [ref=e1374]:
+      - generic [ref=e1375]:
+        - img "logo" [ref=e1376]
+        - paragraph [ref=e1377]: Need Our Help ?
+        - paragraph [ref=e1378]: We Would Happy To Help You ...
+        - generic [ref=e1379]:
+          - button [ref=e1380] [cursor=pointer]:
+            - img [ref=e1382]
+          - button [ref=e1384] [cursor=pointer]:
+            - img [ref=e1386]
+          - button [ref=e1389] [cursor=pointer]:
+            - img [ref=e1391]
+          - button [ref=e1393] [cursor=pointer]:
+            - img [ref=e1395]
+        - img "certified footer" [ref=e1400] [cursor=pointer]
+      - generic [ref=e1401]:
+        - paragraph [ref=e1402]: Sunpyramids Links
+        - list [ref=e1403]:
+          - listitem [ref=e1404]:
+            - link "Home" [ref=e1405] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e1406]: Home
+          - listitem [ref=e1407]:
+            - link "One Day Tours" [ref=e1408] [cursor=pointer]:
+              - /url: /egypt-tours/one-day-tours
+              - generic [ref=e1409]: One Day Tours
+          - listitem [ref=e1410]:
+            - link "Multi Days Tours" [ref=e1411] [cursor=pointer]:
+              - /url: /egypt-tours/multi-days-tours
+              - generic [ref=e1412]: Multi Days Tours
+          - listitem [ref=e1413]:
+            - link "Nile Cruises" [ref=e1414] [cursor=pointer]:
+              - /url: /egypt-tours/nile-cruises
+              - generic [ref=e1415]: Nile Cruises
+          - listitem [ref=e1416]:
+            - link "Shore Excursion" [ref=e1417] [cursor=pointer]:
+              - /url: /egypt-tours/shore-excursions
+              - generic [ref=e1418]: Shore Excursion
+          - listitem [ref=e1419]:
+            - link "Special Offer" [ref=e1420] [cursor=pointer]:
+              - /url: /trips?main=special-offers
+              - generic [ref=e1421]: Special Offer
+              - img [ref=e1423]
+          - listitem [ref=e1425]:
+            - link "Rent Car" [ref=e1426] [cursor=pointer]:
+              - /url: /rent-car
+              - generic [ref=e1427]: Rent Car
+          - listitem [ref=e1428]:
+            - link "About Us" [ref=e1429] [cursor=pointer]:
+              - /url: /about-us
+              - generic [ref=e1430]: About Us
+          - listitem [ref=e1431]:
+            - link "Contact Us" [ref=e1432] [cursor=pointer]:
+              - /url: /contact-us
+              - generic [ref=e1433]: Contact Us
+          - listitem [ref=e1434]:
+            - link "Egypt Travel Guide" [ref=e1435] [cursor=pointer]:
+              - /url: /egypt-travel-guide
+              - generic [ref=e1436]: Egypt Travel Guide
+          - listitem [ref=e1437]:
+            - link "faqs" [ref=e1438] [cursor=pointer]:
+              - /url: /faqs
+              - generic [ref=e1439]: faqs
+          - listitem [ref=e1440]:
+            - link "Events" [ref=e1441] [cursor=pointer]:
+              - /url: /events
+              - generic [ref=e1442]: Events
+          - listitem [ref=e1443]:
+            - link "Accessible Travel" [ref=e1444] [cursor=pointer]:
+              - /url: /accessible-travel
+              - generic [ref=e1445]: Accessible Travel
+      - generic [ref=e1446]:
+        - paragraph [ref=e1447]: Contact Info
+        - generic [ref=e1448]:
+          - generic [ref=e1450]:
+            - paragraph [ref=e1451]:
+              - link "+20 109 588 8830" [ref=e1452] [cursor=pointer]:
+                - /url: tel:+20 109 588 8830
+            - paragraph [ref=e1453]:
+              - link "+20 109 588 8831" [ref=e1454] [cursor=pointer]:
+                - /url: tel:+20 109 588 8831
+            - paragraph [ref=e1455]:
+              - link "+20 109 588 8835" [ref=e1456] [cursor=pointer]:
+                - /url: tel:+20 109 588 8835
+          - generic [ref=e1457]:
+            - img [ref=e1458]
+            - paragraph [ref=e1461] [cursor=pointer]: +20 109 588 8830
+          - generic [ref=e1463]:
+            - paragraph [ref=e1464]:
+              - link "info@sunpyramidstours.com" [ref=e1465] [cursor=pointer]:
+                - /url: mailto:info@sunpyramidstours.com
+            - paragraph [ref=e1466]:
+              - link "sales@sunpyramidstours.com" [ref=e1467] [cursor=pointer]:
+                - /url: mailto:sales@sunpyramidstours.com
+            - paragraph [ref=e1468]:
+              - link "sustainability@sunpyramidstours.com" [ref=e1469] [cursor=pointer]:
+                - /url: mailto:sustainability@sunpyramidstours.com
+          - paragraph [ref=e1472] [cursor=pointer]: Pyramids View Tower - Mansourieh Intersection with Faisal - Above Tseppas Pastry - Fourth Floor
+    - generic [ref=e1474]:
+      - paragraph [ref=e1475]: All rights reserved to sunpyramids company, Egypt ©2024
+      - generic [ref=e1476]:
+        - link "Privacy and Cookies" [ref=e1477] [cursor=pointer]:
+          - /url: /privacy-and-cookies
+        - link "Terms and Conditions" [ref=e1478] [cursor=pointer]:
+          - /url: /terms-and-conditions

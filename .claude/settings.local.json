@@ -16,7 +16,22 @@
       "Bash(npx sharp *)",
       "Bash(node -e \"console.log\\(require\\('sharp'\\).version\\)\")",
       "Bash(node *)",
-      "Bash(BASE_URL=https://sunpyramids.vercel.app npx playwright test tests/webp-images.spec.ts)"
+      "Bash(BASE_URL=https://sunpyramids.vercel.app npx playwright test tests/webp-images.spec.ts)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "PowerShell(Get-Content *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(fuser -k 3000/tcp)",
+      "Bash(npx kill-port *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(lrc *)",
+      "Bash(sort -k5 -rh)",
+      "Bash(BASE_URL=https://sunpyramids.vercel.app npx playwright *)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\public\\\\images\" | Where-Object { $_.Name -in @\\('clover.png','logo.png','line-arrow-right.svg','easter-egg.png'\\) } | Select-Object Name, Length)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\public\\\\icons\" | Where-Object { $_.Name -eq 'language.svg' } | Select-Object Name, Length)",
+      "Bash(npx npx *)",
+      "Bash(git checkout *)"
     ]
   },
   "enabledMcpjsonServers": [

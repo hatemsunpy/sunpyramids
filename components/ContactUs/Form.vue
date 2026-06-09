@@ -32,7 +32,7 @@
     </div>
 
     <div class="w-full rounded-[2rem] h-[53.5rem] overflow-hidden">
-      <!-- <NuxtImg class="w-full h-full  object-cover" src="/images/realLocation.svg" /> -->
+      <!-- <img class="w-full h-full  object-cover" src="/images/realLocation.svg" /> -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.6362016367007!2d31.1358037!3d29.989883499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458453ac9012d27%3A0xc9798c397d0dfd0!2sSUN%20PYRAMIDS%20TOURS!5e0!3m2!1sen!2seg!4v1756828808951!5m2!1sen!2seg"
         style="border:0; width: 100%; height: 100%; " allowfullscreen="" loading="lazy"

@@ -1,7 +1,7 @@
 <template>
   <section class="md:py-6 md:px-10 py-4 px-4 pe-0 bg-white md:rounded-2xl">
     <div class="md:flex hidden items-center gap-4" @click="back">
-      <NuxtImg src="/icons/arrow-left.png"
+      <img src="/icons/arrow-left.png"
         class="p-3 min-w-5 min-h-5 hover:bg-dark transition-colors rounded-full cursor-pointer" />
 
       <h5 class="text-2xl font-medium">{{ $t("labels." + props.title) }}</h5>

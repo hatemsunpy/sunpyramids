@@ -2,7 +2,7 @@
   <nav class="top-0 w-full z-40 h-fit" :class="[isFixed ? 'fixed' : 'sticky']">
     <div class="header">
 
-      <NuxtImg @click="router.push(localePath('/'))"
+      <img @click="router.push(localePath('/'))"
         class="xl:min-w-44 xl:max-w-4min-w-44 min-w-32 max-w-32 cursor-pointer" src="/images/logo.png" alt="logo" />
 
       <ul v-if="isFirstStyle" class="xl:flex hidden items-center justify-between gap-6 font-medium text-base">
@@ -18,7 +18,7 @@
                 {{ $t(`labels.${link.name}`) }}
               </span>
 
-              <!-- <NuxtImg class="w-5" src="/icons/arrow-down.svg" alt="logo" /> -->
+              <!-- <img class="w-5" src="/icons/arrow-down.svg" alt="logo" /> -->
               <NuxtIcon name="arrow-down" class="w-5 h-5 text-xl" />
               <ul
                 class="absolute  -left-4 text-base bg-white dropDownShadow rounded-b-2xl px-4 py-2 w-56 invisible group-hover:visible transition-all duration-200 z-30"
@@ -90,9 +90,9 @@
       :class="[isFirstStyle ? 'flex' : 'hidden md:hidden lg:top-[2.875rem]']">
 
       <div class="flex items-center gap-2 ">
-        <NuxtImg src="/images/clover.png" class="w-6 h-6" />
+        <img src="/images/clover.png" class="w-6 h-6" alt="" />
 
-        <NuxtImg src="/images/easter-egg.png" class="w-8 h-8" />
+        <img src="/images/easter-egg.png" class="w-8 h-8" alt="" />
       </div>
 
       <p class="text-white font-medium text-xl z-10">{{ $t('labels.strip.title') }}</p>
@@ -157,7 +157,7 @@
   <!-- <div v-if="route.fullPath != localePath('/event/egypt-christmas-event-2025')"
     class="fixed -translate-x-1/2 start-1/2 md:-top-[10px] sm:top-[36px] top-[52px] transition-all duration-700 sm:w-fit w-3/4 z-[31]"
     :class="[isFirstStyle ? 'xl:hover:top-[5.2125rem] lg:hover:top-[4.8125rem] md:hover:top-[5.9125rem] hover:top-[6.8125rem] tree' : !isFirstStyle && !isMobile ? 'xl:top-[8.9rem] lg:top-[8.5rem] md:top-[5.9125rem] top-[6.8125rem]' : !isFirstStyle && isMobile ? 'xl:hover:top-[5.2125rem] lg:hover:top-[4.8125rem] md:hover:top-[5.9125rem] hover:top-[6.8125rem] tree' : '']">
-    <NuxtImg src="/images/cri-container.webp" class="!w-[460px]" />
+    <img src="/images/cri-container.webp" class="!w-[460px]" />
 
     <NuxtLink :to="localePath('/event/egypt-christmas-event-2025')"
       class="absolute sm:top-8 top-6 start-1/2 -translate-x-1/2 -translate-y-1/2 md:text-lg text-sm  text-center font-medium">
@@ -170,7 +170,7 @@
     <div class="bg-white w-[80%] py-10 px-4">
 
       <div class="flex items-center justify-between mb-6">
-        <NuxtImg class="xl:min-w-60 xl:max-w-60 min-w-40 max-w-40 mb-6 cursor-pointer"
+        <img class="xl:min-w-60 xl:max-w-60 min-w-40 max-w-40 mb-6 cursor-pointer"
           @click="router.push(localePath('/')), isModelOpened = false" src="/icons/logo.svg" alt="logo" />
 
         <UIButton :text="$t(`labels.signIn`)" v-if="!isLogin" :classes="[

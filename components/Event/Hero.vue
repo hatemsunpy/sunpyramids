@@ -5,7 +5,7 @@
       <img :src="props.imgPhone ?? props.img"
         class="absolute start-0 w-full h-full object-cover lg:hidden block brightness-75" />
 
-      <!-- <NuxtImg src="/images/IMG_3817.jpg" class="absolute start-0 w-full h-full" /> -->
+      <!-- <img src="/images/IMG_3817.jpg" class="absolute start-0 w-full h-full" /> -->
       <div
         class="text-center font-bold text-white top-10 xl:px-48 h-full flex items-center justify-center  w-full flex-col !z-10">
         <!-- <h1 class="2xl:text-5xl lg:text-[2rem] text-2xl   2xl:leading-[4.0625rem] leading-[2.5rem] secondText "> -->

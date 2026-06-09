@@ -4,7 +4,7 @@
     <div
       class="md:w-[62px] md:h-[62px] w-14 h-14 rounded-full bubble-btn bg-primary flex items-center justify-center   group-hover:-rotate-[20deg] transition-transform duration-300">
 
-      <NuxtImg src="/icons/chair.svg" alt="chair icon" class="icon-white md:w-[42px] md:h-[42px] w-10 h-10" />
+      <img src="/icons/chair.svg" alt="chair icon" class="icon-white md:w-[42px] md:h-[42px] w-10 h-10" />
     </div>
 
     <div class="popup border lg:w-[800px] md:w-[500px] w-[300px]">
@@ -25,7 +25,7 @@
     <div
       class="md:w-[62px] md:h-[62px] w-14 h-14 rounded-full bubble-btn bg-primary flex items-center justify-center   group-hover:-rotate-[20deg] transition-transform duration-300">
 
-      <NuxtImg src="/icons/chair.svg" alt="chair icon" class="icon-white md:w-[42px] md:h-[42px] w-10 h-10" />
+      <img src="/icons/chair.svg" alt="chair icon" class="icon-white md:w-[42px] md:h-[42px] w-10 h-10" />
     </div>
 
     <div v-if="isOpen" class="popup border lg:w-[800px] md:w-[500px] w-[300px]">

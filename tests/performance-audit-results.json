@@ -1,0 +1,88 @@
+{
+  "url": "https://sunpyramids.vercel.app/",
+  "timestamp": "2026-06-09T09:11:40.499Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "htmlSizeKb": 1010.6,
+  "domMetrics": {
+    "elements": 3280,
+    "scripts": 5,
+    "links": 79,
+    "imgs": 290,
+    "stylesheets": 17,
+    "noscriptStylesheets": 0,
+    "modulePreloads": 45,
+    "inlineStyles": 36
+  },
+  "stylesheets": {
+    "renderBlocking": 17,
+    "noscript": 0,
+    "inline": 36
+  },
+  "modulePreloads": 45,
+  "coreWebVitals": {
+    "fcp": 1220,
+    "ttfb": 440.29999999701977,
+    "longTasks": 4
+  },
+  "transferSizes": {
+    "totalKb": 911.5,
+    "jsKb": 7.6,
+    "cssKb": 4.4,
+    "imgKb": 825.9,
+    "fontKb": 73.6,
+    "resourceCount": 148
+  },
+  "heroImage": {},
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "failedRequests": [
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/clover.png",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/logo.png",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/icons/language.svg",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/line-arrow-right.svg",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/easter-egg.png",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/arrow_steps.png",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/icons/chair.svg",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80&s_260x56/images/logo.png",
+      "status": 404
+    },
+    {
+      "url": "https://sunpyramids.vercel.app/_ipx/q_80/images/whatsapp.png",
+      "status": 404
+    }
+  ]
+}
