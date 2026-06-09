@@ -8,8 +8,8 @@
     <NuxtImg src="/images/whatsapp.png" class="w-10 h-10" />
   </button>
 
-  <HomeChairIcon />
-  <Footer />
+  <LazyHomeChairIcon />
+  <LazyFooter />
 
 </template>
 

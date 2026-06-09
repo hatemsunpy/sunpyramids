@@ -295,7 +295,6 @@ onMounted(() => {
   window.addEventListener('scroll', handleScrollY);
   isMobile.value = window.innerWidth < 512
   screanHeight.value = window.innerHeight;
-  console.log("Screen height:", screanHeight.value);
 });
 
 onUnmounted(() => {
