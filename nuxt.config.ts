@@ -79,7 +79,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "~/modules/critical-css",
     "@pinia/nuxt",
     "nuxt-swiper",
     "nuxt-icons",
@@ -108,10 +107,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vercel/speed-insights/nuxt",
   ],
-  criticalCSS: {
-    routes: ['/', '/tours', '/about-us', '/contact-us', '/events', '/make-your-trip'],
-    locales: ['en', 'fr', 'de', 'it', 'pt', 'es', 'zh'],
-  },
   app: {
     head: {
       link: [
