@@ -2,7 +2,7 @@
 import langsConfig from "./i18n/Helpers/config";
 import RedirectRules from "./redirect-rules";
 
-const appURL = process.env.APP_URL || "https://new-sunpyramids-demo.vercel.app";
+const appURL = process.env.APP_URL || "https://sunpyramids.vercel.app";
 const baseURL = process.env.API_URL || "https://sunpyramidtours.com/api/";
 const redirect_rules: any = RedirectRules;
 
