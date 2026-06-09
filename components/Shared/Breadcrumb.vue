@@ -17,8 +17,10 @@
     </ul>
 
     <div class="flex lg:hidden items-center gap-4">
-      <img @click="router.go(-1)" src="/icons/arrow-left.png"
-        class="p-3 min-w-[18px] min-h-[18px] hover:bg-dark transition-colors rounded-full border cursor-pointer" />
+      <button type="button" @click="router.go(-1)" aria-label="Go back"
+        class="p-3 flex items-center justify-center hover:bg-dark transition-colors rounded-full border">
+        <img src="/icons/arrow-left.png" alt="" class="w-5 h-5" />
+      </button>
 
       <h5 class="font-normal truncate">{{ props.mobItem.directTitle ? props.mobItem.title : $t("labels." +
         props.mobItem.title) }}</h5>

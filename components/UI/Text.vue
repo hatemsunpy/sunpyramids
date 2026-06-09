@@ -32,7 +32,7 @@
             }})</span></label>
 
           <button type="button" v-if="props.showVisibility" @click="showPassword">
-            <NuxtImg class="w-6 h-6" :src="currentType == 'password'
+            <img class="w-6 h-6" :src="currentType == 'password'
               ? '/icons/eye.svg'
               : '/icons/eye-close.svg'
               " />

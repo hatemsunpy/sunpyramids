@@ -19,7 +19,7 @@
 
     <div
       class="overflow- mx-4 xl:mx-0 xl:h-[30rem] xl:min-w-[39.375rem] h-[300px] md:h-[500px] w-full rounded-[2.375rem]">
-      <img class="w-full  h-full" src="/images/certified.webp" loading="lazy" />
+      <img class="w-full  h-full" src="/images/certified.webp" loading="lazy" alt="Travelife-certified sustainability partnership badge" />
     </div>
   </section>
 </template>

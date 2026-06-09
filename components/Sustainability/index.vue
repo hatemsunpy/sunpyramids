@@ -4,7 +4,7 @@
       <!-- <NuxtImg class="w-full h-full  object-cover object-center z-0" v-if="privacyData && privacyData.banner"
         :src="privacyData.banner" /> -->
 
-      <img class="w-full h-full  object-cover object-center z-0"  src="/images/faqs-banner.webp" />
+      <img class="w-full h-full  object-cover object-center z-0" src="/images/faqs-banner.webp" alt="Sustainability banner" />
 
       <div class="absolute bottom-0 start-0 w-full h-[70%] categoryBox"></div>
     </div>

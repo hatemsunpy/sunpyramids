@@ -1,16 +1,17 @@
 <template>
-  <Header />
+  <div>
+    <Header />
 
-  <slot />
+    <slot />
 
-  <button @click="goToWhatsApp"
-    class="fixed z-40 right-20 bottom-20 w-[60px] h-[60px] gradient-whatsapp b rounded-full lg:flex hidden justify-center items-center">
-    <img src="/images/whatsapp.png" class="w-10 h-10" />
-  </button>
+    <button @click="goToWhatsApp" aria-label="Open WhatsApp chat"
+      class="fixed z-40 right-20 bottom-20 w-[60px] h-[60px] gradient-whatsapp b rounded-full lg:flex hidden justify-center items-center">
+      <img src="/images/whatsapp.png" class="w-10 h-10" alt="" />
+    </button>
 
-  <LazyHomeChairIcon />
-  <LazyFooter />
-
+    <LazyHomeChairIcon />
+    <LazyFooter />
+  </div>
 </template>
 
 <script setup lang="js">

@@ -34,9 +34,9 @@
       </div>
     </div>
 
-    <button @click="goToWhatsApp"
+    <button @click="goToWhatsApp" aria-label="Open WhatsApp chat"
       class="absolute start-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-14 h-14 gradient-whatsapp b rounded-full flex justify-center items-center">
-      <img src="/images/whatsapp.png" class="w-8 h-8" />
+      <img src="/images/whatsapp.png" class="w-8 h-8" alt="" />
     </button>
   </section>
 </template>
