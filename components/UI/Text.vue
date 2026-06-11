@@ -31,11 +31,11 @@
             <span class="text-[#A5A5A5] text-xs !mb-1" v-if="props.isOptional">({{ $t("inputLabels.optional")
             }})</span></label>
 
-          <button type="button" v-if="props.showVisibility" @click="showPassword">
+          <button type="button" v-if="props.showVisibility" @click="showPassword" :aria-label="currentType === 'password' ? 'Show password' : 'Hide password'">
             <img class="w-6 h-6" :src="currentType == 'password'
               ? '/icons/eye.svg'
               : '/icons/eye-close.svg'
-              " />
+              " alt="" />
           </button>
         </div>
 

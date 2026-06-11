@@ -19,7 +19,7 @@
         <div class="flex items-center gap-4 justify-between">
           <button v-for="(item, index) in socials" :key="index" @click="signSocial(item.end)"
             class="flex gap-2 py-4 w-full items-center justify-center border border-[#EEEEEE] rounded-2xl">
-            <img :src="`/icons/${item.img}.png`" class="min-h-6 min-w-6" />
+            <img :src="`/icons/${item.img}.png`" :alt="item.img" class="min-h-6 min-w-6" />
           </button>
         </div>
       </div>
