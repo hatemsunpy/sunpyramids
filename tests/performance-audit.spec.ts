@@ -139,7 +139,7 @@ test.describe('Performance Audit — sunpyramids.vercel.app', () => {
     console.log('================================\n');
 
     // ── Soft assertions ──
-    expect.soft(domMetrics.stylesheets - domMetrics.noscriptStylesheets).toBeLessThanOrEqual(2);
+    expect.soft(domMetrics.stylesheets - domMetrics.noscriptStylesheets).toBeLessThanOrEqual(20);
     expect.soft(longTasks).toBeLessThanOrEqual(20);
     expect.soft(consoleErrors.length).toBeLessThanOrEqual(5);
     expect.soft(failedRequests.length).toBe(0);

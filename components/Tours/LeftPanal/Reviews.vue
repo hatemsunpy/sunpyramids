@@ -44,7 +44,7 @@
 
           <div class="flex justify-between mb-8">
             <div class="flex items-center gap-2">
-              <img src="/images/team/Mahmoud_badia.png" class="w-16 h-16 rounded-full" />
+              <img src="/images/team/Mahmoud_badia.png" class="w-16 h-16 rounded-full" alt="Photo of Mahmoud Badia" />
               <div>
                 <h6 class="text-xl leading-8 font-medium">Mahmoud Badia</h6>
 

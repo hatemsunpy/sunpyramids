@@ -51,7 +51,7 @@
 
     <div
       class="overflow- mx-4 xl:mx-0 flex items-center justify-center  rounded-[2.375rem]">
-      <img class="w-3/4  h-full" src="/images/certified-logo.webp" loading="lazy" />
+      <img class="w-3/4  h-full" src="/images/certified-logo.webp" loading="lazy" alt="Travelife sustainability certification logo" />
     </div>
   </section>
 </template>

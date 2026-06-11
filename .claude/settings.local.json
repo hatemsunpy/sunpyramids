@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80"
+  },
   "permissions": {
     "allow": [
       "Bash(powershell -File .specify/scripts/powershell/setup-plan.ps1 -Json)",
@@ -31,7 +34,8 @@
       "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\public\\\\images\" | Where-Object { $_.Name -in @\\('clover.png','logo.png','line-arrow-right.svg','easter-egg.png'\\) } | Select-Object Name, Length)",
       "PowerShell(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\public\\\\icons\" | Where-Object { $_.Name -eq 'language.svg' } | Select-Object Name, Length)",
       "Bash(npx npx *)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(npx playwright *)"
     ]
   },
   "enabledMcpjsonServers": [

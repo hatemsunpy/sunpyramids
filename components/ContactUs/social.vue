@@ -2,7 +2,7 @@
   <section v-if="settings" class="py-14 xl:px-20 px-4 grid lg:grid-cols-4 grid-cols-2 xl:gap-10 md:gap-4 gap-2 justify-between">
     <button @click="getURL(item.value)" v-for="(item, index) in socials" :key="index"
       class="flex gap-2 py-4 w-full hover:bg-[#d19026] hover:border-[#d19026] duration-300 transition-colors px-10 items-center justify-center border border-[#CCCCCC] rounded-2xl">
-      <NuxtImg :src="`/icons/${item.icon}.png`" class="min-h-6 min-w-6 max-w-6 max-h-6 " />
+      <img :src="`/icons/${item.icon}.png`" class="min-h-6 min-w-6 max-w-6 max-h-6 " />
 
       <span class="font-medium">{{ item.title }}</span>
     </button>
