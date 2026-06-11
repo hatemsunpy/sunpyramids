@@ -52,7 +52,7 @@
               </div>
             </div>
 
-            <img src="/images/team/doupleQuote.png" class="w-20 h-[3.375rem]" />
+            <img src="/images/team/doupleQuote.png" alt="" class="w-20 h-[3.375rem]" />
           </div>
         </div>
       </swiper-slide>

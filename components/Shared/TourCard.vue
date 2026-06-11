@@ -6,10 +6,9 @@
     } : false" @swiper="setSwiperInstance">
       <swiper-slide class="overflow-hidden h-full" v-for="img in props.item?.gallery.slice(0, 6)" :key="img">
         <NuxtLink :to="localePath(`/tour/${props.item?.slug}`)" :prefetch="false">
-          <NuxtImg class="w-full h-full object-cover cursor-pointer" :src="img" :alt="props.item?.title ? props.item?.title + ' image' : 'Tour image'"
+          <img class="w-full h-full object-cover cursor-pointer" :src="img" :alt="props.item?.title ? props.item?.title + ' image' : 'Tour image'"
             :loading="img === props.item?.gallery[0] ? 'eager' : 'lazy'" width="400" height="194" decoding="async"
-            style="aspect-ratio: 400/194;" format="webp"
-            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 33vw, 25vw" />
+            style="aspect-ratio: 400/194;" />
         </NuxtLink>
       </swiper-slide>
 

@@ -4,7 +4,7 @@
       class="border-2 w-full !h-full flex flex-col  gap-6 border-[#EEEEEE] xl:p-8 p-6 rounded-[2rem]">
       <span
         class="flex justify-center items-center xl:rounded-[2rem] rounded-2xl text-secondary xl:w-[5.5rem] xl:h-[5.5rem] w-[4.5rem] h-[4.5rem] bg-[#FEF3E6]">
-        <img :src="item.icon" class="xl:w-10 xl:h-10 w-8 h-8  object-cover" alt="" />
+        <img :src="item.icon" :alt="$t(`labels.aboutus.goals.${item.name}.title`)" class="xl:w-10 xl:h-10 w-8 h-8  object-cover" />
       </span>
 
       <h4 class="xl:text-[2.125rem] text-2xl font-medium">

@@ -17,7 +17,7 @@
     </ul>
 
     <div class="flex lg:hidden items-center gap-4">
-      <button type="button" @click="router.go(-1)" aria-label="Go back"
+      <button type="button" @click="router.go(-1)" :aria-label="$t('labels.goBack')"
         class="p-3 flex items-center justify-center hover:bg-dark transition-colors rounded-full border">
         <img src="/icons/arrow-left.png" alt="" class="w-5 h-5" />
       </button>
