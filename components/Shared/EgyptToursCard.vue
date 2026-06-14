@@ -11,7 +11,7 @@
         <div class="bg-no-repeat object-center bg-cover bg-center h-full w-full backgroundhover cursor-pointer"
           v-for="offer in 1" :key="offer">
 
-          <NuxtImg :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" format="webp" alt="" />
+          <NuxtImg :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" format="webp" :alt="props.data?.title ? `${props.data.title} tour destination` : 'Tour destination image'" />
         </div>
 
         <h2

@@ -19,7 +19,7 @@
         <div class="flex items-center gap-4 justify-between">
           <button v-for="(item, index) in socials" :key="index" @click="signSocial(item.end)"
             class="flex gap-2 py-4 w-full items-center justify-center border border-[#EEEEEE] rounded-2xl">
-            <img :src="`/icons/${item.img}.png`" :alt="$t('labels.auth.signUpWith', { provider: item.displayName })"
+            <img :src="`/icons/${item.img}.png`" :alt="$t('labels.signUpWith', { provider: item.displayName })"
               class="min-h-6 min-w-6" />
           </button>
         </div>

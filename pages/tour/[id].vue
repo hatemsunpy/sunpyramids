@@ -55,6 +55,7 @@ watch(tour, (newVal) => {
             rel: 'preload',
             as: 'image',
             href: preloadHref,
+            fetchpriority: 'high',
           }
         ]
       })
