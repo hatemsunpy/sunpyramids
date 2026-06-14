@@ -5,6 +5,10 @@
     "contact": "Contatti",
     "events": "Eventi",
     "goBack": "Indietro",
+    "showPassword": "Mostra password",
+    "hidePassword": "Nascondi password",
+    "signInWith": "Accedi con {provider}",
+    "signUpWith": "Registrati con {provider}",
     "criTitle": "Esplora l'Egitto guidato da una vera esperienza",
     "bookCriTrip": "Prenota ora il tuo viaggio di Natale",
     "specialEventsData": {

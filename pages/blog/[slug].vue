@@ -53,21 +53,26 @@ await getData(`blogs/${route.params.slug}?includes=seo,relatedTours`).then((res)
 })
 
 const { addSeo } = useSeo()
+// Preload LCP main banner image using @nuxt/image so the URL format
+// adapts to the active provider (Vercel /_vercel/image or IPX)
+const img = useImage()
+
 if (blog.value) {
   addSeo(blog.value)
-  
-  // Preload LCP main banner image
-  useHead({
-    link: blog.value.featured_image ? [
-      {
-        rel: 'preload',
-        as: 'image',
-        href: `/_ipx/w_1024,f_webp/${blog.value.featured_image}`,
-        imagesrcset: `/_ipx/w_320,f_webp/${blog.value.featured_image} 320w, /_ipx/w_640,f_webp/${blog.value.featured_image} 640w, /_ipx/w_768,f_webp/${blog.value.featured_image} 768w, /_ipx/w_1024,f_webp/${blog.value.featured_image} 1024w`,
-        imagesizes: 'xs:320px sm:640px md:768px lg:1024px'
-      }
-    ] : []
-  })
+
+  if (blog.value.featured_image) {
+    const preloadHref = img(blog.value.featured_image, { width: 1024, format: 'webp', quality: 80 })
+
+    useHead({
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: preloadHref,
+        }
+      ]
+    })
+  }
 }
 </script>
 

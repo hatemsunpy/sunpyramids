@@ -35,22 +35,26 @@ await getData(`tours/${route.params.id}?includes=seo,destinations,categories,opt
   console.error(error)
 })
 
+// Preload the first gallery image as the LCP element using @nuxt/image
+// so the URL format adapts to the active provider (Vercel /_vercel/image or IPX)
+const img = useImage()
+
 watch(tour, (newVal) => {
   if (newVal) {
     breadcrumbItems.value = [...breadcrumbItems.value, { title: newVal.title, directTitle: true, disabled: true, path: "" },]
-    
+
     addSeo(newVal)
 
-    // Preload the first Swiper hero image as the LCP element
     if (newVal.gallery && newVal.gallery[0]) {
+      const src = newVal.gallery[0]
+      const preloadHref = img(src, { width: 1024, format: 'webp', quality: 80 })
+
       useHead({
         link: [
           {
             rel: 'preload',
             as: 'image',
-            href: `/_ipx/w_1024,f_webp/${newVal.gallery[0]}`,
-            imagesrcset: `/_ipx/w_320,f_webp/${newVal.gallery[0]} 320w, /_ipx/w_640,f_webp/${newVal.gallery[0]} 640w, /_ipx/w_768,f_webp/${newVal.gallery[0]} 768w, /_ipx/w_1024,f_webp/${newVal.gallery[0]} 1024w`,
-            imagesizes: 'xs:320px sm:640px md:768px lg:1024px'
+            href: preloadHref,
           }
         ]
       })

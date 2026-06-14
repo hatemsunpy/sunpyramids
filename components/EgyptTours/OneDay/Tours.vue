@@ -101,7 +101,8 @@
 import { configure } from "vee-validate";
 import * as yup from "yup";
 
-const { getData } = useApi()
+const config = useRuntimeConfig()
+const { locale } = useI18n()
 const isOpenFilterMobile = ref(false)
 const route = useRoute()
 
@@ -172,7 +173,9 @@ const getTours = async (values) => {
   isLoading.value = true
   tours.value = null
   isOpenFilterMobile.value = false
-  window.scrollTo({ top: 200, behavior: "smooth" });
+  if (process.client) {
+    window.scrollTo({ top: 200, behavior: "smooth" });
+  }
 
   let params = [`exists=wishlisted`, `&destinations.slug=${route.params.slug}`]
   if (selecterBtnsFilter.value.includes("All")) {
@@ -203,14 +206,26 @@ const getTours = async (values) => {
   // }
 
   const query = params.join("")
-  await getData(`${url}?${query}`).then((res) => {
-    tours.value = res.data
+  try {
+    const res = await $fetch(`${config.public.baseURL}${url}?${query}`, {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        'Content-Type': 'application/json',
+        'X-Localize': locale.value,
+      },
+    })
+    tours.value = res?.data ?? null
     if (totalGlobalTrips.value == 0)
-      totalGlobalTrips.value = res.total
+      totalGlobalTrips.value = res?.total ?? 0
+  } catch (err) {
+    console.error('[getTours] Failed to load tours:', err)
+    tours.value = null
+  } finally {
     isLoading.value = false
-  })
+  }
 }
-getTours()
+await getTours()
 
 watch([selecterBtnsFilter, order], () => {
   page.value = 1

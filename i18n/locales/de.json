@@ -19,6 +19,10 @@
     "contactNow":"Jetzt kontaktieren",
     "whyChooseUs": "Warum Sun Pyramids Tours?",
     "goBack": "Zurück",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "signInWith": "Anmelden mit {provider}",
+    "signUpWith": "Registrieren mit {provider}",
     "thankful": {
       "title": "Dankesseite",
       "one": "Vielen Dank, Herr/Frau {name}",

@@ -128,9 +128,10 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'ipx',
+    // Don't set provider explicitly — let @nuxt/image auto-detect:
+    // On Vercel it uses /_vercel/image; elsewhere it falls back to IPX.
     quality: 80,
-    format: ['webp', 'avif'],
+    format: ['webp'],
     domains: ['sunpyramidtours.com', 'pub-5ccb6ad334fb427684d7f3fa11a34197.r2.dev'],
     screens: {
       xs: 320,

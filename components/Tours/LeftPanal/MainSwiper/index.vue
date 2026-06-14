@@ -6,7 +6,7 @@
         class="md:rounded-2xl rounded-none border w-full md:min-h-[36.25rem] md:max-h-[36.25rem] overflow-hidden "
         v-for="(img, index) in tour?.gallery" :key="index">
         <!-- <img v-if="!item.video" :src="item.photo" class="w-full h-full object-cover" /> -->
-        <img :src="img" class="w-full md:min-h-[36.25rem] md:max-h-[36.25rem] object-cover object-top" :loading="index === 0 ? 'eager' : 'lazy'" :fetchpriority="index === 0 ? 'high' : 'auto'" width="1000" height="580" style="aspect-ratio: 16 / 9;" />
+        <NuxtImg :src="img" class="w-full md:min-h-[36.25rem] md:max-h-[36.25rem] object-cover object-top" :loading="index === 0 ? 'eager' : 'lazy'" width="1000" height="580" format="webp" />
 
         <!-- <UIVideo :class="'min-h-[26.25rem] max-h-[26.25rem]'" :timeNow="timeNow" v-else :photo="item.photo"
           :video="item.video" /> -->
@@ -47,7 +47,7 @@
       },
     }" :freeMode="true" :modules="modules" class="tourSwiper">
       <swiper-slide v-for="(img, index) in tour?.gallery" :key="index" class="relative">
-        <img :src="img" class="w-full h-full object-cover " loading="lazy" width="64" height="64" style="aspect-ratio: 1 / 1;" />
+        <NuxtImg :src="img" class="w-full h-full object-cover" loading="lazy" width="64" height="64" format="webp" />
 
         <!-- <div v-if="item.video"
           class="absolute bg-[#1D1F1FCC] flex justify-center items-center  rounded-full w-5 h-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
