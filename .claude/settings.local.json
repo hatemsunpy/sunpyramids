@@ -35,7 +35,17 @@
       "Bash(npx npx *)",
       "Bash(git checkout *)",
       "Bash(npx playwright *)",
-      "mcp__playwright__browser_navigate"
+      "mcp__playwright__browser_navigate",
+      "WebFetch(domain:sunpyramidstours.com)",
+      "WebFetch(domain:sunpyramids.vercel.app)",
+      "Bash(Get-ChildItem -Path \"D:\\\\Sun Pyramids\\\\sun pyramids tours - Web\\\\sun-front\\\\pages\" -Recurse -Filter \"*.vue\")",
+      "Bash(Select-Object FullName)",
+      "Bash(npx @playwright/mcp install-browser chrome-for-testing)",
+      "Bash(where chrome-for-testing *)",
+      "Read(//c/Users/HaTeM/AppData/Local/ms-playwright/mcp-chrome-for-testing-f4049ab/**)",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Users\\\\HaTeM\\\\AppData\\\\Local\\\\ms-playwright\\\\mcp-chrome-for-testing-f4049ab' -Recurse -Name | Select-Object -First 20\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Users\\\\HaTeM\\\\AppData\\\\Local\\\\ms-playwright\\\\mcp-chrome-for-testing-f4049ab\\\\chrome-win64' -Name\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Users\\\\HaTeM\\\\AppData\\\\Local\\\\ms-playwright\\\\mcp-chrome-for-testing-f4049ab' -Name | Select-Object -First 30\")"
     ]
   },
   "enabledMcpjsonServers": [

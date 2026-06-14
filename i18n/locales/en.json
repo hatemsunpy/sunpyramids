@@ -43,6 +43,10 @@
     "accessibleTravel": "Accessible Travel",
     "whyChooseUs": "Why Sun Pyramids Tours?",
     "goBack": "Go Back",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "signInWith": "Sign in with {provider}",
+    "signUpWith": "Sign up with {provider}",
     "thankful": {
       "title": "Thankful Page",
       "one": "Thank You Mr. {name}",

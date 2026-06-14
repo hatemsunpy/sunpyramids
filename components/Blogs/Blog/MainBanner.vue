@@ -9,7 +9,7 @@
         class="blogSwiper group ">
         <swiper-slide class="lg:rounded-2xl border w-full lg:h-[566px] h-96 overflow-hidden " v-for="image in 1">
           <div>
-            <img :src="page?.featured_image" class="!w-full lg:h-[566px] h-96 object-cover object-top" alt="" loading="eager" fetchpriority="high" />
+            <NuxtImg :src="page?.featured_image" class="!w-full lg:h-[566px] h-96 object-cover object-top" alt="" loading="eager" format="webp" width="1024" height="566" />
           </div>
           <div class="w-full linearBG h-[70%] flex items-end absolute bottom-0 right-0">
             <div class="text-white text-start w-full font-medium pb-[2.375rem] lg:px-20 px-6 textShadow">

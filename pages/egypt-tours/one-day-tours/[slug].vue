@@ -19,6 +19,7 @@ const route = useRoute()
 const { getData } = useApi()
 const { addSeo } = useSeo()
 
+const breadcrumbItems = ref([{ title: "home", disabled: false, path: "/" }, { title: "egyTours", disabled: true, path: "/egypt-tours" }, { title: "oneDay", disabled: false, path: "/egypt-tours/one-day-tours" },])
 const distination = ref(null)
 const getDistination = async () => {
   await getData(`destinations/${route.params.slug}`, { includes: 'seo' }).then((res) => {
@@ -27,8 +28,7 @@ const getDistination = async () => {
     addSeo(distination.value)
   })
 }
-getDistination()
-const breadcrumbItems = ref([{ title: "home", disabled: false, path: "/" }, { title: "egyTours", disabled: true, path: "/egypt-tours" }, { title: "oneDay", disabled: false, path: "/egypt-tours/one-day-tours" },])
+await getDistination()
 </script>
 
 <style scoped lang="scss"></style>

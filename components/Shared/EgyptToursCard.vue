@@ -11,7 +11,7 @@
         <div class="bg-no-repeat object-center bg-cover bg-center h-full w-full backgroundhover cursor-pointer"
           v-for="offer in 1" :key="offer">
 
-          <img :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" style="aspect-ratio: 3 / 2;" decoding="async" />
+          <NuxtImg :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" format="webp" alt="" />
         </div>
 
         <h2
@@ -20,11 +20,11 @@
           {{ props.data?.title }}
         </h2>
 
-        <h6 v-if="props.type == 'nile'"
+        <p v-if="props.type == 'nile'"
           class="text-white text-center  !textH4 2xl:text-xl cursor-pointer text-base absolute w-full -translate-x-1/2  bottom-0 group-hover:bottom-4 transition-all z-20 font-medium"
           :class="[props.type == 'nile' ? '!left-1/2 -translate-x-1/2' : 'sm:start-5 xl-start-11  start-[10px]']"
           v-html="props.data?.description">
-        </h6>
+        </p>
 
         <div class="absolute bottom-0 start-0 w-full h-[70%]  z-10 categoryBox"></div>
         <!-- <h4

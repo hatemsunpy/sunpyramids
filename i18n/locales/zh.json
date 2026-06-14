@@ -5,6 +5,10 @@
     "contact": "联系我们",
     "events": "活动",
     "goBack": "返回",
+    "showPassword": "显示密码",
+    "hidePassword": "隐藏密码",
+    "signInWith": "使用 {provider} 登录",
+    "signUpWith": "使用 {provider} 注册",
     "criTitle": "由真实体验引领，探索埃及",
     "bookCriTrip": "立即预订您的圣诞之旅",
     "specialEventsData": {

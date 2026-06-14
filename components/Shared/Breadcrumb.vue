@@ -22,8 +22,8 @@
         <img src="/icons/arrow-left.png" alt="" class="w-5 h-5" />
       </button>
 
-      <h5 class="font-normal truncate">{{ props.mobItem.directTitle ? props.mobItem.title : $t("labels." +
-        props.mobItem.title) }}</h5>
+      <span class="font-normal truncate">{{ props.mobItem.directTitle ? props.mobItem.title : $t("labels." +
+        props.mobItem.title) }}</span>
     </div>
   </section>
 </template>

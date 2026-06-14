@@ -13,6 +13,10 @@
       "btn": "Voir les circuits de Pâques"
     },
     "goBack": "Retour",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "signInWith": "Se connecter avec {provider}",
+    "signUpWith": "S'inscrire avec {provider}",
     "criTitle": "Explorez l'Égypte guidé par une véritable expérience",
     "bookCriTrip": "Réservez votre voyage de Noël dès maintenant",
     "thankful": {
