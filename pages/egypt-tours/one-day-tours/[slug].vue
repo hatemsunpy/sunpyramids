@@ -22,11 +22,14 @@ const { addSeo } = useSeo()
 const breadcrumbItems = ref([{ title: "home", disabled: false, path: "/" }, { title: "egyTours", disabled: true, path: "/egypt-tours" }, { title: "oneDay", disabled: false, path: "/egypt-tours/one-day-tours" },])
 const distination = ref(null)
 const getDistination = async () => {
-  await getData(`destinations/${route.params.slug}`, { includes: 'seo' }).then((res) => {
+  try {
+    const res = await getData(`destinations/${route.params.slug}`, { includes: 'seo' })
     distination.value = res.data
     breadcrumbItems.value.push({ title: distination.value?.title, directTitle: true, disabled: false, path: "" })
     addSeo(distination.value)
-  })
+  } catch (err) {
+    console.error('[getDistination] Failed to load destination:', err)
+  }
 }
 await getDistination()
 </script>

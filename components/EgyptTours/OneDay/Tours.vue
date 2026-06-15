@@ -207,7 +207,8 @@ const getTours = async (values) => {
 
   const query = params.join("")
   try {
-    const res = await $fetch(`${config.public.baseURL}${url}?${query}`, {
+    const res = await $fetch(`${url}?${query}`, {
+      baseURL: config.public.baseURL,
       method: 'GET',
       headers: {
         accept: 'application/json',
@@ -217,7 +218,7 @@ const getTours = async (values) => {
     })
     tours.value = res?.data ?? null
     if (totalGlobalTrips.value == 0)
-      totalGlobalTrips.value = res?.total ?? 0
+      totalGlobalTrips.value = res?.data?.total ?? 0
   } catch (err) {
     console.error('[getTours] Failed to load tours:', err)
     tours.value = null

@@ -9,7 +9,7 @@
           })" -->
         <div class="h-[12.0625rem] cursor-pointer rounded-[1.1rem] overflow-hidden">
           <NuxtImg class="w-full h-full object-cover group-hover:scale-125 transition-all duration-300"
-            :src="props.blog.featured_image" alt="BlogCard" loading="lazy" width="400" height="193" format="webp" />
+            :src="props.blog.featured_image" :alt="props.blog.title ? `${props.blog.title} blog image` : 'Blog image'" loading="lazy" width="400" height="193" format="webp" />
         </div>
       </NuxtLink>
       <div class="mt-4 px-2 flex flex-col gap-2">

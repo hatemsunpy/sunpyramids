@@ -69,6 +69,7 @@ if (blog.value) {
           rel: 'preload',
           as: 'image',
           href: preloadHref,
+          fetchpriority: 'high',
         }
       ]
     })
