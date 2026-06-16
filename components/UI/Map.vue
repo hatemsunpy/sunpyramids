@@ -24,7 +24,7 @@
         <GMapMarker v-for="(coord, index) in props.PolygonCoords" :key="index" :position="coord" :clickable="false"
           :draggable="false" :options="{
             icon: {
-              url: '/images/map-location-2.png',
+              url: '/images/map-location-2.webp',
               scaledSize: { width: 60, height: 60 },
               anchor: { x: 30, y: 30 }
             }

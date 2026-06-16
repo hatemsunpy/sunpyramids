@@ -12,26 +12,8 @@
 </template>
 
 <script setup lang='js'>
-const trustindexContainer = ref(null);
-
-
-onMounted(() => {
-  // Check if running on client side
-  if (process.client) {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e';
-    script.async = true;
-    script.defer = true;
-
-    // Add data attributes if needed by TrustIndex
-    script.setAttribute('data-type', 'stripe');
-    script.setAttribute('data-location', 'home-reviews');
-
-    if (trustindexContainer.value) {
-      trustindexContainer.value.appendChild(script);
-    }
-  }
-});
+// TrustIndex is loaded by plugins/third-party-scripts.client.ts when the
+// #home-reviews container is present, respecting the ?no-third-party gate.
 </script>
 
 <style scoped lang='scss'></style>

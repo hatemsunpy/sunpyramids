@@ -1,7 +1,9 @@
 <template>
-  <div ref="iceContainer" class="ice-container">
-    <NuxtIcon name="snow" v-for="drop in drops" :key="drop.id" class="snow-drop" :style="drop.style" />
-  </div>
+  <ClientOnly>
+    <div ref="iceContainer" class="ice-container">
+      <NuxtIcon name="snow" v-for="drop in drops" :key="drop.id" class="snow-drop" :style="drop.style" />
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup lang='js'>

@@ -132,7 +132,7 @@ const clickAction = () => {
 
 
 const currentType = ref(props.type);
-const specialID = `${props.name}-${Date.now()}`;
+const specialID = useId();
 
 function showPassword() {
   if (currentType.value == "text") {

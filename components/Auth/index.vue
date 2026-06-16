@@ -6,7 +6,7 @@
         <SharedLangAndCurrancies :is-auth="true" />
 
         <NuxtLink :to="localePath('/')">
-          <img src="/images/Artboard 5.png" class="w-20" /> 
+          <img src="/images/Artboard 5.webp" class="w-20" /> 
         </NuxtLink>
       </div>
 

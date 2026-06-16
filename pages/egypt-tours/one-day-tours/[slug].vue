@@ -29,6 +29,11 @@ const getDistination = async () => {
     addSeo(distination.value)
   } catch (err) {
     console.error('[getDistination] Failed to load destination:', err)
+    throw createError({
+      statusCode: err?.statusCode || 404,
+      statusMessage: err?.statusMessage || `Destination not found: ${route.params.slug}`,
+      fatal: true,
+    })
   }
 }
 await getDistination()

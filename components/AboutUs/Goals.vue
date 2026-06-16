@@ -27,7 +27,7 @@ const props = defineProps({
     default: () => ([])
   }
 })
-const goals = [{ name: "mission", icon: "/images/airdrop.png" }, { name: "vision", icon: "/images/eye.png" }]
+const goals = [{ name: "mission", icon: "/images/airdrop.webp" }, { name: "vision", icon: "/images/eye.webp" }]
 </script>
 
 <style scoped lang="scss"></style>
