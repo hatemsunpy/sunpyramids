@@ -44,7 +44,7 @@ const filterWith = ref(props.value ?? true)
 
 const emits = defineEmits(["update"]);
 
-const id = `maincbx-${Math.random() * 40000}`
+const id = useId()
 </script>
 
 <style scoped lang="scss">

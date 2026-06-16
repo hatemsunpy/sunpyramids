@@ -7,7 +7,7 @@
           v-for="offer in 1" :key="offer">
 
           <img :src="props.data?.featured_image" class="w-full h-full object-cover" loading="lazy" width="600" height="400" style="aspect-ratio: 3 / 2;" decoding="async" />
-          <!-- <img src="/images/IMG_3817.jpg" class="w-full h-full object-cover" /> -->
+          <!-- <img src="/images/IMG_3817.webp" class="w-full h-full object-cover" /> -->
         </div>
 
         <h4

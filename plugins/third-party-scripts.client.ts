@@ -99,15 +99,20 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   // --- TrustIndex DOM-based detection ---
 
-  const TRUSTINDEX_CONTAINERS: Record<string, string> = {
-    'home-reviews': 'https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e',
-    'footer-cert': 'https://cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a',
+  const TRUSTINDEX_CONTAINERS: Record<string, { src: string; attrs?: Record<string, string> }> = {
+    'home-reviews': {
+      src: 'https://cdn.trustindex.io/loader.js?1d15b034519c8049128609a4d4e',
+      attrs: { 'data-type': 'stripe', 'data-location': 'home-reviews' },
+    },
+    'footer-cert': {
+      src: 'https://cdn.trustindex.io/loader-cert.js?c80e286451c98153d1567b8885a',
+    },
   }
 
   const loadedTrustIndex = new Set<string>()
 
   function checkTrustIndexContainers() {
-    for (const [id, src] of Object.entries(TRUSTINDEX_CONTAINERS)) {
+    for (const [id, { src, attrs }] of Object.entries(TRUSTINDEX_CONTAINERS)) {
       if (loadedTrustIndex.has(id)) continue
       if (document.getElementById(id)) {
         loadedTrustIndex.add(id)
@@ -115,6 +120,11 @@ export default defineNuxtPlugin((nuxtApp) => {
         script.src = src
         script.async = true
         script.defer = true
+        if (attrs) {
+          for (const [key, value] of Object.entries(attrs)) {
+            script.setAttribute(key, value)
+          }
+        }
         document.head.appendChild(script)
       }
     }
@@ -172,7 +182,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     })
   )
 
-  // 5-second fallback
+  // 5-second fallback: if the user never interacts, load scripts after a
+  // short delay so they never block the critical rendering path.
   setTimeout(() => {
     if (!loaded) loadAllScripts()
   }, 5000)

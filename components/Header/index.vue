@@ -3,7 +3,7 @@
     <div class="header">
 
       <img @click="router.push(localePath('/'))"
-        class="xl:min-w-44 xl:max-w-4min-w-44 min-w-32 max-w-32 cursor-pointer" src="/images/logo.png" alt="logo" />
+        class="xl:min-w-44 xl:max-w-4min-w-44 min-w-32 max-w-32 cursor-pointer" src="/images/logo.webp" alt="logo" />
 
       <ul v-if="isFirstStyle" class="xl:flex hidden items-center justify-between gap-6 font-medium text-base">
         <template v-for="(link, index) in links" :key="index">
@@ -29,7 +29,7 @@
                     <span>{{ $t(`labels.${c.name}`) }}</span>
 
                     <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity"
-                      src="/images/Line arrow-right.png" alt="logo" />
+                      src="/images/Line arrow-right.webp" alt="logo" />
                   </NuxtLink>
                 </li>
               </ul>
@@ -90,9 +90,9 @@
       :class="[isFirstStyle ? 'flex' : 'hidden md:hidden lg:top-[2.875rem]']">
 
       <div class="flex items-center gap-2 ">
-        <img src="/images/clover.png" class="w-6 h-6" alt="" />
+        <img src="/images/clover.webp" class="w-6 h-6" alt="" />
 
-        <img src="/images/easter-egg.png" class="w-8 h-8" alt="" />
+        <img src="/images/easter-egg.webp" class="w-8 h-8" alt="" />
       </div>
 
       <p class="text-white font-medium text-xl z-10">{{ $t('labels.strip.title') }}</p>
@@ -132,7 +132,7 @@
                   <span>{{ $t(`labels.${c.name}`) }}</span>
 
                   <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity"
-                    src="/images/Line arrow-right.png" alt="logo" />
+                    src="/images/Line arrow-right.webp" alt="logo" />
                 </NuxtLink>
               </li>
             </ul>
@@ -213,7 +213,7 @@
                     <span>{{ $t(`labels.${c.name}`) }}</span>
 
                     <img class="w-5 opacity-0 group-hover/link:opacity-100 transition-opacity"
-                      src="/images/Line arrow-right.png" alt="logo" />
+                      src="/images/Line arrow-right.webp" alt="logo" />
                   </NuxtLink>
                 </li>
               </ul>

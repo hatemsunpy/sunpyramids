@@ -7,7 +7,7 @@
     <div class="py-16 xl:px-[7.5rem] px-4 messageReduis bg-[#ffffff]">
       <div class="flex justify-between mb-8">
         <div class="flex items-center gap-2">
-          <img src="/images/team/Mahmoud_badia.png" class="xl:w-16 w-10 xl:h-16 h-10 rounded-full" />
+          <img src="/images/team/Mahmoud_badia.webp" class="xl:w-16 w-10 xl:h-16 h-10 rounded-full" />
           <div>
             <h6 class="lg:text-xl text-xs lg:leading-8 leading-[160%] font-medium">Mahmoud Badia</h6>
 
@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <img src="/images/team/doupleQuote.png" class="lg:w-20 lg:h-[3.375rem] h-10" />
+        <img src="/images/team/doupleQuote.webp" class="lg:w-20 lg:h-[3.375rem] h-10" />
       </div>
 
       <div class="text-xl flex flex-col gap-8">

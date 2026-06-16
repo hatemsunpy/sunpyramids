@@ -115,6 +115,7 @@ export default defineNuxtConfig({
         { rel: "dns-prefetch", href: "https://sunpyramidtours.com" },
         { rel: "preconnect", href: "https://pub-5ccb6ad334fb427684d7f3fa11a34197.r2.dev" },
         { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/TripSans-Regular.woff2", crossorigin: "anonymous" },
+        { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/TripSans-Medium.woff2", crossorigin: "anonymous" },
         { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/TripSans-Bold.woff2", crossorigin: "anonymous" },
       ],
       script: [],

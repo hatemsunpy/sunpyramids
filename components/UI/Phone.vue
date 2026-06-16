@@ -122,7 +122,7 @@ await getData("countries").then((res) => {
   });
 });
 
-const specialID = `${name}-${Date.now()}`;
+const specialID = useId();
 
 function changePhoneCode(e) {
   country.value = e;

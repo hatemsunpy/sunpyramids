@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 xl:px-20 px-4 md-10">
     <div
-      class="md:py-16 py-4 md:px-12 px-4 rounded-[2rem] bg-[url('/images/linearNeedHelp.png')] bg-no-repeat bg-cover bg-center">
+      class="md:py-16 py-4 md:px-12 px-4 rounded-[2rem] bg-[url('/images/linearNeedHelp.webp')] bg-no-repeat bg-cover bg-center">
       <h3 class="xl:text-5xl md:text-4xl text-3xl text  font-bold text-center text-white mb-12">
         {{ $t("labels.needHelp") }}
       </h3>

@@ -12,31 +12,35 @@
       </div>
     </div>
 
-    <div class="!max-w-1/2"><vue-awesome-paginate :total-items="props.total ?? 1" :items-per-page="24"
-        :max-pages-shown="getDeviceType" v-model="currentPage"
-        @click="onClickHandler">
-        <template #starting-breakpoint-button>....</template>
-        <template #ending-breakpoint-button>....</template>
-        <template #prev-button>
-          <UIButton :text="$t(`labels.back`)" pre-icon="arrow-right-pagination"
-            :pre-icon-classes="['text-lg !font-normal rotate-180 !text-textDark']" :classes="[
-              'border !min-w-fit me-2 hidden lg:flex  gap-2 border-[1px] text-textDark   font-meduim hover:text-white border-textLight hover:bg-textDark',
+    <div class="!max-w-1/2">
+      <ClientOnly>
+        <vue-awesome-paginate :total-items="props.total ?? 1" :items-per-page="24"
+          :max-pages-shown="getDeviceType" v-model="currentPage"
+          @click="onClickHandler">
+          <template #starting-breakpoint-button>....</template>
+          <template #ending-breakpoint-button>....</template>
+          <template #prev-button>
+            <UIButton :text="$t(`labels.back`)" pre-icon="arrow-right-pagination"
+              :pre-icon-classes="['text-lg !font-normal rotate-180 !text-textDark']" :classes="[
+                'border !min-w-fit me-2 hidden lg:flex  gap-2 border-[1px] text-textDark   font-meduim hover:text-white border-textLight hover:bg-textDark',
+              ]" />
+            <UIButton pre-icon="arrow-right-pagination"
+              :pre-icon-classes="['text-lg !font-normal !text-textDark rotate-180']" :classes="[
+                'border !w-11 ! h-11 !p-0 !m-0 lg:hidden flex !justify-center lg:gap-2 gap-0 !items-center flex gap-2 border-[1px] text-textDark   font-meduim hover:text-white border-textLight hover:bg-textDark',
+              ]" />
+          </template>
+          <template #next-button>
+            <UIButton :text="$t(`labels.next`)" post-icon="arrow-right-pagination"
+              :post-icon-classes="['text-lg !font-normal !m-0']" :classes="[
+                'border border-primary hidden lg:flex gap-2 border-[1px] hover:bg-[#143485] ms-2 bg-primary font-meduim text-white',
+              ]" />
+            <UIButton post-icon="arrow-right-pagination" :post-icon-classes="['text-lg !font-normal !m-0']" :classes="[
+              'border border-primary  !w-11 ! h-11 !p-0 px-0 lg:hidden flex !m-0 !justify-center !items-center flex lg:gap-2 gap-0 border-[1px] hover:bg-[#143485] ms-2 bg-primary font-meduim text-white',
             ]" />
-          <UIButton pre-icon="arrow-right-pagination"
-            :pre-icon-classes="['text-lg !font-normal !text-textDark rotate-180']" :classes="[
-              'border !w-11 ! h-11 !p-0 !m-0 lg:hidden flex !justify-center lg:gap-2 gap-0 !items-center flex gap-2 border-[1px] text-textDark   font-meduim hover:text-white border-textLight hover:bg-textDark',
-            ]" />
-        </template>
-        <template #next-button>
-          <UIButton :text="$t(`labels.next`)" post-icon="arrow-right-pagination"
-            :post-icon-classes="['text-lg !font-normal !m-0']" :classes="[
-              'border border-primary hidden lg:flex gap-2 border-[1px] hover:bg-[#143485] ms-2 bg-primary font-meduim text-white',
-            ]" />
-          <UIButton post-icon="arrow-right-pagination" :post-icon-classes="['text-lg !font-normal !m-0']" :classes="[
-            'border border-primary  !w-11 ! h-11 !p-0 px-0 lg:hidden flex !m-0 !justify-center !items-center flex lg:gap-2 gap-0 border-[1px] hover:bg-[#143485] ms-2 bg-primary font-meduim text-white',
-          ]" />
-        </template>
-      </vue-awesome-paginate></div>
+          </template>
+        </vue-awesome-paginate>
+      </ClientOnly>
+    </div>
   </div>
 </template>
 

@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <img v-if="index + 1 != steps.length" src="/images/arrow_steps.png" class="lg:w-24 w-12  lg:block hidden" />
+        <img v-if="index + 1 != steps.length" src="/images/arrow_steps.webp" class="lg:w-24 w-12  lg:block hidden" />
       </template>
     </div>
   </section>

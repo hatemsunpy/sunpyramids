@@ -1,39 +1,39 @@
 {
   "url": "http://localhost:3000/",
-  "timestamp": "2026-06-09T14:33:01.638Z",
+  "timestamp": "2026-06-16T11:42:49.297Z",
   "viewport": {
     "width": 390,
     "height": 844
   },
-  "htmlSizeKb": 1434.9,
+  "htmlSizeKb": 931.5,
   "domMetrics": {
-    "elements": 3003,
-    "scripts": 7,
-    "links": 23,
-    "imgs": 289,
-    "stylesheets": 6,
+    "elements": 3193,
+    "scripts": 5,
+    "links": 84,
+    "imgs": 290,
+    "stylesheets": 18,
     "noscriptStylesheets": 0,
-    "modulePreloads": 1,
-    "inlineStyles": 37
+    "modulePreloads": 48,
+    "inlineStyles": 1
   },
   "stylesheets": {
-    "renderBlocking": 6,
+    "renderBlocking": 18,
     "noscript": 0,
-    "inline": 37
+    "inline": 1
   },
-  "modulePreloads": 1,
+  "modulePreloads": 48,
   "coreWebVitals": {
-    "fcp": 9328,
-    "ttfb": 6039.800000000745,
-    "longTasks": 2
+    "fcp": 408,
+    "ttfb": 46.599999994039536,
+    "longTasks": 4
   },
   "transferSizes": {
-    "totalKb": 15092.9,
-    "jsKb": 12785.6,
-    "cssKb": 477.4,
-    "imgKb": 841.4,
+    "totalKb": 1715,
+    "jsKb": 314.7,
+    "cssKb": 16.5,
+    "imgKb": 412.1,
     "fontKb": 73.6,
-    "resourceCount": 447
+    "resourceCount": 103
   },
   "heroImage": {},
   "consoleErrors": [],
